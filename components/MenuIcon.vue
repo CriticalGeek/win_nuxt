@@ -1,7 +1,7 @@
 <template>
   <div
     :class="'shapeshifter ' + status"
-    style="background-image: url(/img/menu-icon.svg)"
+    style="background-image: url('/img/menu-icon.svg')"
   ></div>
 </template>
 
