@@ -1,0 +1,14 @@
+// ---------------------------------------------
+// ⚠️ ¡IMPORTANT! ⚠️
+//
+// this file should only include imports
+// ---------------------------------------------
+
+// base imports
+@import './base/resets';
+@import './base/fontSizes';
+
+// theme imports
+@import './theme/colors';
+@import './theme/vars';
+@import './theme/ui';

@@ -1,0 +1,36 @@
+// vars
+$p_color: #1EBCA9; // primary color
+$s_color: #0578da; // secondary color
+$a_color: #ff2d2d; // accent color
+
+$dark_background: #000;
+$dark_color: #fff;
+
+$light_background: #fff;
+$light_color: #111;
+
+// extends
+%p_color {
+  background: $p_color;
+  color: #fff;
+}
+
+%s_color {
+  background: $s_color;
+  color: #fff;
+}
+
+%a_color {
+  background: $a_color;
+  color: #fff;
+}
+
+%dark_background {
+  background: $dark_background;
+  color: $dark_color;
+}
+
+%light_background {
+  background: $light_background;
+  color: $light_color;
+}

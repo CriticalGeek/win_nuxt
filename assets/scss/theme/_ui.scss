@@ -1,0 +1,43 @@
+*::selection {
+  @extend %p_color;
+}
+
+em {
+  @extend %a_color;
+  font-style: normal;
+}
+
+strong {
+  color: $s_color;
+}
+
+a {
+  transition: ease .3s;
+  outline: none;
+
+  &:hover {
+    color: $p_color !important;
+  }
+}
+
+ul,
+ol {
+  margin-left: 2rem;
+}
+
+.btn {
+  @extend %p_color;
+
+  padding: .5rem 1rem;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  transition: ease .3s;
+  cursor: pointer;
+  font-size: 1rem !important;
+
+  &:hover {
+    background: darken($p_color, 10%);
+    color: #fff !important;
+  }
+}
