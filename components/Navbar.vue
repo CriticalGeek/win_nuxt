@@ -51,7 +51,7 @@
 </template>
 
 <script>
-  import MenuIcon from '@/components/menuIcon'
+  import MenuIcon from '@/components/MenuIcon'
 
   export default {
     data () {
