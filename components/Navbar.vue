@@ -12,7 +12,7 @@
       <div class="nav_actions">
         <a
           :href="navbar_actionURL"
-          class="btn"
+          class="btn login"
         >{{ navbar_action }}</a>
         <div v-on:click="navMenu">
           <MenuIcon :status="menuStatus" />
@@ -224,6 +224,14 @@
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .login {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
   }
 }
 </style>

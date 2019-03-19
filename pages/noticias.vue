@@ -203,6 +203,16 @@
   padding: 100px var(--global_padding);
   text-align: center;
 }
+
+@media screen and (max-width: 700px) {
+  .new > img {
+    display: none;
+  }
+
+  .new__content {
+    width: 100% !important;
+  }
+}
 </style>
 
 

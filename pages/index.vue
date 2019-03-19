@@ -80,10 +80,7 @@
     </section>
 
     <section class="section3">
-      <span
-        v-html="section3_title"
-        v-rellax="{ speed: 2 }"
-      ></span>
+      <span v-html="section3_title"></span>
       <div
         class="section3__content"
         v-html="section3_content"
@@ -227,7 +224,8 @@
           v-for="image in section5_images"
           :key="image in section5_images"
           :src="image.url"
-          v-rellax="{ speed: -1 }"
+          data-aos="zoom-out-right"
+          data-aos-duration="700"
         >
       </div>
       <p
@@ -469,7 +467,8 @@
 
     .section2__content__data {
       color: #fff;
-      width: 500px;
+      max-width: 500px;
+      width: 100%;
 
       h3 {
         color: #000;
@@ -509,16 +508,16 @@
 .section3 {
   @extend %section;
 
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-start;
 
   span h1 {
-    font-size: 12rem;
+    font-size: 13rem;
     font-weight: 500;
-    margin-right: 100px;
-    margin-top: 250px;
-    margin-bottom: -350px;
+    margin: -70px 100px 0 100px;
 
     strong {
       font-weight: 500;
@@ -740,7 +739,7 @@
     justify-content: center;
     align-items: flex-start;
     text-align: left;
-    padding: 0 15%;
+    padding: 0 10%;
     z-index: 3;
 
     h1 {
@@ -761,7 +760,7 @@
 
   padding-left: calc(var(--global_padding) * 2);
   padding-right: calc(var(--global_padding) * 2);
-  padding-bottom: 200px;
+  padding-bottom: 100px;
   display: flex;
   align-items: flex-end;
 
@@ -795,7 +794,7 @@
   @extend %section;
 
   padding-bottom: 200px;
-  padding-top: 350px;
+  padding-top: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -808,12 +807,12 @@
   }
 
   button {
-    margin-top: 50px;
+    margin-top: 20px;
   }
 
   .section5__images {
     position: absolute;
-    top: -800px;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -827,6 +826,117 @@
       width: 25%;
       margin: 30px;
     }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .section2__content {
+    flex-direction: column-reverse;
+    align-items: center;
+
+    .section2__content__data {
+      margin-top: 250px;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .activators-slide {
+    img {
+      display: none;
+    }
+  }
+
+  .principle {
+    display: block !important;
+
+    .principle__circle,
+    .separator {
+      display: none;
+    }
+
+    .principle__text {
+      position: initial !important;
+      text-align: center !important;
+      width: auto !important;
+    }
+  }
+
+  .compensation-carousel {
+    & > img,
+    .compensation-carousel__wrapper {
+      width: 100%;
+    }
+
+    .compensation-carousel__icon {
+      display: none;
+    }
+  }
+
+  .highlighted_activator {
+    padding-left: var(--global_padding);
+    padding-right: var(--global_padding);
+
+    .highlighted_separator {
+      margin: 0 25px;
+    }
+  }
+
+  .section5 {
+    padding: 100px var(--global_padding);
+
+    .section5__images {
+      display: none !important;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .highlighted_activator {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 50px;
+
+    & > img {
+      max-width: 300px;
+      height: 300px;
+    }
+
+    .highlighted_separator {
+      width: 80%;
+      height: 3px;
+      margin: 50px 0;
+    }
+  }
+
+  .section2__content__gallery {
+    display: none;
+  }
+
+  .section2__content__data {
+    margin-top: 0 !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .circles {
+    transform: scale(0.6);
+    margin-bottom: 20px !important;
+  }
+
+  .section3 span h1 {
+    font-size: 8rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .circles {
+    transform: scale(0.5);
+    margin-bottom: 10px !important;
   }
 }
 </style>

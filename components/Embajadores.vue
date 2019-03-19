@@ -138,4 +138,20 @@
     }
   }
 }
+
+@media screen and (max-width: 525px) {
+  .embajadores {
+    transform: scale(0.8) !important;
+    height: 600px;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .embajadores {
+    transform: scale(0.7) !important;
+    height: 550px;
+    margin-top: 0;
+  }
+}
 </style>

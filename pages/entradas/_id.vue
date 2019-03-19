@@ -87,7 +87,7 @@
       }
 
       .header__text {
-        width: 50%;
+        width: 70%;
         height: 100%;
         position: absolute;
         right: 0;
@@ -167,6 +167,40 @@
           }
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .header {
+    height: 600px !important;
+
+    .header__text {
+      width: 100% !important;
+      height: auto !important;
+      max-height: 100%;
+      text-align: center;
+      padding: 2rem 1rem !important;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .post {
+    flex-direction: column;
+
+    article {
+      width: 100%;
+      margin-right: 0;
+
+      .content {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    aside {
+      width: 100%;
     }
   }
 }

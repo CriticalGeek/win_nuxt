@@ -52,6 +52,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
 
   .footer__links {
     & > a {
@@ -86,6 +87,12 @@
   .footer_rights {
     margin-top: 50px;
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footer > img {
+    margin: 50px 0 50px 0 !important;
   }
 }
 </style>

@@ -91,7 +91,7 @@
 
   .profile__header {
     position: relative;
-    height: 550px;
+    height: 600px;
     display: flex;
     align-items: flex-end;
     padding: 100px var(--global_padding);
@@ -120,10 +120,12 @@
     & img {
       width: 300px;
       object-fit: contain;
+      object-position: bottom;
     }
 
     .profile__about__info {
       margin-left: var(--global_padding);
+      margin-bottom: 5rem;
     }
   }
 
@@ -170,6 +172,18 @@
           margin: 1rem;
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .profile__about {
+    & > img {
+      display: none;
+    }
+
+    .profile__about__info {
+      margin-left: 0 !important;
     }
   }
 }

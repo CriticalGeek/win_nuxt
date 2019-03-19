@@ -48,6 +48,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 
   .ambassadors_wrapper {
     margin-top: 50px;

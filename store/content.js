@@ -154,7 +154,7 @@ export const state = () => ({
         ]
       },
       "section3": {
-        "title": "<h1>yeah<strong>!</strong><h1>",
+        "title": "<h1>yeah<strong>!</strong></h1>",
         "content": `
           <p>Te invitamos a ser parte. WIN elimina las debilidades comunes de los esquemas comerciales en red, es decir: no tienes que pagar inscripción, comprar ni vender nada, no tienes que mantener o cargar redes, lo único que tienes que hacer es invitar a 3 personas. <br> ¡Así de fácil!</p> <br>
           <p>Lo mejor es que pueden afiliarse <b>todo tipo de Negocios</b> de productos y/o servicios</p> <br>
@@ -298,12 +298,11 @@ export const state = () => ({
             "title": "Nivel #1",
             "subtitle": "Negocios Afiliados de manera directa",
             "content": `
-              <p>WIN te pagará el 0.20% sobre el 100% de los ingresos que los Negocios Activos en la plataforma Weenjoy, hayan obtenido mensualmente derivados por las compras y/o consumos de los usuarios de Weenjoy.</p> <br>
-              <p>Puede llegar a ser del 0.30% en el caso de cadenas*.</p> <br>
+              <p>WIN te pagará el 0.20% sobre el 100% de los ingresos que los Negocios Activos en la plataforma Weenjoy, hayan obtenido mensualmente derivados por las compras y/o consumos de los usuarios de Weenjoy. Puede llegar a ser del 0.30 % en el caso de cadenas * . </p>
               <p>0.20% al 0.30% de tus primeros 6 Negocios.</p>
             `,
             "background": "/img/level_1.jpg",
-            "icon": "/img/level_1-ico.svg"
+            "icon": "/img/ico-level_1.png"
           },
           {
             "title": "Nivel #2 al #6",
@@ -312,7 +311,7 @@ export const state = () => ({
               <p>Te pagará el 0.10% en cada nivel sobre el 100% de los ingresos que los Negocios Activos en la plataforma Weenjoy, hayan obtenido mensualmente derivados por las compras y/o consumos de los usuarios de Weenjoy.</p>
             `,
             "background": "/img/level_2.jpg",
-            "icon": "/img/level_2-ico.svg"
+            "icon": "/img/ico-level_2.png"
           }
         ]
       },

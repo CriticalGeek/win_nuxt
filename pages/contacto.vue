@@ -165,11 +165,13 @@
 
 .addresses {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   padding: 100px var(--global_padding);
 
   .address {
-    width: 500px;
+    max-width: 300px;
+    width: 100%;
     margin: 30px;
     text-align: center;
 
