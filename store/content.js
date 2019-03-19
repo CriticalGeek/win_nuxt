@@ -302,7 +302,7 @@ export const state = () => ({
               <p>0.20% al 0.30% de tus primeros 6 Negocios.</p>
             `,
             "background": "/img/level_1.jpg",
-            "icon": "/img/ico-level_1.png"
+            "icon": "/img/level_1-ico.png"
           },
           {
             "title": "Nivel #2 al #6",
@@ -311,7 +311,7 @@ export const state = () => ({
               <p>Te pagará el 0.10% en cada nivel sobre el 100% de los ingresos que los Negocios Activos en la plataforma Weenjoy, hayan obtenido mensualmente derivados por las compras y/o consumos de los usuarios de Weenjoy.</p>
             `,
             "background": "/img/level_2.jpg",
-            "icon": "/img/ico-level_2.png"
+            "icon": "/img/level_2-ico.png"
           }
         ]
       },
