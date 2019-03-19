@@ -57,8 +57,8 @@ module.exports = {
   // Plugins to load before mounting the App
   plugins: [
     { src: 'node_modules/vue-rellax/lib/nuxt-plugin', ssr: false },
-    { src: "~/plugins/aos", ssr: false },
-    { src: "~/plugins/swiper", ssr: false },
+    { src: '~/plugins/aos', ssr: false },
+    { src: '~/plugins/swiper', ssr: false }
   ],
 
   // Nuxt.js modules
@@ -66,6 +66,7 @@ module.exports = {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
+    'vue-sweetalert2/nuxt'
   ],
 
   // Axios module configuration

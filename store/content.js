@@ -143,13 +143,13 @@ export const state = () => ({
           <p>Tú como ellos puedes tener un plan de compensación monetaria.</p>
         `,
         "gallery": [{
-            "img": "/img/success_01.jpg"
+            "src": "https://player.vimeo.com/video/314064438"
           },
           {
-            "img": "/img/success_02.jpg"
+            "src": "https://player.vimeo.com/video/314064361"
           },
           {
-            "img": "/img/success_03.jpg"
+            "src": "https://player.vimeo.com/video/314064378"
           }
         ]
       },
@@ -167,22 +167,42 @@ export const state = () => ({
         "principles": [{
             "name": "Principio #1",
             "description": "Ingresos Residuales",
-            "icon": "/img/principio_01.png"
+            "icon": "/img/principio_01.png",
+            "background": "/img/principio_01-background.png",
+            "content": `
+              <p>En los trabajos tradicionales y comunes, intercambias tu tiempo por dinero(quincena, honorarios, etc.) por eso a este tipo de ingresos se les llaman Lineales.</p> <br>
+              <p>En cambio, en los ingresos residuales, realizas un trabajo una sola vez y él mismo te reportará un flujo continuo de ganancias que se prolonga y puede perpetuarse con el tiempo.</p> <br>
+              <p>Esta es la forma más inteligente de ganar dinero.</p>
+              <p>Lo más valioso de WIN, es que te permite generar de manera muy fácil importantes ingresos residuales.</p>
+            `
           },
           {
             "name": "Principio #2",
             "description": "Apalancamiento en personas",
-            "icon": "/img/principio_02.png"
+            "icon": "/img/principio_02.png",
+            "background": "/img/principio_02-background.png",
+            "content": `
+              <p>Quienes obtienen INGRESOS RESIDUALES se apalancan en personas, que al no ser tus empleados no te cuestan. Como ellos también son dueños de su propio Negocio, ponen el mismo interés y entusiasmo que tú en hacerlo crecer y al no ser comisionistas no hay competencia.</p> <br>
+              <p>Este modelo de apalancamiento en personas busca que a ti te vaya bien porque en la medida que tú ganes, ganan ellos también.</p>
+            `          
           },
           {
             "name": "Principio #3",
             "description": "Modelo de crecimiento exponencial",
-            "icon": "/img/principio_03.png"
+            "icon": "/img/principio_03.png",
+            "background": "/img/principio_03-background.png",
+            "content": `
+              <p>En WIN te apalancarás en el talento y trabajo de cientos de Activadores (Joyners), aunque tú solamente integres a tres conocidos.</p>
+            `
           },
           {
             "name": "Principio #4",
             "description": "Sistema fácil y replicable",
-            "icon": "/img/principio_04.png"
+            "icon": "/img/principio_04.png",
+            "background": "/img/principio_04-background.png",
+            "content": `
+              <p>Al tener estos beneficios, serás el portavoz para difundir la buena noticia de Weenjoy a todas las personas.</p>
+            `        
           }
         ]
       },
@@ -212,7 +232,6 @@ export const state = () => ({
 
         }]
       },
-
 
       "consultants": [{
           "img": "/img/asesores/alejandro_ramirez.png",
@@ -278,16 +297,58 @@ export const state = () => ({
         }
       ],
       "activator_carousel": [{
-        "name": "German Zamacona",
-        "photo": "/img/activadores/german_zamacona.png",
+        "name": "Germán Zamacona",
+        "photo": "/img/activadores/germanZamacona.png",
         "speach": "Cuando no te guste lo que pasa disrumpe y crea, lo que a tus ojos es correcto.",
         "position": "Activador Master"
       },
       {
-        "name": "German Zamacona",
-        "photo": "/img/activadores/german_zamacona.png",
-        "speach": "Cuando no te guste lo que pasa disrumpe y crea, lo que a tus ojos es correcto.",
+        "name": "Tere Medina",
+        "photo": "/img/activadores/tereMedina.png",
+        "speach": "Para mí, Weenjoy es compartir oportunidades, ya que este es un gran movimiento que activará la economía de nuestro país.",
         "position": "Activador Master"
+      },
+      {
+        "name": "Roberto Martínez",
+        "photo": "/img/activadores/robertoMartinez.png",
+        "speach": "Weenjoy es la solución más impactante e innovadora del futuro para solucionar la economía de las personas.",
+        "position": "Asesor General Weenjoy"
+      },
+      {
+        "name": "Octavio Rincón",
+        "photo": "/img/activadores/octavioRincon.png",
+        "speach": "Weenjoy viene a responder al reto de innovar de manera impactante en la economía a todos los niveles sociales, realmente una solución revolucionaria.",
+        "position": "Asesor de T.I. Weenjoy"
+      },
+      {
+        "name": "Nacho Pérez",
+        "photo": "/img/activadores/nachoPerez.png",
+        "speach": "La innovación es lo de hoy.",
+        "position": "Activador Master"
+      },
+      {
+        "name": "Miriam del Peral",
+        "photo": "/img/activadores/miriamDelPeral.png",
+        "speach": "Weenjoy es la solución más eficaz para mejorar la calidad de vida de las personas mediante un método original, sorprendente y además de forma gratuita que impactará por su excelente eficacia y funcionalidad.",
+        "position": "Directora de Desarrollo Weenjoy travel"
+      },
+      {
+        "name": "Karla Lijermark",
+        "photo": "/img/activadores/karlaLijermark.png",
+        "speach": "Tu destino lo decides tú.",
+        "position": "Activador Master"
+      },
+      {
+        "name": "Domingo Ruiz",
+        "photo": "/img/activadores/domingoRuiz.png",
+        "speach": "Weenjoy es un vehículo innovador a favor de la distribución de la riqueza al conectar necesidades y soluciones a través de medios digitales.",
+        "position": "Asesor Fiscal y Legal Weenjoy"
+      },
+      {
+        "name": "Alejandro Ramírez",
+        "photo": "/img/activadores/alejandroRamirez.png",
+        "speach": "Weenjoy, compartiendo para cambiar a mundo.",
+        "position": "Director de Desarrollo Weenjoy Commerce"
       }],
       "compensation_plan": {
         "title": "Plan de compensación",
@@ -458,7 +519,7 @@ export const state = () => ({
         {
           "background": "/img/folleto_04.png",
           "title": "INFO CONTABLE",
-          "pdf": "/pdf/Info_contable_R1_ene2019.pdf",
+          "pdf": "/pdf/Info_contable_R5_14marzo_2019.pdf",
           "action": "DESCARGAR"
         }],
       },
@@ -641,17 +702,17 @@ export const state = () => ({
       "addresses": [{
           "name": "Weenjoy USA",
           "icon": "/img/contact_icons/ciudades_01.svg",
-          "address": "1160 Battery Street East, Suite 100, San Francisco, CA 94111, EE.UU. Phone: (628) 208 6431"
+          "address": `<p>1160 Battery Street East, Suite 100, <br> San Francisco, CA 94111, EE.UU. <br> Phone: (628) 208 6431</p>`
         },
         {
           "name": "Weenjoy México",
           "icon": "/img/contact_icons/ciudades_02.svg",
-          "address": "Puerta de Hierro, Av. Real Acueducto 360, 5 to piso, Col.Santa Margarita, C.P.45116, Zapopan, Jal.Mx. Tel: (33) 3002 4049"
+          "address": `<p>Puerta de Hierro, Av. Real Acueducto 360, <br> 5 to piso, Col.Santa Margarita, <br> C.P.45116, Zapopan, Jal.Mx. <br> Tel: (33) 3002 4049</p>`
         },
         {
           "name": "Weenjoy Colombia",
           "icon": "/img/contact_icons/ciudades_03.svg",
-          "address": "Torre Protección, Carrera 43A 1 - 50, Torre 1, Piso 6, Oficina 652 Medellín, Antq.Col. Tel: 57 4 605 1047"
+          "address": `<p>Torre Protección, Carrera 43A <br> 1 - 50, Torre 1, Piso 6, Oficina 652 <br> Medellín, Antq.Col. <br> Tel: 57 4 605 1047</p>`
         }
       ]
     }

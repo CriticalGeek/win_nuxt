@@ -36,8 +36,8 @@
     <section class="news">
       <div
         class="new"
-        v-for="item in news"
-        :key="item in news"
+        v-for="(item, index) in news"
+        :key="`newsItems-${index}`"
       >
         <img :src="item.images.main">
         <div class="new__content">

@@ -26,8 +26,8 @@
     >
       <div
         class="link"
-        v-for="social in contact_social"
-        :key="social in contact_social"
+        v-for="(social, index) in contact_social"
+        :key="`linksSocial-${index}`"
       >
         <div class="link__header">
           <a
@@ -42,8 +42,8 @@
         <div class="link__links">
           <span
             v-html="item.name"
-            v-for="item in social.contact"
-            :key="item in social.contact"
+            v-for="(item, index) in social.contact"
+            :key="`linkLinks-${index}`"
           ></span>
         </div>
       </div>
@@ -52,14 +52,14 @@
     <section class="addresses">
       <div
         class="address"
-        v-for="address in contact_addresses"
-        :key="address in contact_addresses"
+        v-for="(address, index) in contact_addresses"
+        :key="`addtesses-${index}`"
         data-aos="fade-up"
         data-aos-duration="700"
       >
         <img :src="address.icon">
         <h4>{{ address.name }}</h4>
-        <p>{{ address.address }}</p>
+        <span v-html="address.address"></span>
       </div>
     </section>
   </div>
@@ -167,7 +167,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 100px var(--global_padding);
+  padding: 50px var(--global_padding) 100px var(--global_padding);
 
   .address {
     max-width: 300px;

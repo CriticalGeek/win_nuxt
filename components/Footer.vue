@@ -2,8 +2,8 @@
   <footer class="footer">
     <div class="footer__links">
       <a
-        v-for="link in footer_links"
-        :key="link in footer_links"
+        v-for="(link, index) in footer_links"
+        :key="`footerLinks-${index}`"
         :href="link.url"
       >{{ link.name }}</a>
     </div>
@@ -14,8 +14,8 @@
     <div class="footer__social">
       <a
         :href="social.url"
-        v-for="social in footer_social"
-        :key="social in footer_social"
+        v-for="(social, index) in footer_social"
+        :key="`socialUrl-${index}`"
       >
         <img :src="social.icon">
       </a>

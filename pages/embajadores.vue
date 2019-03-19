@@ -10,8 +10,8 @@
     <div class="ambassadors_wrapper">
       <nuxt-link
         class="ambassador"
-        v-for="ambassador in ambassadors"
-        :key="ambassador in ambassadors"
+        v-for="(ambassador, index) in ambassadors"
+        :key="`ambassador-${index}`"
         :to="ambassador.url"
         data-aos="fade-up"
         data-aos-duration="700"

@@ -27,7 +27,7 @@
       <div class="links">
         <nuxt-link
           v-for="(link, index) in menu_links"
-          :key="(link, index) in menu_links"
+          :key="`menuLinks-${index}`"
           :to="link.url"
           v-on:click.native="navMenu"
         >{{ link.name }}</nuxt-link>
@@ -40,8 +40,8 @@
           :href="social.url"
           target="_blank"
           rel="noopener noreferrer"
-          v-for="social in menu_social"
-          :key="social in menu_social"
+          v-for="(social, index) in menu_social"
+          :key="`menuSocual-${index}`"
         >
           <img :src="social.icon">
         </a>

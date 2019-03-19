@@ -25,8 +25,8 @@
       <hr>
       <ul>
         <li
-          v-for="related in relatedPost"
-          :key="related in relatedPost"
+          v-for="(related, index) in relatedPost"
+          :key="`related-${index}`"
         >
           <nuxt-link :to="related.url">
             <img :src="related.thumbnail">
@@ -67,7 +67,7 @@
 
 .post {
   width: 100%;
-  padding: 50px;
+  padding: 50px 5%;
   display: flex;
   align-items: flex-start;
 
@@ -78,7 +78,7 @@
     .header {
       width: 100%;
       position: relative;
-      height: 400px;
+      height: 450px;
 
       img {
         width: 100%;
@@ -87,7 +87,7 @@
       }
 
       .header__text {
-        width: 70%;
+        width: 50%;
         height: 100%;
         position: absolute;
         right: 0;
@@ -171,7 +171,7 @@
   }
 }
 
-@media screen and (max-width: 1220px) {
+@media screen and (max-width: 1300px) {
   .header {
     height: 600px !important;
 

@@ -24,8 +24,8 @@
           class="brochure"
           data-aos="fade-up"
           data-aos-duration="700"
-          v-for="file in brochures_files"
-          :key="file in brochures_files"
+          v-for="(file, index) in brochures_files"
+          :key="`brochureFiles-${index}`"
         >
           <img :src="file.background">
           <div class="brochure__title">
@@ -53,8 +53,8 @@
       <div class="videos__wrapper">
         <div
           class="video"
-          v-for="video in videos_files"
-          :key="video in videos_files"
+          v-for="(video, index) in videos_files"
+          :key="`resourcesVideoFiles-${index}`"
           data-aos="fade-up"
           data-aos-duration="700"
         >
@@ -84,8 +84,8 @@
         <nuxt-link
           :to="entry.url"
           class="entry"
-          v-for="entry in entry_articles"
-          :key="entry in entry_articles"
+          v-for="(entry, index) in entry_articles"
+          :key="`entry-${index}`"
           data-aos="fade-up"
           data-aos-duration="700"
         >

@@ -52,8 +52,8 @@
       <div class="profile__social__networks">
         <a
           :href="social.url"
-          v-for="social in profile.cv.social.networks"
-          :key="social in profile.cv.social.networks"
+          v-for="(social, index) in profile.cv.social.networks"
+          :key="`profileSocialNetworks-${index}`"
         >
           <img
             :src="social.icon"

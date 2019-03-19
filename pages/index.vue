@@ -22,7 +22,7 @@
       <div class="circles">
         <img
           v-for="( circle, index ) in section1_circles"
-          :key="( circle, index ) in section1_circles"
+          :key="`section1Circles-${index}`"
           :src="circle.img"
           data-aos="zoom-in-up"
           data-aos-duration="1000"
@@ -69,18 +69,30 @@
           ></div>
         </div>
         <div class="section2__content__gallery">
-          <img
-            v-rellax="{ speed: 3 }"
-            v-for="item in section2_gallery"
-            :key="item.img"
-            :src="item.img"
-          >
+          <iframe
+            data-aos="fade-up"
+            data-aos-duration="700"
+            class="media"
+            width="300"
+            height="300"
+            v-for="(item, index) in section2_gallery"
+            :key="`section2Gallery-${index}`"
+            :src="item.src"
+            frameborder="0"
+            allowFullScreen
+            mozallowfullscreen
+            webkitAllowFullScreen
+          ></iframe>
         </div>
       </div>
     </section>
 
     <section class="section3">
-      <span v-html="section3_title"></span>
+      <span
+        data-aos="fade-right"
+        data-aos-duration="700"
+        v-html="section3_title"
+      ></span>
       <div
         class="section3__content"
         v-html="section3_content"
@@ -96,16 +108,28 @@
       <div class="swiper-wrapper">
         <div
           class="swiper-slide activators-slide"
-          v-for="activator in activators"
-          :key="activator in activators"
+          v-for="(activator, index) in activators"
+          :key="`activators-${index}`"
         >
           <img :src="activator.photo">
           <div class="slide_text">
-            <h3 class="title">{{ activator.speach }}</h3>
-            <div class="slide_text_name">
+            <h4
+              data-aos="fade-up"
+              data-aos-duration="700"
+              class="title"
+            >{{ activator.speach }}</h4>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="700"
+              class="slide_text_name"
+            >
               <p>{{ activator.name }}</p>
             </div>
-            <div class="slide_text_position">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="700"
+              class="slide_text_position"
+            >
               <p>{{ activator.position }}</p>
             </div>
           </div>
@@ -132,13 +156,14 @@
       <div class="section4__principles">
         <div
           class="principle"
-          v-for="principle in section4_principles"
-          :key="principle in section4_principles"
+          v-for="(principle, index) in section4_principles"
+          :key="`principles-${index}`"
         >
           <div
             data-aos="fade-up"
             data-aos-duration="700"
             class="principle__text"
+            @click="principleModal (principle.icon, principle.background, principle.description, principle.content)"
           >
             <h2>{{ principle.name }}</h2>
             <p>{{ principle.description }}</p>
@@ -153,23 +178,25 @@
 
     <section class="video_carousel">
       <div class="video_carousel__wrapper">
-        <VideoCarousel>
-          <div
-            class="swiper-slide"
-            v-for="video in video_carousel"
-            :key="video in video_carousel"
-          >
-            <iframe
-              width="100%"
-              height="380"
-              :src="video.url"
-              frameborder="0"
-              allowFullScreen
-              mozallowfullscreen
-              webkitAllowFullScreen
-            ></iframe>
-          </div>
-        </VideoCarousel>
+        <no-ssr>
+          <VideoCarousel>
+            <div
+              class="swiper-slide"
+              v-for="(video, index) in video_carousel"
+              :key="`videoCarousel-${index}`"
+            >
+              <iframe
+                width="100%"
+                height="380"
+                :src="video.url"
+                frameborder="0"
+                allowFullScreen
+                mozallowfullscreen
+                webkitAllowFullScreen
+              ></iframe>
+            </div>
+          </VideoCarousel>
+        </no-ssr>
       </div>
     </section>
 
@@ -188,8 +215,8 @@
     <VerticalCarousel>
       <div
         class="swiper-slide compensation-carousel"
-        v-for="level in compensation_levels"
-        :key="level in compensation_levels"
+        v-for="(level, index) in compensation_levels"
+        :key="`compensationLevels-${index}`"
       >
         <img :src="level.background">
         <img
@@ -221,8 +248,8 @@
     <section class="section5">
       <div class="section5__images">
         <img
-          v-for="image in section5_images"
-          :key="image in section5_images"
+          v-for="(image, index) in section5_images"
+          :key="`section5Images-${index}`"
           :src="image.url"
           data-aos="zoom-out-right"
           data-aos-duration="700"
@@ -259,6 +286,24 @@
       Hero,
       VideoCarousel,
       VerticalCarousel
+    },
+    methods: {
+      principleModal (icon, background, title, content) {
+        this.$swal.fire({
+          html: `
+            <div style="width: 100%; position: relative;">
+              <img src="${icon}" style="position: absolute; top: -50px; left: -50px; height: 150px; width: 150px; object-fit: contain; padding: 10px; background: #1EBCA9; border-radius: 50%;" >
+              <img src="${background}" style="sidth: 100%; height: 200px; object-fit: cover;" >
+              <div style="width: 100%; padding: 25px; font-size: .8rem; text-align: left;">
+                <h4 style="margin-bottom: 1rem;">${title}</h4>
+                ${content}
+              </div>
+            </div>
+          `,
+          padding: '0',
+          margin: 200
+        })
+      }
     },
     data () {
       return {
@@ -340,6 +385,24 @@
 
 .container {
   overflow-y: hidden;
+
+  & > .hero {
+    .heroContent {
+      align-items: flex-end;
+      justify-content: flex-start;
+      text-align: left;
+      padding: 100px var(--global_padding);
+    }
+  }
+}
+
+.header-class {
+  display: none;
+}
+
+.popup-class {
+  margin-top: 400px;
+  margin-bottom: 50px;
 }
 
 %section {
@@ -482,23 +545,26 @@
     .section2__content__gallery {
       width: 500px;
       margin-left: 100px;
-      margin-top: 250px;
       position: relative;
 
-      img {
+      .media {
         position: absolute;
+        background: rgba(68, 68, 68, 0.3);
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
 
         &:nth-of-type(1) {
-          top: 0;
-          left: 150px;
+          top: -150px;
+          left: 220px;
         }
         &:nth-of-type(2) {
-          top: 200px;
-          left: -50px;
+          top: 50px;
+          left: -70px;
         }
         &:nth-of-type(3) {
-          top: 480px;
-          left: 230px;
+          top: 230px;
+          left: 210px;
         }
       }
     }
@@ -544,8 +610,10 @@
 
     img {
       height: 100%;
+      width: 500px;
       padding-top: 10%;
       object-fit: contain;
+      object-position: bottom;
     }
 
     .slide_text {
@@ -624,6 +692,7 @@
         flex-direction: row-reverse;
 
         .principle__text {
+          cursor: pointer;
           left: 125%;
           text-align: left;
         }
