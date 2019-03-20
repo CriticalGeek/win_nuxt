@@ -55,46 +55,93 @@
         v-else-if="showNavMenu == 'form'"
         class="menuForm"
       >
-        <h1>{{ form.title }}</h1>
+        <h2>{{ form.title }}</h2>
         <p>{{ form.subtitle }}</p>
-        <form>
+        <form @submit.prevent="submit">
           <div class="form-group">
             <input
               id="name"
               name="name"
               type="text"
+              v-model="$v.form.$model.name"
               required
             >
             <label for="name">Nombre:</label>
+            <div class="errors">
+              <p
+                class="error-message"
+                v-if="!$v.form.name.required"
+              >Este campo es obligatorio</p>
+              <p
+                class="error-message"
+                v-if="!$v.form.name.minLength"
+              >El campo debe de tener más de {{$v.form.name.$params.minLength.min}} letras</p>
+            </div>
           </div>
           <div class="form-group">
             <input
               id="phone"
               name="phone"
               type="text"
+              v-model.number="$v.form.$model.phone"
               required
             >
             <label for="phone">Teléfono:</label>
+            <div class="errors">
+              <p
+                class="error-message"
+                v-if="!$v.form.phone.required"
+              >Este campo es obligatorio</p>
+              <p
+                class="error-message"
+                v-if="!$v.form.phone.integer"
+              >Solo puedes utilizar numeros enteros</p>
+            </div>
           </div>
           <div class="form-group">
             <input
               id="email"
               name="email"
               type="text"
+              v-model="$v.form.$model.email"
               required
             >
             <label for="email">Correo eléctronico</label>
+            <div class="errors">
+              <p
+                class="error-message"
+                v-if="!$v.form.email.required"
+              >Este campo es obligatorio</p>
+              <p
+                class="error-message"
+                v-if="!$v.form.email.email"
+              >Utiliza un correo eléctronico valido</p>
+            </div>
           </div>
           <div class="form-group">
             <textarea
               id="msg"
               name="msg"
+              v-model="$v.form.$model.msg"
               required
             ></textarea>
             <label for="msg">Mensaje</label>
+            <div class="errors">
+              <p
+                class="error-message"
+                v-if="!$v.form.msg.required"
+              >Este campo es obligatorio</p>
+              <p
+                class="error-message"
+                v-if="!$v.form.msg.maxLength"
+              >Solo puedes utilizar {{$v.form.msg.$params.maxLength.max}} caracteres</p>
+            </div>
           </div>
 
-          <button class="btn">{{ form.action }}</button>
+          <button
+            :disabled="$v.form.invalid"
+            class="btn"
+          >{{ form.action }}</button>
         </form>
       </div>
     </div>
@@ -105,8 +152,33 @@
 <script>
   import MenuIcon from '@/components/MenuIcon'
   import Fab from '@/components/Fab'
+  import { required, minLength, integer, between, email, maxLength } from 'vuelidate/lib/validators'
+
 
   export default {
+    validations: {
+      form: {
+        name: {
+          required,
+          minLength: minLength(4)
+        },
+
+        phone: {
+          required,
+          integer: integer
+        },
+
+        email: {
+          required,
+          email: email
+        },
+
+        msg: {
+          required,
+          maxLength: maxLength(250)
+        }
+      }
+    },
     data () {
       return {
         menuStatus: 'reverse',
@@ -155,6 +227,36 @@
           setTimeout(() => {
             menu.style.display = "none"
           }, 300)
+        }
+      },
+      submit () {
+        const Toast = this.$swal.mixin({
+          toast: true,
+          position: 'bottom',
+          showConfirmButton: false,
+          timer: 3000
+        });
+
+        this.$v.$touch()
+        if (this.$v.$invalid) {
+          this.submitStatus = 'ERROR'
+          Toast.fire({
+            type: 'error',
+            title: 'Revisa tus campos e intenta de nuevo'
+          })
+        } else {
+          // do your submit logic here
+          this.submitStatus = 'PENDING'
+          Toast.fire({
+            type: 'info',
+            title: 'Enviando'
+          })
+          setTimeout(() => {
+            Toast.fire({
+              type: 'success',
+              title: 'Enviado!'
+            })
+          }, 1000)
         }
       }
     }
@@ -297,27 +399,41 @@
 .menuForm {
   text-align: center;
   color: #fff;
+  padding: 0 5%;
 
-  h1 {
+  h2 {
     color: $p_color;
   }
 
   form {
-    margin-top: 50px;
+    margin-top: 1rem;
+
     .form-group {
       display: flex;
       align-items: center;
       position: relative;
-      margin-bottom: 1rem;
+      margin-bottom: 2.5rem;
 
       label {
         position: absolute;
         left: 0.5rem;
-        top: 10px;
+        top: 11px;
         font-size: 1rem;
         padding: 0 5px;
         background: darken($s_color, 10%);
         transition: ease.3s;
+      }
+
+      .errors {
+        display: flex;
+        position: absolute;
+        top: 110%;
+        left: 0;
+
+        p {
+          font-size: 0.7rem;
+          margin-right: 0.5rem;
+        }
       }
 
       input,
@@ -326,7 +442,7 @@
         border: 1px solid #fff;
         border-radius: 5px;
         outline: none;
-        padding: 0.5rem;
+        padding: 0.5rem 1rem;
         width: 100%;
         color: #fff;
         font-size: 1rem;
@@ -338,11 +454,8 @@
 
       textarea {
         width: 100%;
-        resize: vertical;
-        height: 12rem;
-        max-height: 16rem;
-        min-height: 8rem;
-        margin-bottom: 2rem;
+        resize: none;
+        height: 6rem;
       }
 
       input:focus + label,

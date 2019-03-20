@@ -58,7 +58,8 @@ module.exports = {
   plugins: [
     { src: 'node_modules/vue-rellax/lib/nuxt-plugin', ssr: false },
     { src: '~/plugins/aos', ssr: false },
-    { src: '~/plugins/swiper', ssr: false }
+    { src: '~/plugins/swiper', ssr: false },
+    { src: '~/plugins/vuelidate', ssr: false }
   ],
 
   // Nuxt.js modules

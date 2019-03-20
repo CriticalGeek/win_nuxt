@@ -297,8 +297,8 @@
               <div style="position: absolute; top: -50px; left: -50px; height: 130px; width: 130px; padding: 30px; background: #1EBCA9; border-radius: 50%;" >
                 <img src="${icon}" style="width: 100%; height: 100%; object-fit: contain;" >
               </div>
-              <img src="${background}" style="width: 100%; height: 200px; object-fit: cover;" >
-              <div style="width: 100%; padding: 25px; font-size: .8rem; text-align: left;">
+              <img src="${background}" style="width: 100%; height: 200px; object-fit: cover; margin-top: -15px;" >
+              <div style="width: 100%; padding: 25px; font-size: .8rem; text-align: left; margin-top: -15px;">
                 <h4 style="margin-bottom: 1rem;">${title}</h4>
                 ${content}
               </div>
@@ -384,10 +384,6 @@
 <style lang="scss">
 @import "../assets/scss/theme/colors";
 @import "../assets/scss/theme/vars";
-
-.swal2-header {
-  display: none !important;
-}
 
 .swal2-popup {
   margin-top: 100px !important;
