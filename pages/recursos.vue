@@ -97,15 +97,31 @@
         </nuxt-link>
       </div>
     </section>
+
+    <section
+      class="faqs"
+      id="faqs"
+    >
+      <h5
+        data-aos="fade-up"
+        data-aos-duration="700"
+      >{{ faqs_title }}</h5>
+
+      <div class="faqs_wrapper">
+        <Faqs />
+      </div>
+    </section>
   </section>
 </template>
 
 <script>
   import Hero from '@/components/Hero'
+  import Faqs from '@/components/Faqs'
 
   export default {
     components: {
-      Hero
+      Hero,
+      Faqs
     },
     data () {
       return {
@@ -124,6 +140,10 @@
         // entries
         entry_title: this.$store.state.content.resources.entries.title,
         entry_articles: this.$store.state.content.resources.entries.articles,
+
+        // Faq's
+        faqs_title: this.$store.state.content.resources.faqs.title
+
       }
     }
   }
@@ -252,6 +272,22 @@
         }
       }
     }
+  }
+}
+
+.faqs {
+  width: 100%;
+  padding: 0 var(--global_padding) 100px var(--global_padding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  .faqs_wrapper {
+    margin-top: 50px;
+    width: 100%;
+    max-width: 1200px;
+    box-shadow: 0 1px 16px rgba(0, 0, 0, 0.2);
   }
 }
 </style>

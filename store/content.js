@@ -184,7 +184,7 @@ export const state = () => ({
             "content": `
               <p>Quienes obtienen INGRESOS RESIDUALES se apalancan en personas, que al no ser tus empleados no te cuestan. Como ellos también son dueños de su propio Negocio, ponen el mismo interés y entusiasmo que tú en hacerlo crecer y al no ser comisionistas no hay competencia.</p> <br>
               <p>Este modelo de apalancamiento en personas busca que a ti te vaya bien porque en la medida que tú ganes, ganan ellos también.</p>
-            `          
+            `
           },
           {
             "name": "Principio #3",
@@ -202,7 +202,7 @@ export const state = () => ({
             "background": "/img/principio_04-background.png",
             "content": `
               <p>Al tener estos beneficios, serás el portavoz para difundir la buena noticia de Weenjoy a todas las personas.</p>
-            `        
+            `
           }
         ]
       },
@@ -626,21 +626,138 @@ export const state = () => ({
       },
       "faqs": {
         "title": "¿AÚN TIENES DUDAS? AQUÍ LAS SOLUCIONAMOS:",
-        "Q&A": [{
+        "qa": [{
             "question": "¿Qué es WIN?",
-            "answer": "Son las siglas de Weenjoy Intelligent Network, nuestro sistema de activación de Negocios a la plataforma de Marketing inteligente de Weenjoy donde los Joyners (Activadores) pueden generar ingresos adicionales de manera fácil, rápida y segura."
+            "answer": `<p>Son las siglas de Weenjoy Intelligent Network, nuestro sistema de activación de Negocios a la plataforma de
+              Marketing inteligente de Weenjoy donde los Joyners (Activadores) pueden generar ingresos adicionales de manera fácil,
+              rápida y segura.</p>`
           },
           {
             "question": "¿Quiénes son los Joyners o Activadores?",
-            "answer": "Son personas que obtienen los beneficios de WIN al vincular a 6 Negocios y apalancarse de 3 Activadores a la plataforma Weenjoy."
+            "answer": `<p>Son personas que obtienen los beneficios de WIN al vincular a 6 Negocios y apalancarse de 3 Activadores a la plataforma Weenjoy.</p>`
           },
           {
             "question": "¿Qué es el plan 6x3?",
-            "answer": "El plan consiste como objetivo básico, activar a 6 Negocios y con ello integrar a 3 Activadores directos a tu equipo. 6 negocios, así como 3 Activadores directos, son números muy fáciles de alcanzar.Todos conocemos 6 negocios, sin importar el género.Pueden ser desde pequeños hasta grandes negocios: como una lavandería o un salón de belleza, un restaurante, cafetería, pastelería.Un salón de eventos o fiestas infantiles.Una tienda de ropa, zapatería, colegio, escuela de idiomas, danza o música, tienda de electrónica, muebles, abarrotes o hasta despachos de servicios como contadores, abogados, arquitectos o inclusive veterinarios.Dentistas, Pediatras, Ginecólogos, Farmacias, etc."
+            "answer": `<p>El plan consiste como objetivo básico, activar a 6 Negocios y con ello integrar a 3 Activadores directos a tu equipo.</p>
+              <p>6 negocios, así como 3 Activadores directos, son números muy fáciles de alcanzar. Todos conocemos 6 negocios,
+                sin importar el género. Pueden ser desde pequeños hasta grandes negocios: como una lavandería o un salón de belleza,
+                un restaurante, cafetería, pastelería. Un salón de eventos o fiestas infantiles. Una tienda de ropa, zapatería,
+                colegio, escuela de idiomas, danza o música, tienda de electrónica, muebles, abarrotes o hasta despachos de servicios
+                como contadores, abogados, arquitectos o inclusive veterinarios. Dentistas, Pediatras, Ginecólogos, Farmacias, etc.</p>`
           },
           {
-            "question": "¿Cuáles son los requisitos para ser activador?",
-            "answer": "Para ser activador el requisito es que conozcas a 6 negocios que deseen afiliarse como Weenjoy Partners a nuestra plataforma."
+            "question": "¿Qué es Weenjoy?",
+            "answer": `<p>La primera APP del mundo que resuelve de manera efectiva, sencilla y creativa la economía de las personas.</p>`
+          },
+          {
+            "question": "¿Cuál es el propósito de Weenjoy?",
+            "answer": `<p>Ser la aplicación más empleada en México y el mundo, que mejore la economía de las personas y negocios,
+              manteniéndose a la vanguardia, creando recompensas enfocadas a cumplir los objetivos de nuestros
+              clientes e inspirando a nuestras comunidades a crear conexiones de apoyo mutuo.</p>`
+          },
+          {
+            "question": "¿Cuál es el costo de la APP?",
+            "answer": `<p>La APP es completamente gratuita para todos los usuarios de iOS y Android.</p>`
+          },
+          {
+            "question": "¿Dónde se puede usar la app de Weenjoy?",
+            "answer": `<p>Lo puedes usar en todos los negocios afiliados a la plataforma Weenjoy.</p>`
+          },
+          {
+            "question": "¿Qué son los Weenjoy Partners?",
+            "answer": ` <p>Los Weenjoy Partners son los negocios afiliados a la plataforma de Weenjoy, los cuales se dividen en
+              géneros y subgéneros. Los géneros son las 12 clasificaciones de negocio que existen y los subgéneros
+              son los tipos de negocio en específico que pertenecen a cada género.</p>`
+          },
+          {
+            "question": "¿Qué son los jobbers?",
+            "answer": `<p>Trabajador, dependiente o auxiliar dentro de la empresa registrada como Weenjoy Partner.
+              El jobber debe ser a su vez y de forma obligada un usuario de Weenjoy.
+              El jobber es la persona que brinda el producto o servicio al usuario de Weenjoy y que realiza las operaciones
+              de bonificaciones y canjes desde la aplicación móvil.</p>`
+          },
+          {
+            "question": "¿Quién capacita a los jobbers?",
+            "answer": `<p>Los jobbers son capacitados por el activador que haya afiliado a su Weenjoy Partner.</p>`
+          },
+          {
+            "question": "¿Qué son los Pinjoys?",
+            "answer": `<p>Un pinjoy es una unidad en puntos que acumulan los usuarios, la empresa y los jobbers al realizar actividades
+              de compras de productos y servicios en los establecimientos afiliados a Weenjoy a través de las bonificaciones
+              que estos otorgan. Equivalen a MX $1 y no pude ser convertido a moneda circulante ni ser retirado por el usuario.</p>`
+          },
+          {
+            "question": "¿Qué son los Geolayers?",
+            "answer": `<p>Herramientas que permite a los usuarios crear consultas interactivas, analizar la información geográfica, editar datos, mapas y presentar los resultados.</p>`
+          },
+          {
+            "question": "¿Qué es el código QR?",
+            "answer": `<p>Matriz cuadrada que contiene información codificada. El código QR está diseñado para ser leído por dispositivos
+              electrónicos y dar tratamiento posterior a la información codificada. El usuario desde la aplicación móvil puede
+              codificar y leer códigos QR con la información necesaria para el proceso de identificación en la bonificación y/o
+              cobro de Pinjoys o en proceso de registro con la invitación de una cuenta nueva.</p>`
+          },
+          {
+            "question": "¿Qué es la ABCE Platform?",
+            "answer": `<p>Es una plataforma mercadológica dirigida a los negocios afiliados con beneficios de procesos operativos, mercadológicos, publicitarios, de crecimientos, de apoyo al negocio, de incremento en clientes y ventas.</p>`
+          },
+          {
+            "question": "¿Cuáles son los pasos del plan 6 x 3?",
+            "answer": `<h5><b>Paso #1 ACTIVA:</b></h5>
+              <p>Activa tus 6 primeros negocios (les llamamos Weenjoy Partners), de acuerdo al proceso que WIN establece.</p>
+              <br>
+              <h5><b>Paso #2 INTEGRA:</b></h5>
+              <p>Integra tu equipo de 3 Activadores y ayúdalos en su capacitación y certificación para que puedan
+                comenzar a activar negocios.</p>
+              <br>
+              <h5><b>Paso #3 AYUDA:</b></h5>
+              <p>Ayuda a tus 3 primeros Activadores a activar a sus propios Weenjoy Partners de acuerdo al proceso establecido.</p>`
+          },
+          {
+            "question": "¿En qué consiste el plan de compensación?",
+            "answer": `<p>El plan de compensación de WIN, te pagará comisiones mensuales sobre el total de los ingresos que todos
+              los negocios de tu red generen mes tras mes a través de los usuarios de Weenjoy.</p>`
+          },
+          {
+            "question": "¿Cómo funcionan las comisiones?",
+            "answer": `<h5><b>Nivel #1</b></h5>
+              <p>Negocios afiliados de manera directa</p>
+              <p>Te pagará el <b>0.20%</b> sobre el 100% de los ingresos que los negocios activos en la plataforma Weenjoy,
+                hayan obtenido mensualmente derivados por las compras y/o consumos de los usuarios de Weenjoy</p>
+              <p>Puede llegar a ser del <b>0.30%</b> en el caso de cadenas*</p>
+              <p style="font-weight: 700; font-size: .8rem; font-style: italic;">* Por cadenas se consideran negocios
+                con la misma marca que superen 30 establecimientos o tengan presencia en mínimo 5 ciudades.</p>
+              <br>
+              <h5><b>Niveles #2 al #6</b></h5>
+              <p>Negocios afiliados de manera indirecta</p>
+              <p>Te pagará el <b>0.10% en cada nivel</b> sobre el 100% de los ingresos que los negocios activos en la plataforma Weenjoy,
+                hayan obtenido mensualmente derivados por las compras y/o consumos de los usuarios de Weenjoy.</p>`
+          },
+          {
+            "question": "¿Cómo se contacta a los negocios?",
+            "answer": `<p>Trabaja únicamente con tu “Hot List”</p>
+              <p>Tu “Hot List” (Lista caliente) son aquellos negocios en los que conoces personalmente al dueño o
+                la persona que tiene el poder de tomar la decisión de afiliarse a la plataforma Weenjoy. Los dueños
+                de estos negocios pueden ser familiares tuyos, amigos o simplemente los conoces porque tú ya eres su cliente,
+                pero es importante que te conozcan personalmente.</p>
+              <p>Se trata justamente de eso, de que una vez que tu conozcas y te convenzas de que Weenjoy es una plataforma que
+                incrementará las ventas y utilidades de tus 6 negocios conocidos, te acerques con toda la confianza los dueños (o las
+                personas que pueden tomar la decisión de afiliarse) y los ACTIVES dentro de la plataforma Weenjoy.</p>`
+          },
+          {
+            "question": "¿Cuánto se gana como activador?",
+            "answer": `<p>La ganancia es potencial. El plan de compensación de W I N  /  Weenjoy Intelligent Network, está diseñado
+              para que ganes mensualmente mucho dinero por un trabajo que realizarás solamente una vez y por un periodo de
+              entre 3 a 6 meses como máximo sin invertir más que  2 o 3 horas en total por semana.</p>`
+          },
+          {
+            "question": "¿Qué es una posición de apalancamiento?",
+            "answer": `<p>El plan de compensación establece que por cada 2 negocios que directamente ACTIVES dentro de Weenjoy,
+              podrás invitar a una persona que haga lo mismo que tu. Con tan solo 6 negocios que ACTIVES podrás integrar
+              un equipo de 3 ACTIVADORES que como tu, harán lo mismo. A cada persona que integres a tu Red de Activadores,
+              le llamamos “Posición de Apalancamiento”.</p>
+              <p>Escoge solamente a 3 personas, no más. Piensa en familiares o amigos, pero sobre todo en las personas a las
+              que más quieres beneficiar, porque es lo que va a sucederles con WIN.</p>`
           }
         ]
       }

@@ -290,18 +290,20 @@
     methods: {
       principleModal (icon, background, title, content) {
         this.$swal.fire({
+          position: 'top',
+          padding: '0',
           html: `
             <div style="width: 100%; position: relative;">
-              <img src="${icon}" style="position: absolute; top: -50px; left: -50px; height: 150px; width: 150px; object-fit: contain; padding: 10px; background: #1EBCA9; border-radius: 50%;" >
-              <img src="${background}" style="sidth: 100%; height: 200px; object-fit: cover;" >
+              <div style="position: absolute; top: -50px; left: -50px; height: 130px; width: 130px; padding: 30px; background: #1EBCA9; border-radius: 50%;" >
+                <img src="${icon}" style="width: 100%; height: 100%; object-fit: contain;" >
+              </div>
+              <img src="${background}" style="width: 100%; height: 200px; object-fit: cover;" >
               <div style="width: 100%; padding: 25px; font-size: .8rem; text-align: left;">
                 <h4 style="margin-bottom: 1rem;">${title}</h4>
                 ${content}
               </div>
             </div>
           `,
-          padding: '0',
-          margin: 200
         })
       }
     },
@@ -383,6 +385,19 @@
 @import "../assets/scss/theme/colors";
 @import "../assets/scss/theme/vars";
 
+.swal2-header {
+  display: none !important;
+}
+
+.swal2-popup {
+  margin-top: 100px !important;
+  margin-bottom: 50px !important;
+}
+
+.swal2-actions {
+  margin: 0 1.25em 1.25rem 1.25rem !important;
+}
+
 .container {
   overflow-y: hidden;
 
@@ -398,11 +413,6 @@
 
 .header-class {
   display: none;
-}
-
-.popup-class {
-  margin-top: 400px;
-  margin-bottom: 50px;
 }
 
 %section {
@@ -692,13 +702,13 @@
         flex-direction: row-reverse;
 
         .principle__text {
-          cursor: pointer;
           left: 125%;
           text-align: left;
         }
       }
 
       .principle__text {
+        cursor: pointer;
         text-align: right;
         position: absolute;
         right: 125%;
@@ -904,7 +914,7 @@
     align-items: center;
 
     .section2__content__data {
-      margin-top: 250px;
+      margin-top: 550px;
     }
   }
 }

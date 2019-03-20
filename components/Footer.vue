@@ -6,6 +6,7 @@
         :key="`footerLinks-${index}`"
         :href="link.url"
       >{{ link.name }}</a>
+
     </div>
     <img
       class="footer__logo"

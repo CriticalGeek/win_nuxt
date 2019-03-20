@@ -107,14 +107,15 @@
   }
 
   .nav_background {
-    @extend %dark_background;
+    background: $dark_background;
+    transform: translate3d(0, 0, 0);
 
     width: 100%;
     height: var(--navbar_height);
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 99;
+    z-index: 90;
   }
 
   nav {

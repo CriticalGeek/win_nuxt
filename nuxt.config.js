@@ -66,7 +66,12 @@ module.exports = {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
-    'vue-sweetalert2/nuxt'
+    [
+      'vue-sweetalert2/nuxt',
+      {
+        confirmButtonColor: '#1EBCA9'
+      }
+    ]
   ],
 
   // Axios module configuration
