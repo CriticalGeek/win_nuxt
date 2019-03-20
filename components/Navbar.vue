@@ -14,48 +14,104 @@
           :href="navbar_actionURL"
           class="btn login"
         >{{ navbar_action }}</a>
-        <div v-on:click="navMenu">
+        <div v-on:click="navMenu('links')">
           <MenuIcon :status="menuStatus" />
         </div>
       </div>
     </nav>
 
+    <Fab v-on:click.native="navMenu('form')" />
+
     <div
+      id="navContent"
       class="menu animated fadeIn"
-      id="menu"
     >
-      <div class="links">
-        <nuxt-link
-          v-for="(link, index) in menu_links"
-          :key="`menuLinks-${index}`"
-          :to="link.url"
-          v-on:click.native="navMenu"
-        >{{ link.name }}</nuxt-link>
+      <div v-if="showNavMenu == 'links'">
+        <div class="links">
+          <nuxt-link
+            v-for="(link, index) in menu_links"
+            :key="`menuLinks-${index}`"
+            :to="link.url"
+            v-on:click.native="navMenu('links')"
+          >{{ link.name }}</nuxt-link>
+        </div>
+
+        <div class="menu__separator"></div>
+
+        <div class="menu__social">
+          <a
+            :href="social.url"
+            target="_blank"
+            rel="noopener noreferrer"
+            v-for="(social, index) in menu_social"
+            :key="`menuSocual-${index}`"
+          >
+            <img :src="social.icon">
+          </a>
+        </div>
       </div>
 
-      <div class="menu__separator"></div>
+      <div
+        v-else-if="showNavMenu == 'form'"
+        class="menuForm"
+      >
+        <h1>{{ form.title }}</h1>
+        <p>{{ form.subtitle }}</p>
+        <form>
+          <div class="form-group">
+            <input
+              id="name"
+              name="name"
+              type="text"
+              required
+            >
+            <label for="name">Nombre:</label>
+          </div>
+          <div class="form-group">
+            <input
+              id="phone"
+              name="phone"
+              type="text"
+              required
+            >
+            <label for="phone">Teléfono:</label>
+          </div>
+          <div class="form-group">
+            <input
+              id="email"
+              name="email"
+              type="text"
+              required
+            >
+            <label for="email">Correo eléctronico</label>
+          </div>
+          <div class="form-group">
+            <textarea
+              id="msg"
+              name="msg"
+              required
+            ></textarea>
+            <label for="msg">Mensaje</label>
+          </div>
 
-      <div class="menu__social">
-        <a
-          :href="social.url"
-          target="_blank"
-          rel="noopener noreferrer"
-          v-for="(social, index) in menu_social"
-          :key="`menuSocual-${index}`"
-        >
-          <img :src="social.icon">
-        </a>
+          <button class="btn">{{ form.action }}</button>
+        </form>
       </div>
     </div>
+
   </div>
 </template>
 
 <script>
   import MenuIcon from '@/components/MenuIcon'
+  import Fab from '@/components/Fab'
 
   export default {
     data () {
       return {
+        menuStatus: 'reverse',
+        showNavMenu: 'links',
+
         // Navbar
         navbar_img: this.$store.state.content.navbar.logo,
         navbar_action: this.$store.state.content.navbar.action,
@@ -65,15 +121,24 @@
         menu_links: this.$store.state.content.menu.links,
         menu_social: this.$store.state.content.menu.social,
 
-        menuStatus: 'reverse'
+        // Form
+        form: {
+          title: this.$store.state.content.form.title,
+          subtitle: this.$store.state.content.form.subtitle,
+          fields: this.$store.state.content.form.fields,
+          action: this.$store.state.content.form.action
+        }
       }
     },
     components: {
-      MenuIcon
+      MenuIcon,
+      Fab
     },
     methods: {
-      navMenu: function (e) {
-        let menu = document.getElementById('menu')
+      navMenu: function (status) {
+        this.showNavMenu = status
+
+        let menu = document.getElementById('navContent')
 
         if (menu.classList.contains('active') == false) {
           menu.classList.remove('fadeOut')
@@ -166,7 +231,7 @@
   .menu {
     width: 100%;
     height: 100vh;
-    background: $s_color;
+    background: darken($s_color, 10%);
     position: fixed;
     top: 0;
     left: 0;
@@ -184,6 +249,7 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
+      padding: 0;
 
       a {
         color: inherit;
@@ -193,8 +259,8 @@
     }
 
     .menu__separator {
-      width: 80%;
-      max-width: 300px;
+      width: 100%;
+      max-width: 400px;
       margin: 40px 0;
       height: 2px;
       background: #fff;
@@ -223,6 +289,80 @@
           filter: grayscale(0);
           opacity: 1;
         }
+      }
+    }
+  }
+}
+
+.menuForm {
+  text-align: center;
+  color: #fff;
+
+  h1 {
+    color: $p_color;
+  }
+
+  form {
+    margin-top: 50px;
+    .form-group {
+      display: flex;
+      align-items: center;
+      position: relative;
+      margin-bottom: 1rem;
+
+      label {
+        position: absolute;
+        left: 0.5rem;
+        top: 10px;
+        font-size: 1rem;
+        padding: 0 5px;
+        background: darken($s_color, 10%);
+        transition: ease.3s;
+      }
+
+      input,
+      textarea {
+        background: none;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        outline: none;
+        padding: 0.5rem;
+        width: 100%;
+        color: #fff;
+        font-size: 1rem;
+      }
+
+      input {
+        height: 3rem;
+      }
+
+      textarea {
+        width: 100%;
+        resize: vertical;
+        height: 12rem;
+        max-height: 16rem;
+        min-height: 8rem;
+        margin-bottom: 2rem;
+      }
+
+      input:focus + label,
+      textarea:focus + label {
+        top: -13px;
+        left: 0;
+        transform: scale(0.8);
+        color: $p_color;
+      }
+
+      input:focus,
+      textarea:focus {
+        border: 1px solid $p_color;
+      }
+
+      input:valid + label,
+      textarea:valid + label {
+        top: -13px;
+        left: 0;
+        transform: scale(0.8);
       }
     }
   }
