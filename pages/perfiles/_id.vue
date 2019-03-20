@@ -118,7 +118,7 @@
     display: flex;
 
     & img {
-      width: 300px;
+      width: 400px;
       object-fit: contain;
       object-position: bottom;
     }
@@ -126,6 +126,14 @@
     .profile__about__info {
       margin-left: var(--global_padding);
       margin-bottom: 5rem;
+
+      h4 {
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
     }
   }
 

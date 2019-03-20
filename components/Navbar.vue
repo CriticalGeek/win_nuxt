@@ -318,7 +318,6 @@
         font-size: 0.8rem;
         font-weight: 700;
         margin-right: 2rem;
-        font-size: 1rem;
       }
 
       svg {

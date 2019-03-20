@@ -39,3 +39,9 @@
     }
   }
 </script>
+
+<style lang="scss">
+.swiper-button-white {
+  padding: 2rem;
+}
+</style>

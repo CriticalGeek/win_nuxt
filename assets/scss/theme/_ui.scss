@@ -5,6 +5,9 @@
 em {
   @extend %a_color;
   font-style: normal;
+
+  display: inline-block;
+  line-height: 1;
 }
 
 strong {
@@ -28,15 +31,21 @@ ol {
 .btn {
   @extend %p_color;
 
-  padding: .5rem 1rem;
+  padding: .3rem 1rem;
   text-decoration: none;
   border: none;
   outline: none;
   transition: ease .3s;
+  font-size: .9rem;
+  font-weight: 700;
   cursor: pointer;
 
   &:hover {
     background: darken($p_color, 10%);
     color: #fff !important;
   }
+}
+
+.swiper-pagination-bullet-active {
+  background: #fff !important;
 }

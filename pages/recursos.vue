@@ -218,7 +218,7 @@
     .video__title {
       padding: 1rem;
       border-top: 6px solid $p_color;
-      margin-top: -7px;
+      margin-top: -10px;
     }
   }
 }

@@ -41,19 +41,20 @@
       >
         <img :src="item.images.main">
         <div class="new__content">
-          <div class="new__content__text">
-            <h4
-              data-aos="fade-up"
-              data-aos-duration="700"
-            >{{ item.title }}</h4>
-            <p
-              data-aos="fade-up"
-              data-aos-duration="700"
-            >{{ item.content }}</p>
-            <p
-              data-aos="fade-up"
-              data-aos-duration="700"
-            >{{ item.date }}</p>
+          <div
+            class="new__content__text"
+            data-aos="fade-up"
+            data-aos-duration="700"
+          >
+            <h5>{{ item.title }}</h5>
+            <p>{{ item.content }}</p>
+            <p class="date">{{ item.date }}</p>
+            <div class="newSeparator"></div>
+            <button
+              :v-if="item.images.gallery"
+              @click="modalGallery(`${index}`)"
+              class="btn"
+            >VER MÁS</button>
           </div>
           <img :src="item.images.landscape">
         </div>
@@ -81,14 +82,21 @@
 
 <script>
   import Hero from '@/components/Hero'
-  import PartnersCarousel from '@/components/PartnersCarousel'
   import Embajadores from '@/components/Embajadores'
 
   export default {
     components: {
       Hero,
-      PartnersCarousel,
       Embajadores
+    },
+    methods: {
+      modalGallery (num) {
+        this.$swal.fire({
+          position: 'top',
+          padding: '0',
+          html: `<h1>${num}</h1>`,
+        })
+      }
     },
     data () {
       return {
@@ -169,21 +177,32 @@
         justify-content: center;
         align-items: center;
 
-        h4,
+        h5,
         p:last-child {
           text-align: center;
         }
 
         p {
-          font-size: 1rem;
+          font-size: 0.9rem;
         }
 
-        h4 {
-          margin-bottom: 2rem;
+        .date {
+          margin-top: 1rem;
         }
 
-        p:last-child {
-          margin-top: 2rem;
+        .newSeparator {
+          width: 50px;
+          height: 1px;
+          background: #444;
+          margin: 1rem 0;
+        }
+
+        .btn {
+          background: $a_color;
+
+          &:hover {
+            background: darken($a_color, 10%);
+          }
         }
       }
 

@@ -62,7 +62,8 @@
 
       h1 {
         @extend %a_color;
-        display: inline;
+        display: inline-block;
+        line-height: 1;
       }
 
       p {

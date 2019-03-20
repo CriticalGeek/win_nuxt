@@ -135,9 +135,8 @@
           </div>
         </div>
       </div>
-      <div class="swiper-pagination swiper-pagination-bullets"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev swiper-button-white"></div>
+      <div class="swiper-button-next swiper-button-white"></div>
     </section>
 
     <section class="section4">
@@ -167,6 +166,7 @@
           >
             <h2>{{ principle.name }}</h2>
             <p>{{ principle.description }}</p>
+            <p style="font-size: .8rem"><strong>{{ section4_action }}</strong></p>
           </div>
           <div class="principle__circle">
             <img :src="principle.icon">
@@ -212,25 +212,27 @@
       ></div>
     </section>
 
-    <VerticalCarousel>
-      <div
-        class="swiper-slide compensation-carousel"
-        v-for="(level, index) in compensation_levels"
-        :key="`compensationLevels-${index}`"
-      >
-        <img :src="level.background">
-        <img
-          class="compensation-carousel__icon"
-          :src="level.icon"
+    <no-ssr>
+      <VerticalCarousel>
+        <div
+          class="swiper-slide compensation-carousel"
+          v-for="(level, index) in compensation_levels"
+          :key="`compensationLevels-${index}`"
         >
-        <div class="compensation-carousel__wrapper">
-          <h1>{{ level.title }}</h1>
-          <p>{{ level.subtitle }}</p>
-          <div class="separator"></div>
-          <p v-html="level.content"></p>
+          <img :src="level.background">
+          <img
+            class="compensation-carousel__icon"
+            :src="level.icon"
+          >
+          <div class="compensation-carousel__wrapper">
+            <h1>{{ level.title }}</h1>
+            <p>{{ level.subtitle }}</p>
+            <div class="separator"></div>
+            <p v-html="level.content"></p>
+          </div>
         </div>
-      </div>
-    </VerticalCarousel>
+      </VerticalCarousel>
+    </no-ssr>
 
     <section class="highlighted_activator">
       <img :src="highlighted_photo">
@@ -314,14 +316,13 @@
           slidesPerView: 'auto',
           centeredSlides: true,
           spaceBetween: 30,
-          pagination: {
-            el: '.swiper-pagination',
-            dynamicBullets: true
-          },
           navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev'
-          }
+          },
+          autoplay: {
+            delay: 5000,
+          },
         },
 
         // Hero
@@ -351,6 +352,7 @@
         section4_title: this.$store.state.content.home.section4.title,
         section4_content: this.$store.state.content.home.section4.content,
         section4_principles: this.$store.state.content.home.section4.principles,
+        section4_action: this.$store.state.content.home.section4.action,
 
         // section 5
         section5_title: this.$store.state.content.home.section5.title,
@@ -708,7 +710,7 @@
         text-align: right;
         position: absolute;
         right: 125%;
-        top: 0;
+        top: -15px;
         width: 25vw;
 
         & > h2 {

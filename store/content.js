@@ -164,6 +164,7 @@ export const state = () => ({
       "section4": {
         "title": "4 principios fundamentales",
         "content": "Lo más valioso de WIN es que te permite generar de manera muy fácil un ingreso continuo, constante y que con el tiempo puede incrementarse.",
+        "action": "Ver más",
         "principles": [{
             "name": "Principio #1",
             "description": "Ingresos Residuales",
@@ -211,7 +212,7 @@ export const state = () => ({
         "subtitle": "Conoce, actívate y genera",
         "content": "No tienes nada que perder y si mucho que ganar",
         "background": "/img/activate_background.png",
-        "action": "ACTIVATE",
+        "action": "ACTÍVATE",
         "images": [{
             "url": "/img/activate-down-01.png"
           },
@@ -269,9 +270,6 @@ export const state = () => ({
           "url": "https://player.vimeo.com/video/314064448"
         },
         {
-          "url": "https://player.vimeo.com/video/314064438"
-        },
-        {
           "url": "https://player.vimeo.com/video/314064427"
         },
         {
@@ -282,12 +280,6 @@ export const state = () => ({
         },
         {
           "url": "https://player.vimeo.com/video/314064391"
-        },
-        {
-          "url": "https://player.vimeo.com/video/314064378"
-        },
-        {
-          "url": "https://player.vimeo.com/video/314064361"
         },
         {
           "url": "https://player.vimeo.com/video/314064342"
@@ -412,7 +404,16 @@ export const state = () => ({
           "date": "27 de Octubre 2018",
           "images": {
             "main": "/img/news/connection_01.jpg",
-            "landscape": "/img/news/connection_02.jpg"
+            "landscape": "/img/news/connection_02.jpg",
+            "gallery": [
+              '/img/news/connection_03.png',
+              '/img/news/connection_04.png',
+              '/img/news/connection_05.png',
+              '/img/news/connection_06.png',
+              '/img/news/connection_07.png',
+              '/img/news/connection_08.png',
+              '/img/news/connection_09.png'
+            ]
           }
         },
         {
@@ -421,7 +422,16 @@ export const state = () => ({
           "date": "12 de Diciembre 2018",
           "images": {
             "main": "/img/news/winweeks_01.jpg",
-            "landscape": "/img/news/winweeks_02.jpg"
+            "landscape": "/img/news/winweeks_02.jpg",
+            "gallery": [
+              '/img/news/winweeks_03.png',
+              '/img/news/winweeks_04.png',
+              '/img/news/winweeks_05.png',
+              '/img/news/winweeks_06.png',
+              '/img/news/winweeks_07.png',
+              '/img/news/winweeks_08.png',
+              '/img/news/winweeks_09.png'
+            ]
           }
         }
       ],
@@ -461,7 +471,7 @@ export const state = () => ({
         "hero": {
           "image": "/img/embajadores/lucy_ponce/hero.png",
           "title": "Lucy Ponce Ávila",
-          "subtitle": "Embajadora"
+          "subtitle": "Embajadora WIN"
         },
         "about": {
           "photo": "/img/embajadores/lucy_ponce/cv.png",
@@ -484,6 +494,48 @@ export const state = () => ({
             },
             {
               "url": "https://www.instagram.com/lucyponceavila",
+              "icon": "/img/social_icons/insta.svg"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ahmed",
+      "name": "Ahmed Ozsu",
+      "position": "Embajador WIN",
+      "photo": "/img/embajadores/ahmed_ozsu/photo.png",
+      "url": "/perfiles/ahmed",
+      "cv": {
+        "hero": {
+          "image": "/img/embajadores/ahmed_ozsu/hero.png",
+          "title": "Ahmed Ozsu",
+          "subtitle": "Embajador WIN"
+        },
+        "about": {
+          "photo": "/img/embajadores/ahmed_ozsu/cv.png",
+          "title": "Conoce más",
+          "subtitle": "Ahmed Ozsu se ha caracterizado por ser un gran emprendedor y agente de cambio.",
+          "content": `
+            <p>Ahmed tiene la motivación, pasión, creatividad y determinación para buscar soluciones sociales, ya sea en su comunidad, país o en el mundo.Fiel creyente del emprendimiento con visión social colectiva, siempre ha buscado generar una participación ciudadana más activa, así como una generación de beneficios para la ciudad de Morelia, el estado de Michoacán y México.</p> <br>
+            <p>Fundador de varias empresas y asociaciones civiles, donde destaca su visión y participación social como: Prefiero Local AC, Fundación México 2050 AC, Amor por Morelia AC, en el estado de Michoacán; siempre intentando promover, difundir y respetar la diversidad cultural, artística, y gastronómica de Michoacán y México, siendo un constante impulsor de este estado a través de sus emprendimientos, asociaciones civiles y trabajo como representante y vocal consejero ciudadano en distintas instancias e instituciones públicas, descentralizadas y ciudadanas sin fines de lucro.</p> <br>
+            <p>Actualmente se encuentra realizando nuevos proyectos con la meta de desarrollar fuertemente la parte socioeconómica de Michoacán a través de la investigación, desarrollo y aplicación de tecnología.</p>
+          `,
+        },
+        "phrase": "El emprendimiento con visión social es mi pasión",
+        "social": {
+          "thumbnail": "/img/embajadores/ahmed_ozsu/thumbnail.png",
+          "user": "/img/embajadores/ahmed_ozsu/user.png",
+          "networks": [{
+              "url": "https://www.facebook.com/ahmed.medina",
+              "icon": "/img/social_icons/facebook.svg"
+            },
+            {
+              "url": "https://twitter.com/ahmedozsu",
+              "icon": "/img/social_icons/twitter.svg"
+            },
+            {
+              "url": "https://www.instagram.com/ahmedozsu/ ",
               "icon": "/img/social_icons/insta.svg"
             }
           ]
@@ -526,19 +578,19 @@ export const state = () => ({
       "videos": {
         "title": "Videos",
         "files": [{
-          "title": "¿Qué es weenjoy?",
+          "title": "¿Qué es Weenjoy?",
           "url": "https://player.vimeo.com/video/297434646"
         },
         {
-          "title": "Casos de uso con pinjoys",
+          "title": "Casos de uso con Pinjoys",
           "url": "https://player.vimeo.com/video/315921387"
         },
         {
-          "title": "Mercado cautivo",
+          "title": "Clientes con poder adquisitivo",
           "url": "https://player.vimeo.com/video/297434565"
         },
         {
-          "title": "ABCE",
+          "title": "Plataforma ABCE",
           "url": "https://player.vimeo.com/video/297434611"
         }],
       },
@@ -577,7 +629,7 @@ export const state = () => ({
             <img src="/img/entries/02/inspire.jpg" alt="Inspire">
             <p>La capacitación a los Negocios y empleados es importante porque de ellos dependerá la adecuada funcionalidad de la APP de Weenjoy con los usuarios.</p>
             <p>N=Notify / Notifica: En este último paso, tu objetivo es dar acompañamiento para asegurar la calidad y servicio del funcionamiento de la APP en pro de los beneficios de la empresa y los usuarios.</p>
-            <img src="/img/entries/notify.jpg" alt="Notify">
+            <img src="/img/entries/02/notify.jpg" alt="Notify">
             <p>No olvides invitar a tus amigos que ya tengan la APP a consumir en los Negocios que tú afiliaste, así ¡todos ganan!</p>
           `,
           "url": "/entradas/contigo"
@@ -610,14 +662,12 @@ export const state = () => ({
           "title": "Invita a tus amigos para que puedas tener al mejor equipo junto a ti.",
           "thumbnail": "/img/entries/04/thumbnail.jpg",
           "entry": `
-            <img src="/img/entries/04/looking.png" alt="Busqueda">
-            <p>Personas que están en la constante búsqueda de oportunidades.</p>
-            <img src="/img/entries/04/think_big.png" alt="Pensar en grande">
-            <p>Que les guste pensar en grande.</p>
-            <img src="/img/entries/04/business_owners.png" alt="Dueños de negocios">
-            <p>Que sean sociables.</p>
-            <img src="/img/entries/04/social.png" alt="Social">
-            <p>Que conozcan a dueños de Negocios.</p>
+            <ol>
+              <li>Personas que están en la constante búsqueda de oportunidades.</li>
+              <li>Que les guste pensar en grande.</li>
+              <li>Que sean sociables.</li>
+              <li>Que conozcan a dueños de Negocios.</li>
+            </ol>
             <p>Es muy fácil afiliar, por lo que no es necesario que sean especialista en temas específicos, ¡todos tenemos contactos de Negocios!</p> <br>
             <p><strong>¡Invítalos a compartir Weenjoy!</strong></p>
           `,
@@ -771,7 +821,7 @@ export const state = () => ({
       },
       "social": [{
           "icon": "/img/contact_icons/smartphone.png",
-          "title": "Llamanos",
+          "title": "Llámanos",
           "url": "javascript: void(0)",
           "contact": [{
               "name": `<p>Interior de la República <b>01 800 123 4567</b></p>`,
@@ -819,17 +869,17 @@ export const state = () => ({
       "addresses": [{
           "name": "Weenjoy USA",
           "icon": "/img/contact_icons/ciudades_01.svg",
-          "address": `<p>1160 Battery Street East, Suite 100, <br> San Francisco, CA 94111, EE.UU. <br> Phone: (628) 208 6431</p>`
+          "address": `<p>1160 Battery Street East, Suite 100, <br> San Francisco, CA 94111, EE.UU.</p>`
         },
         {
           "name": "Weenjoy México",
           "icon": "/img/contact_icons/ciudades_02.svg",
-          "address": `<p>Puerta de Hierro, Av. Real Acueducto 360, <br> 5 to piso, Col.Santa Margarita, <br> C.P.45116, Zapopan, Jal.Mx. <br> Tel: (33) 3002 4049</p>`
+          "address": `<p>Puerta de Hierro, Av. Real Acueducto 360, <br> 5 to piso, Col.Santa Margarita, <br> C.P.45116, Zapopan, Jal.Mx.</p>`
         },
         {
           "name": "Weenjoy Colombia",
           "icon": "/img/contact_icons/ciudades_03.svg",
-          "address": `<p>Torre Protección, Carrera 43A <br> 1 - 50, Torre 1, Piso 6, Oficina 652 <br> Medellín, Antq.Col. <br> Tel: 57 4 605 1047</p>`
+          "address": `<p>Torre Protección, Carrera 43A <br> 1 - 50, Torre 1, Piso 6, Oficina 652</p>`
         }
       ]
     }

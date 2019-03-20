@@ -17,11 +17,11 @@
       <li
         data-aos="fade-up"
         data-aos-duration="700"
-      >¿cuántas videas quieres cambiar hoy?</li>
+      >¿Cuántas videas quieres cambiar hoy?</li>
       <li
         data-aos="fade-up"
         data-aos-duration="700"
-      >WIN: succes stories</li>
+      >WIN: success stories</li>
       <li
         data-aos="fade-up"
         data-aos-duration="700"
@@ -29,7 +29,7 @@
       <li
         data-aos="fade-up"
         data-aos-duration="700"
-      >Activadores y asesores</li>
+      >Activadores y Asesores</li>
       <li
         data-aos="fade-up"
         data-aos-duration="700"
@@ -37,7 +37,7 @@
       <li
         data-aos="fade-up"
         data-aos-duration="700"
-      >Testimonios activadores</li>
+      >Testimonios Activadores</li>
       <li
         data-aos="fade-up"
         data-aos-duration="700"
@@ -121,11 +121,11 @@
       <li
         data-aos="fade-up"
         data-aos-duration="700"
-      >Direcciones de oficinas de weenjo</li>
+      >Direcciones de oficinas de Weenjoy</li>
       <li
         data-aos="fade-up"
         data-aos-duration="700"
-      >FAQ</li>
+      >FAQ'S</li>
     </ul>
   </div>
 </template>

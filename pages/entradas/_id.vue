@@ -129,6 +129,9 @@
     padding: 25px;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
+    position: sticky;
+    top: 120px;
+    background: #fff;
 
     hr {
       opacity: 0.5;
