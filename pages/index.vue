@@ -213,7 +213,7 @@
     </section>
 
     <no-ssr>
-      <VerticalCarousel>
+      <Carousel>
         <div
           class="swiper-slide compensation-carousel"
           v-for="(level, index) in compensation_levels"
@@ -231,7 +231,7 @@
             <p v-html="level.content"></p>
           </div>
         </div>
-      </VerticalCarousel>
+      </Carousel>
     </no-ssr>
 
     <section class="highlighted_activator">
@@ -281,13 +281,13 @@
 <script>
   import Hero from '@/components/Hero'
   import VideoCarousel from '@/components/VideoCarousel'
-  import VerticalCarousel from '@/components/VerticalCarousel'
+  import Carousel from '@/components/Carousel'
 
   export default {
     components: {
       Hero,
       VideoCarousel,
-      VerticalCarousel
+      Carousel
     },
     methods: {
       principleModal (icon, background, title, content) {

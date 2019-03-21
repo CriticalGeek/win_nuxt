@@ -49,12 +49,13 @@
             <h5>{{ item.title }}</h5>
             <p>{{ item.content }}</p>
             <p class="date">{{ item.date }}</p>
-            <div class="newSeparator"></div>
-            <button
-              :v-if="item.images.gallery"
-              @click="modalGallery(`${index}`)"
-              class="btn"
-            >VER MÁS</button>
+            <template v-if="item.images.gallery">
+              <div class="newSeparator"></div>
+              <button
+                @click="modalGallery(`${item.images.gallery}`)"
+                class="btn"
+              >VER MÁS</button>
+            </template>
           </div>
           <img :src="item.images.landscape">
         </div>
@@ -77,25 +78,57 @@
         data-aos-duration="700"
       />
     </section>
+
+    <div
+      class="gallery animated fadeIn"
+      @click="closeGallery"
+    >
+      <div
+        class="gallery__wrapper"
+        @click.stop=""
+      >
+        <no-ssr>
+          <Carousel slidesPerView="3">
+            <div
+              class="swiper-slide"
+              v-for="(route, index) in routes"
+              :key="`routes-${index}`"
+            >
+              <img :src="route">
+            </div>
+          </Carousel>
+        </no-ssr>
+      </div>
+    </div>
   </section>
 </template>
 
 <script>
   import Hero from '@/components/Hero'
   import Embajadores from '@/components/Embajadores'
+  import Carousel from '@/components/Carousel'
 
   export default {
     components: {
       Hero,
-      Embajadores
+      Embajadores,
+      Carousel
     },
     methods: {
-      modalGallery (num) {
-        this.$swal.fire({
-          position: 'top',
-          padding: '0',
-          html: `<h1>${num}</h1>`,
-        })
+      modalGallery (gallery) {
+        let domGallery = document.querySelector('.gallery')
+
+        domGallery.style.display = 'block'
+        domGallery.style.display = 'flex'
+
+        this.routes = []
+        let gallerySplit = gallery.split(',')
+        this.routes = gallerySplit
+        console.log(this.routes)
+      },
+      closeGallery () {
+        let domGallery = document.querySelector('.gallery')
+        domGallery.style.display = "none"
       }
     },
     data () {
@@ -104,6 +137,7 @@
         heroBackground: this.$store.state.content.news.hero.background,
         heroTitle: this.$store.state.content.news.hero.title,
         heroContent: this.$store.state.content.news.hero.content,
+        routes: [],
 
         // News Banner
         bannerIcon: this.$store.state.content.news.news_banner.icon,
@@ -177,6 +211,10 @@
         justify-content: center;
         align-items: center;
 
+        h5 {
+          margin-bottom: 1rem;
+        }
+
         h5,
         p:last-child {
           text-align: center;
@@ -221,6 +259,29 @@
   flex-direction: column;
   padding: 100px var(--global_padding);
   text-align: center;
+}
+
+.gallery {
+  background: rgba(#000, 0.8);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+
+  .gallery__wrapper {
+    width: 80%;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
 }
 
 @media screen and (max-width: 700px) {

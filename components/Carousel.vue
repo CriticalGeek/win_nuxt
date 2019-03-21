@@ -14,11 +14,16 @@
 
 <script>
   export default {
+    props: {
+      slidesPerView: {
+        default: 1
+      }
+    },
     data () {
       return {
         verticalSwiperOption: {
-          slidesPerView: 1,
-          spaceBetween: 0,
+          slidesPerView: this.slidesPerView,
+          spaceBetween: 25,
           pagination: {
             el: '.swiper-pagination',
             clickable: true
@@ -26,6 +31,11 @@
           navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev'
+          },
+          breakpoints: {
+            1000: {
+              slidesPerView: 1
+            }
           }
         },
       }
