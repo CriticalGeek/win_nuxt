@@ -24,7 +24,7 @@
 
     <div
       id="navContent"
-      class="menu animated fadeIn"
+      :class="'menu animated fadeIn ' + showNavMenu"
     >
       <div v-if="showNavMenu == 'links'">
         <div class="links">
@@ -221,25 +221,23 @@
     },
     methods: {
       navMenu (status) {
-        this.$store.commit('nav/updateNavMenu', status)
-
         let menu = document.getElementById('navContent')
 
-        if (menu.classList.contains('active') == false) {
-          menu.classList.remove('fadeOut')
-          menu.classList.add('fadeIn')
-          menu.classList.add('active')
-          menu.style.display = 'block'
-          menu.style.display = 'flex'
-          this.$store.commit('nav/updateStatus', 'play')
-        } else {
+        if (this.showNavMenu == 'form' && status == 'links' || this.showNavMenu == 'links' && status == 'links') {
+          this.$store.commit('nav/updateNavMenu', 'close')
           this.$store.commit('nav/updateStatus', 'reverse')
-          menu.classList.remove('active')
           menu.classList.remove('fadeIn')
           menu.classList.add('fadeOut')
           setTimeout(() => {
             menu.style.display = "none"
-          }, 300)
+          }, 500)
+        } else {
+          this.$store.commit('nav/updateStatus', 'play')
+          this.$store.commit('nav/updateNavMenu', status)
+          menu.classList.remove('fadeOut')
+          menu.classList.add('fadeIn')
+          menu.style.display = 'block'
+          menu.style.display = 'flex'
         }
       },
       submit () {

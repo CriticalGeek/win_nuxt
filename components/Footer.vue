@@ -17,6 +17,8 @@
         :href="social.url"
         v-for="(social, index) in footer_social"
         :key="`socialUrl-${index}`"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <img :src="social.icon">
       </a>
