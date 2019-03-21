@@ -13,7 +13,10 @@
       ></span>
     </Hero>
 
-    <section class="brochures">
+    <section
+      class="brochures"
+      id="#folletos"
+    >
       <h5
         data-aos="fade-up"
         data-aos-duration="700"
@@ -43,7 +46,10 @@
       </div>
     </section>
 
-    <section class="videos">
+    <section
+      class="videos"
+      id="#videos"
+    >
       <h5
         data-aos="fade-up"
         data-aos-duration="700"
@@ -74,7 +80,10 @@
       </div>
     </section>
 
-    <section class="entries">
+    <section
+      class="entries"
+      id="entradas"
+    >
       <h5
         data-aos="fade-up"
         data-aos-duration="700"

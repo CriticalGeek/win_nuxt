@@ -21,6 +21,7 @@
 
     <section
       class="links"
+      id="centrodeatencion"
       data-aos="fade-up"
       data-aos-duration="700"
     >
@@ -49,7 +50,10 @@
       </div>
     </section>
 
-    <section class="addresses">
+    <section
+      class="addresses"
+      id="direcciones"
+    >
       <div
         class="address"
         v-for="(address, index) in contact_addresses"

@@ -13,43 +13,83 @@
       <li
         data-aos="fade-up"
         data-aos-duration="700"
-      >Bienvenido a WIN</li>
+      >
+        <a href="/">
+          Bienvenido a WIN
+        </a>
+      </li>
       <li
         data-aos="fade-up"
         data-aos-duration="700"
-      >¿Cuántas videas quieres cambiar hoy?</li>
+      >
+        <a href="/#vidas">
+          ¿Cuántas videas quieres cambiar hoy?
+        </a>
+      </li>
       <li
         data-aos="fade-up"
         data-aos-duration="700"
-      >WIN: success stories</li>
+      >
+        <a href="/#success">
+          WIN: success stories
+        </a>
+      </li>
       <li
         data-aos="fade-up"
         data-aos-duration="700"
-      >Yeah!</li>
+      >
+        <a href="/#yeah">
+          Yeah!
+        </a>
+      </li>
       <li
         data-aos="fade-up"
         data-aos-duration="700"
-      >Activadores y Asesores</li>
+      >
+        <a href="/#activadoresyasesores">
+          Activadores y Asesores
+        </a>
+      </li>
       <li
         data-aos="fade-up"
         data-aos-duration="700"
-      >4 principios fundamentales</li>
+      >
+        <a href="/#principios">
+          4 principios fundamentales
+        </a>
+      </li>
       <li
         data-aos="fade-up"
         data-aos-duration="700"
-      >Testimonios Activadores</li>
+      >
+        <a href="/#testimonios">
+          Testimonios Activadores
+        </a>
+      </li>
       <li
         data-aos="fade-up"
         data-aos-duration="700"
-      >Plan de compensación</li>
+      >
+        <a href="/#compensacion">
+          Plan de compensación
+        </a>
+      </li>
       <li
         data-aos="fade-up"
         data-aos-duration="700"
-      >Testimonio Larry</li>
+      >
+        <a href="/#testimonio">
+          Testimonio Larry
+        </a>
+      </li>
       <li
         data-aos="fade-up"
         data-aos-duration="700"
-      >Actívate</li>
+      >
+        <a href="/#activate">
+          Actívate
+        </a>
+      </li>
     </ul>
 
     <hr>
@@ -62,15 +102,27 @@
       <li
         data-aos="fade-up"
         data-aos-duration="700"
-      >¡Juntos logramos más!</li>
+      >
+        <a href="/noticias#juntos">
+          ¡Juntos logramos más!
+        </a>
+      </li>
       <li
         data-aos="fade-up"
         data-aos-duration="700"
-      >EVENTOS ESPECIALES WIN</li>
+      >
+        <a href="/noticias#eventos">
+          EVENTOS ESPECIALES WIN
+        </a>
+      </li>
       <li
         data-aos="fade-up"
         data-aos-duration="700"
-      >Nuestros partners satisfechos</li>
+      >
+        <a href="/noticias#partners">
+          Nuestros partners satisfechos
+        </a>
+      </li>
     </ul>
 
     <hr>
@@ -83,7 +135,19 @@
       <li
         data-aos="fade-up"
         data-aos-duration="700"
-      >Embajadores Weenjoy</li>
+      >
+        <a href="perfiles/lucy">
+          Luisa Leon
+        </a>
+      </li>
+      <li
+        data-aos="fade-up"
+        data-aos-duration="700"
+      >
+        <a href="perfiles/ahmed">
+          Ahmed Ozsu
+        </a>
+      </li>
     </ul>
 
     <hr>
@@ -96,15 +160,35 @@
       <li
         data-aos="fade-up"
         data-aos-duration="700"
-      >Folletos Informativos</li>
+      >
+        <a href="/recursos#folletos">
+          Folletos Informativos
+        </a>
+      </li>
       <li
         data-aos="fade-up"
         data-aos-duration="700"
-      >Videos</li>
+      >
+        <a href="/recursos#videos">
+          Videos
+        </a>
+      </li>
       <li
         data-aos="fade-up"
         data-aos-duration="700"
-      >Un vistazo a los tips de nuestros Joyners...</li>
+      >
+        <a href="/recursos#entradas">
+          Un vistazo a los tips de nuestros Joyners...
+        </a>
+      </li>
+      <li
+        data-aos="fade-up"
+        data-aos-duration="700"
+      >
+        <a href="/recursos#faqs">
+          FAQ'S
+        </a>
+      </li>
     </ul>
 
     <hr>
@@ -117,15 +201,19 @@
       <li
         data-aos="fade-up"
         data-aos-duration="700"
-      >Contacto de Centro de Atención Weenjoy</li>
+      >
+        <a href="/contacto#centrodeatencion">
+          Contacto de Centro de Atención Weenjoy
+        </a>
+      </li>
       <li
         data-aos="fade-up"
         data-aos-duration="700"
-      >Direcciones de oficinas de Weenjoy</li>
-      <li
-        data-aos="fade-up"
-        data-aos-duration="700"
-      >FAQ'S</li>
+      >
+        <a href="/contacto#direcciones">
+          Direcciones de oficinas de Weenjoy
+        </a>
+      </li>
     </ul>
   </div>
 </template>
@@ -146,6 +234,11 @@
 
   ul {
     margin-left: 50px;
+
+    li a {
+      color: #000;
+      text-decoration: none;
+    }
   }
 }
 </style>

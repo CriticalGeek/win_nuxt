@@ -15,7 +15,10 @@
       ></span>
     </Hero>
 
-    <section class="news_banner">
+    <section
+      class="news_banner"
+      id="juntos"
+    >
       <img
         data-aos="fade-up"
         data-aos-duration="700"
@@ -33,7 +36,10 @@
       </div>
     </section>
 
-    <section class="news">
+    <section
+      class="news"
+      id="eventos"
+    >
       <div
         class="new"
         v-for="(item, index) in news"
@@ -62,7 +68,10 @@
       </div>
     </section>
 
-    <section class="partners">
+    <section
+      class="partners"
+      id="partners"
+    >
       <div>
         <p
           data-aos="fade-up"

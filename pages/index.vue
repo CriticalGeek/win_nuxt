@@ -17,6 +17,7 @@
 
     <section
       class="section1"
+      id="vidas"
       v-rellax="{ speed: 1 }"
     >
       <div class="circles">
@@ -47,7 +48,10 @@
       >
     </section>
 
-    <section class="section2">
+    <section
+      class="section2"
+      id="success"
+    >
       <img
         class="section2__background"
         :src="section2_background"
@@ -87,7 +91,10 @@
       </div>
     </section>
 
-    <section class="section3">
+    <section
+      class="section3"
+      id="yeah"
+    >
       <span
         data-aos="fade-right"
         data-aos-duration="700"
@@ -103,6 +110,7 @@
 
     <section
       class="activators_carousel"
+      id="activadoresyasesores"
       v-swiper:mySwiper="swiperOption"
     >
       <div class="swiper-wrapper">
@@ -139,7 +147,10 @@
       <div class="swiper-button-next swiper-button-white"></div>
     </section>
 
-    <section class="section4">
+    <section
+      class="section4"
+      id="principios"
+    >
       <span>
         <h1
           data-aos="fade-up"
@@ -176,7 +187,10 @@
       </div>
     </section>
 
-    <section class="video_carousel">
+    <section
+      class="video_carousel"
+      id="testimonios"
+    >
       <div class="video_carousel__wrapper">
         <no-ssr>
           <VideoCarousel>
@@ -200,7 +214,10 @@
       </div>
     </section>
 
-    <section class="compensation_plan">
+    <section
+      class="compensation_plan"
+      id="compensacion"
+    >
       <h1
         data-aos="fade-up"
         data-aos-duration="700"
@@ -234,7 +251,10 @@
       </Carousel>
     </no-ssr>
 
-    <section class="highlighted_activator">
+    <section
+      class="highlighted_activator"
+      id="testimonio"
+    >
       <img :src="highlighted_photo">
       <div class="highlighted_separator"></div>
       <div
@@ -247,7 +267,10 @@
       </div>
     </section>
 
-    <section class="section5">
+    <section
+      class="section5"
+      id="activate"
+    >
       <div class="section5__images">
         <img
           v-for="(image, index) in section5_images"

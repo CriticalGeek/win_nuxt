@@ -437,7 +437,7 @@ export const state = () => ({
       ],
       "partners": {
         "title": "¡Gracias por tu confianza!",
-        "subtitle": "Nuestros partners satisfechos",
+        "subtitle": "Nuestros Weenjoy Partners satisfechos",
         "list": [{
           "logo": "/img/partners/tata.jpg",
           "speach": "Si te vas a meter a bañar, salpica, creemos que eso es precisamente lo que hace WEENJOY, y cambiará el mundo.",
