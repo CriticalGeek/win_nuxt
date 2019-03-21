@@ -15,7 +15,7 @@
           class="btn login"
         >{{ navbar_action }}</a>
         <div v-on:click="navMenu('links')">
-          <MenuIcon :status="menuStatus" />
+          <MenuIcon />
         </div>
       </div>
     </nav>
@@ -58,7 +58,10 @@
         <h2>{{ form.title }}</h2>
         <p>{{ form.subtitle }}</p>
         <form @submit.prevent="submit">
-          <div class="form-group">
+          <div
+            class="form-group"
+            :class="{ 'form-group--error': $v.form.name.$error }"
+          >
             <input
               id="name"
               name="name"
@@ -78,7 +81,10 @@
               >El campo debe de tener más de {{$v.form.name.$params.minLength.min}} letras</p>
             </div>
           </div>
-          <div class="form-group">
+          <div
+            class="form-group"
+            :class="{ 'form-group--error': $v.form.phone.$error }"
+          >
             <input
               id="phone"
               name="phone"
@@ -98,7 +104,10 @@
               >Solo puedes utilizar numeros enteros</p>
             </div>
           </div>
-          <div class="form-group">
+          <div
+            class="form-group"
+            :class="{ 'form-group--error': $v.form.email.$error }"
+          >
             <input
               id="email"
               name="email"
@@ -118,7 +127,10 @@
               >Utiliza un correo eléctronico valido</p>
             </div>
           </div>
-          <div class="form-group">
+          <div
+            class="form-group"
+            :class="{ 'form-group--error': $v.form.msg.$error }"
+          >
             <textarea
               id="msg"
               name="msg"
@@ -179,12 +191,13 @@
         }
       }
     },
+    computed: {
+      showNavMenu () {
+        return this.$store.state.nav.showNavMenu
+      }
+    },
     data () {
-      return {
-        menuStatus: 'reverse',
-        showNavMenu: 'links',
-
-        // Navbar
+      return {// Navbar
         navbar_img: this.$store.state.content.navbar.logo,
         navbar_action: this.$store.state.content.navbar.action,
         navbar_actionURL: this.$store.state.content.navbar.actionURL,
@@ -207,8 +220,8 @@
       Fab
     },
     methods: {
-      navMenu: function (status) {
-        this.showNavMenu = status
+      navMenu (status) {
+        this.$store.commit('nav/updateNavMenu', status)
 
         let menu = document.getElementById('navContent')
 
@@ -218,9 +231,9 @@
           menu.classList.add('active')
           menu.style.display = 'block'
           menu.style.display = 'flex'
-          this.menuStatus = 'play'
+          this.$store.commit('nav/updateStatus', 'play')
         } else {
-          this.menuStatus = 'reverse'
+          this.$store.commit('nav/updateStatus', 'reverse')
           menu.classList.remove('active')
           menu.classList.remove('fadeIn')
           menu.classList.add('fadeOut')
@@ -475,6 +488,17 @@
         top: -13px;
         left: 0;
         transform: scale(0.8);
+      }
+    }
+
+    .form-group--error {
+      input,
+      textarea {
+        border: 1px solid #e64242;
+      }
+
+      & > label {
+        color: #e64242;
       }
     }
   }

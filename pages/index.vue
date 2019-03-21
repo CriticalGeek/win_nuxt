@@ -296,6 +296,7 @@
         data-aos="fade-up"
         data-aos-duration="700"
         class="btn"
+        @click="showFormMenu"
       >{{ section5_action }}</button>
     </section>
   </section>
@@ -330,6 +331,28 @@
             </div>
           `,
         })
+      },
+      showFormMenu () {
+        this.$store.commit('nav/updateNavMenu', 'form')
+
+        let menu = document.getElementById('navContent')
+
+        if (menu.classList.contains('active') == false) {
+          menu.classList.remove('fadeOut')
+          menu.classList.add('fadeIn')
+          menu.classList.add('active')
+          menu.style.display = 'block'
+          menu.style.display = 'flex'
+          this.$store.commit('nav/updateStatus', 'play')
+        } else {
+          this.$store.commit('nav/updateStatus', 'reverse')
+          menu.classList.remove('active')
+          menu.classList.remove('fadeIn')
+          menu.classList.add('fadeOut')
+          setTimeout(() => {
+            menu.style.display = "none"
+          }, 300)
+        }
       }
     },
     data () {

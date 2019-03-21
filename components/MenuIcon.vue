@@ -9,13 +9,12 @@
   export default {
     data () {
       return {
-        menuIcon: this.$store.state.content.navbar.menuIcon
+        menuIcon: this.$store.state.content.navbar.menuIcon,
       }
     },
-    props: {
-      status: {
-        type: String,
-        default: 'reverse'
+    computed: {
+      status () {
+        return this.$store.state.nav.menuStatus
       }
     }
   }
