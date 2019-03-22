@@ -131,7 +131,7 @@ export const state = () => ({
         "title": "¿Cuántas vidas quieres cambiar hoy?",
         "subtitle": "Estás en el lugar adecuado.",
         "content": "WIN es el Sistema de Activación de Negocios a nuestra Plataforma de Marketing Inteligente de Weenjoy, basado en un exitoso modelo de apalancamiento en red, donde obtienes ganancias residuales y exponenciales por apalancarte en otros Joyners como tú, para que, en conjunto, inviten a Negocios a esta gran comunidad.",
-        "texture": "/img/textures/section1.svg"
+        "texture": "/img/textures/fondo_01.svg"
       },
       "section2": {
         "title": "WIN",
@@ -165,6 +165,7 @@ export const state = () => ({
         "title": "4 principios fundamentales",
         "content": "Lo más valioso de WIN es que te permite generar de manera muy fácil un ingreso continuo, constante y que con el tiempo puede incrementarse.",
         "action": "Ver más",
+        "texture": "/img/textures/fondo_02.svg",
         "principles": [{
             "name": "Principio #1",
             "description": "Ingresos Residuales",
@@ -372,7 +373,8 @@ export const state = () => ({
         "name": "Lorenzo Larrinua",
         "photo": "/img/activadores/lorenzo_larrinua.png",
         "speach": "Lo que más me gusta de WIN, es que cada día que vinculo a algún negocio, voy generando una independencia financiera que se incrementa de manera exponencial",
-        "position": "BPA"
+        "position": "BPA",
+        "texture": "/img/textures/fondo_03.svg"
       }
     },
 

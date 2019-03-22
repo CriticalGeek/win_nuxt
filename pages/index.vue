@@ -152,6 +152,11 @@
       id="principios"
     >
       <span>
+        <img
+          :src="section4_texture"
+          class="section4_texture"
+          v-rellax="{ speed: -3 }"
+        >
         <h1
           data-aos="fade-up"
           data-aos-duration="700"
@@ -255,6 +260,11 @@
       class="highlighted_activator"
       id="testimonio"
     >
+      <img
+        :src="highlighted_texture"
+        class="highlighted_texture"
+        v-rellax="{ speed: -2 }"
+      >
       <img :src="highlighted_photo">
       <div class="highlighted_separator"></div>
       <div
@@ -387,6 +397,7 @@
         section4_content: this.$store.state.content.home.section4.content,
         section4_principles: this.$store.state.content.home.section4.principles,
         section4_action: this.$store.state.content.home.section4.action,
+        section4_texture: this.$store.state.content.home.section4.texture,
 
         // section 5
         section5_title: this.$store.state.content.home.section5.title,
@@ -412,6 +423,7 @@
         highlighted_photo: this.$store.state.content.home.highlighted_activator.photo,
         highlighted_speach: this.$store.state.content.home.highlighted_activator.speach,
         highlighted_position: this.$store.state.content.home.highlighted_activator.position,
+        highlighted_texture: this.$store.state.content.home.highlighted_activator.texture,
       }
     }
   }
@@ -710,6 +722,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+
+  .section4_texture {
+    position: absolute;
+    top: 50px;
+    left: 10%;
+    height: 400px;
+    object-fit: contain;
+  }
 
   .section4__title {
     margin-bottom: 2rem;
@@ -874,6 +895,16 @@
   padding-right: calc(var(--global_padding) * 2);
   display: flex;
   align-items: flex-end;
+  position: relative;
+
+  .highlighted_texture {
+    position: absolute;
+    right: 10%;
+    top: -800px;
+    height: 300px;
+    object-fit: contain;
+    z-index: -1;
+  }
 
   img {
     min-width: 200px;
