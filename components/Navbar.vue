@@ -231,7 +231,9 @@
           this.$store.commit('nav/updateNavMenu', 'close')
           this.$store.commit('nav/updateStatus', 'reverse')
           menu.classList.remove('fadeIn')
-          menu.classList.add('fadeOut')
+          setTimeout(() => {
+            menu.classList.add('fadeOut')
+          }, 10)
           setTimeout(() => {
             menu.style.display = "none"
           }, 500)

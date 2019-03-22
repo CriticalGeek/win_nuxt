@@ -49,3 +49,14 @@ ol {
 .swiper-pagination-bullet-active {
   background: #fff !important;
 }
+
+.page-enter-active,
+.page-leave-active {
+  transition: ease .5s;
+}
+
+.page-enter,
+.page-leave-active {
+  opacity: 0;
+  transform: scale(1.05);
+}
