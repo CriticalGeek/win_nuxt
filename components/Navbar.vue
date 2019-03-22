@@ -292,8 +292,9 @@
 
   .navbar__rights {
     position: absolute;
-    bottom: 20px;
-    margin: 0 auto;
+    bottom: 50px;
+    margin: 0 20px;
+    text-align: center;
     color: #fff;
   }
 
