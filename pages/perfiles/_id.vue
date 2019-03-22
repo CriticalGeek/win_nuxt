@@ -103,7 +103,7 @@
       top: 50px;
       right: var(--global_padding);
       width: 60%;
-      height: 400px;
+      height: 500px;
       object-fit: cover;
       z-index: -1;
     }

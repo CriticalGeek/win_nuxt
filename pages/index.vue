@@ -872,7 +872,6 @@
 
   padding-left: calc(var(--global_padding) * 2);
   padding-right: calc(var(--global_padding) * 2);
-  padding-bottom: 100px;
   display: flex;
   align-items: flex-end;
 
@@ -905,6 +904,7 @@
 .section5 {
   @extend %section;
 
+  margin-top: 100px;
   padding-bottom: 200px;
   padding-top: 300px;
   display: flex;
@@ -936,7 +936,9 @@
 
     img {
       width: 25%;
+      height: 40%;
       margin: 30px;
+      object-fit: contain;
     }
   }
 }
