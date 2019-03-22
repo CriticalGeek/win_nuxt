@@ -156,6 +156,8 @@
           >{{ form.action }}</button>
         </form>
       </div>
+
+      <p class="navbar__rights">{{ footer_rights }}</p>
     </div>
 
   </div>
@@ -212,7 +214,9 @@
           subtitle: this.$store.state.content.form.subtitle,
           fields: this.$store.state.content.form.fields,
           action: this.$store.state.content.form.action
-        }
+        },
+
+        footer_rights: this.$store.state.content.footer.rights,
       }
     },
     components: {
@@ -282,6 +286,13 @@
   .safearea {
     width: 100%;
     height: var(--navbar_height);
+  }
+
+  .navbar__rights {
+    position: absolute;
+    bottom: 20px;
+    margin: 0 auto;
+    color: #fff;
   }
 
   .nav_background {

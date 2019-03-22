@@ -8,13 +8,13 @@
     </div>
 
     <div class="ambassadors_wrapper">
-      <nuxt-link
-        class="ambassador"
+      <a
+        class="ambassador animated fadeInUp"
         v-for="(ambassador, index) in ambassadors"
         :key="`ambassador-${index}`"
-        :to="ambassador.url"
-        data-aos="fade-up"
-        data-aos-duration="700"
+        :href="ambassador.url"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <img :src="ambassador.photo">
 
@@ -22,7 +22,7 @@
           <p>{{ ambassador.name }}</p>
           <p>{{ ambassador.position }}</p>
         </div>
-      </nuxt-link>
+      </a>
     </div>
   </section>
 </template>

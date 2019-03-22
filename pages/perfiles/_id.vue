@@ -54,6 +54,8 @@
           :href="social.url"
           v-for="(social, index) in profile.cv.social.networks"
           :key="`profileSocialNetworks-${index}`"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <img
             :src="social.icon"

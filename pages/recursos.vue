@@ -90,8 +90,10 @@
       >{{ entry_title }}</h5>
 
       <div class="entries__wrapper">
-        <nuxt-link
-          :to="entry.url"
+        <a
+          :href="entry.url"
+          target="_blank"
+          rel="noopener noreferrer"
           class="entry"
           v-for="(entry, index) in entry_articles"
           :key="`entry-${index}`"
@@ -103,7 +105,7 @@
             <h4>{{ entry.name }}</h4>
             <p>{{ entry.title }}</p>
           </div>
-        </nuxt-link>
+        </a>
       </div>
     </section>
 
@@ -257,6 +259,21 @@
         width: 100%;
         height: 200px;
         object-fit: cover;
+        transition: ease 0.3s;
+      }
+
+      &:hover {
+        img {
+          transform: scale(1.1);
+        }
+
+        & > .entry__resume {
+          top: 10%;
+
+          h4 {
+            color: $p_color;
+          }
+        }
       }
 
       .entry__resume {
@@ -265,14 +282,15 @@
         position: absolute;
         left: 5%;
         top: 40%;
-        background: #eee;
+        background: rgba(#eee, 0.92);
         padding: 25px;
         text-align: left;
         color: #000;
         transition: ease 0.3s;
 
-        &:hover {
-          color: $p_color;
+        h4 {
+          line-height: 1;
+          transition: ease 0.3s;
         }
 
         p {

@@ -599,7 +599,7 @@ export const state = () => ({
         "related": "CONTINÚA LEYENDO",
         "articles": [{
           "id": "vistazo",
-          "name": "Ventajas de ser comunidad",
+          "name": "Ventajas de hacer comunidad",
           "title": "¡Conoce las ventajas de formar parte de esta gran comunidad!",
           "thumbnail": "/img/entries/01/thumbnail.jpg",
           "entry": `
@@ -824,13 +824,10 @@ export const state = () => ({
           "title": "Llámanos",
           "url": "javascript: void(0)",
           "contact": [{
-              "name": `<p>Interior de la República <b>01 800 123 4567</b></p>`,
+              "name": `<p>Interior de la República <b>01 800 746 5697</b></p>`,
             },
             {
               "name": `<p>Morelia <b>(443) 340 69 44</b></p>`
-            },
-            {
-              "name": `<p>Guadalajara <b>(33) 123 45 67</b></p>`
             }
           ]
         },
@@ -839,13 +836,13 @@ export const state = () => ({
           "title": "WhatsApp Business",
           "url": "https://api.whatsapp.com/send?phone=5213323759183",
           "contact": [{
-            "name": `<p>win.weenjoy</p>`,
+            "name": `<p>+52 1 332 375 9183</p>`,
           }]
         },
         {
           "icon": "/img/contact_icons/email.png",
           "title": "Escribenos a:",
-          "url": "javascript: void(0)",
+          "url": "mailto:atencionwin@weenjoy.com",
           "contact": [{
             "name": `<p>atencionwin@weenjoy.com</p>`,
           }]

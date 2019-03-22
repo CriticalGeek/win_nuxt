@@ -607,6 +607,7 @@
         &:nth-of-type(3) {
           top: 230px;
           left: 210px;
+          z-index: 3;
         }
       }
     }

@@ -214,7 +214,7 @@
         text-align: justify;
         padding: 50px;
         width: 100%;
-        height: calc(100% - -150px);
+        height: calc(100% - 150px);
         display: flex;
         flex-direction: column;
         justify-content: center;
