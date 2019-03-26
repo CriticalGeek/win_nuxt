@@ -15,7 +15,8 @@ module.exports = {
       '/entradas/contigo',
       '/entradas/equipo',
       '/entradas/amigos',
-      '/perfiles/lucy'
+      '/perfiles/lucy',
+      '/perfiles/ahmed',
     ]
   },
 
