@@ -376,7 +376,7 @@ export const state = () => ({
         "position": "Activador Ejecutivo"
       },
       {
-        "name": "Liliana Ruiz",
+        "name": "Liliana Ruíz Montenegro",
         "photo": "/img/activadores/lilianaRuiz.png",
         "speach": "Weenjoy, economía colaborativa de alto sentido.",
         "position": "Activadora Lider"
