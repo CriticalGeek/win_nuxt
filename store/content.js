@@ -37,6 +37,10 @@ export const state = () => ({
         {
           "icon": "/img/social_icons/twitter.svg",
           "url": "https://twitter.com/WINWeenjoy"
+        },
+        {
+          "icon": "/img/social_icons/weenjoy.svg",
+          "url": "https://www.weenjoy.com/"
         }
       ]
     },
@@ -67,6 +71,10 @@ export const state = () => ({
         {
           "icon": "/img/social_icons/twitter.svg",
           "url": "https://twitter.com/WINWeenjoy"
+        },
+        {
+          "icon": "/img/social_icons/weenjoy.svg",
+          "url": "https://www.weenjoy.com/"
         }
       ],
       "rights": "©/WIN, Weenjoy Intelligent Network S.C. - 2019 Todos los derechos reservados"
@@ -342,6 +350,42 @@ export const state = () => ({
         "photo": "/img/activadores/alejandroRamirez.png",
         "speach": "Weenjoy, compartiendo para cambiar a mundo.",
         "position": "Director de Desarrollo Weenjoy Commerce"
+      },
+      {
+        "name": "Estefania Cortina",
+        "photo": "/img/activadores/estefaniaCortina.png",
+        "speach": "Con Weenjoy sabemos lo que queremos y lo vamos a obtener, nada nos va a detener.",
+        "position": "Activadora Asociado"
+      },
+      {
+        "name": "Conny Venegas",
+        "photo": "/img/activadores/connyVenegas.png",
+        "speach": "La manera divertida de hacer Negocios a lo grande.",
+        "position": "Activadora Asociado"
+      },
+      {
+        "name": "Enrique Chávez",
+        "photo": "/img/activadores/enriqueChavez.png",
+        "speach": "Si el dinero está en tu cabeza, Weenjoy lo pondrá en tus manos.",
+        "position": "Activador Asociado"
+      },
+      {
+        "name": "Gerardo Guzmán",
+        "photo": "/img/activadores/gerardoGuzman.png",
+        "speach": "Weenjoy es la forma de transformar el mundo económicamente a través de una comunidad sustentable y cooperativa.",
+        "position": "Activador Ejecutivo"
+      },
+      {
+        "name": "Liliana Ruiz",
+        "photo": "/img/activadores/lilianaRuiz.png",
+        "speach": "Weenjoy, economía colaborativa de alto sentido.",
+        "position": "Activadora Lider"
+      },
+      {
+        "name": "Guadalupe Pérez",
+        "photo": "/img/activadores/guadalupePerez.png",
+        "speach": "Puedes crear dinero y abundancia a través de la alegría y enriqueciendo a la Comunidad!",
+        "position": "Activadora Asociado"
       }],
       "compensation_plan": {
         "title": "Plan de compensación",
