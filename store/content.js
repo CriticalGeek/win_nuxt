@@ -371,10 +371,10 @@ export const state = () => ({
         ]
       },
       "highlighted_activator": {
-        "name": "Lorenzo Larrinua",
-        "photo": "/img/activadores/lorenzo_larrinua.png",
-        "speach": "Lo que más me gusta de WIN, es que cada día que vinculo a algún negocio, voy generando una independencia financiera que se incrementa de manera exponencial",
-        "position": "BPA",
+        "name": "Lizbeth Delgado",
+        "photo": "/img/highlighted/highlighted.png",
+        "speach": "Weenjoy es una Red de Distribuidores donde todos pueden generar una mayor cantidad de ingresos, día a día con un residual extraordinario. ¡Compartir es vivir la vida!",
+        "position": "Joyner",
         "texture": "/img/textures/fondo_03.svg"
       }
     },
