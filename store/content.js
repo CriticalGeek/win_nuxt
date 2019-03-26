@@ -243,37 +243,6 @@ export const state = () => ({
         }]
       },
 
-      "consultants": [{
-          "img": "/img/asesores/alejandro_ramirez.png",
-          "name": "Alejandro Ramírez",
-          "title": "Director de Desarrollo Weenjoy Commerce",
-          "phrase": "Weenjoy, compartiendo para cambiar a mundo."
-        },
-        {
-          "img": "/img/asesores/roberto_martinez.png",
-          "name": "Roberto Martínez",
-          "title": "Asesor General Weenjoy",
-          "phrase": "Weenjoy es la solución más impactante e innovadora del futuro para solucionar la economía de las personas."
-        },
-        {
-          "img": "/img/asesores/miriam_del_peral.png",
-          "name": "Miriam del Peral",
-          "title": "Directora de Desarrollo Weenjoy Travel",
-          "phrase": "Weenjoy es la solución más eficaz para mejorar la calidad de vida de las personas mediante un método original, sorprendente y además de forma gratuita que impactará por su excelente eficacia y funcionalidad."
-        },
-        {
-          "img": "/img/asesores/domingo_ruiz.png",
-          "name": "Domingo Ruiz",
-          "title": "Asesor Fiscal y Legal Weenjoy",
-          "phrase": "Weenjoy es un vehículo innovador a favor de la distribución de la riqueza al conectar necesidades y soluciones a través de medios digitales."
-        },
-        {
-          "img": "/img/asesores/octavio_rincon.png",
-          "name": "Octavio Rincón",
-          "title": "Asesor de T.I. Weenjoy",
-          "phrase": "Weenjoy viene a responder al reto de innovar de manera impactante en la economía a todos los niveles sociales, realmente una solución revolucionaria."
-        }
-      ],
       "video_carousel": [
         {
           "url": "https://player.vimeo.com/video/314064448"
@@ -355,37 +324,25 @@ export const state = () => ({
         "name": "Estefania Cortina",
         "photo": "/img/activadores/estefaniaCortina.png",
         "speach": "Con Weenjoy sabemos lo que queremos y lo vamos a obtener, nada nos va a detener.",
-        "position": "Activadora Asociado"
-      },
-      {
-        "name": "Conny Venegas",
-        "photo": "/img/activadores/connyVenegas.png",
-        "speach": "La manera divertida de hacer Negocios a lo grande.",
-        "position": "Activadora Asociado"
+        "position": "Joyner"
       },
       {
         "name": "Enrique Chávez",
         "photo": "/img/activadores/enriqueChavez.png",
         "speach": "Si el dinero está en tu cabeza, Weenjoy lo pondrá en tus manos.",
-        "position": "Activador Asociado"
+        "position": "BPA"
       },
       {
         "name": "Gerardo Guzmán",
         "photo": "/img/activadores/gerardoGuzman.png",
         "speach": "Weenjoy es la forma de transformar el mundo económicamente a través de una comunidad sustentable y cooperativa.",
-        "position": "Activador Ejecutivo"
+        "position": "BPA"
       },
       {
         "name": "Liliana Ruíz Montenegro",
         "photo": "/img/activadores/lilianaRuiz.png",
         "speach": "Weenjoy, economía colaborativa de alto sentido.",
         "position": "Activadora Lider"
-      },
-      {
-        "name": "Guadalupe Pérez",
-        "photo": "/img/activadores/guadalupePerez.png",
-        "speach": "Puedes crear dinero y abundancia a través de la alegría y enriqueciendo a la Comunidad!",
-        "position": "Activadora Asociado"
       }],
       "compensation_plan": {
         "title": "Plan de compensación",
