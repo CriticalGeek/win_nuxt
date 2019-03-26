@@ -69,7 +69,7 @@ export const state = () => ({
           "url": "https://twitter.com/WINWeenjoy"
         }
       ],
-      "rights": "©/WIN, Weenjoy Intelligent Network - 2019 Todos los derechos reservados"
+      "rights": "©/WIN, Weenjoy Intelligent Network S.C. - 2019 Todos los derechos reservados"
     },
 
     "form": {
@@ -100,7 +100,7 @@ export const state = () => ({
             <span data-aos="fade" data-aos-delay="3000">Conoce nuestro plan 6x3 que es un innovador </span>
             <em data-aos="fade-up" data-aos-delay="1200">modelo de apalancamiento en red.</em></p>
           <p>
-            <span data-aos="fade" data-aos-delay="3000">¡Afilia a Personas y Negocios para impulsar tu economía! Activa negocios en nuestra Plataforma de Marketing Inteligente y</span>
+            <span data-aos="fade" data-aos-delay="3000">¡Afilia a Personas y Negocios para impulsar tu economía! Vincula Negocios en Weenjoy y</span>
             <em data-aos="fade-up" data-aos-delay="1800">genera ingresos adicionales</em>
             <span data-aos="fade" data-aos-delay="3000">de manera fácil, rápida y segura.</span></p>`,
         "background": "/img/hero_01.png"
@@ -130,7 +130,7 @@ export const state = () => ({
         ],
         "title": "¿Cuántas vidas quieres cambiar hoy?",
         "subtitle": "Estás en el lugar adecuado.",
-        "content": "WIN es el Sistema de Activación de Negocios a nuestra Plataforma de Marketing Inteligente de Weenjoy, basado en un exitoso modelo de apalancamiento en red, donde obtienes ganancias residuales y exponenciales por apalancarte en otros Joyners como tú, para que, en conjunto, inviten a Negocios a esta gran comunidad.",
+        "content": "WIN es el Sistema de vinculación de Negocios a Weenjoy, basado en un exitoso modelo de apalancamiento en red, donde obtienes ganancias residuales y exponenciales por apalancarte en otros Joyners como tú, para que, en conjunto, inviten a Negocios a esta gran comunidad.",
         "texture": "/img/textures/fondo_01.svg"
       },
       "section2": {
@@ -156,7 +156,7 @@ export const state = () => ({
       "section3": {
         "title": "<h1>yeah<strong>!</strong></h1>",
         "content": `
-          <p>Te invitamos a ser parte. WIN elimina las debilidades comunes de los esquemas comerciales en red, es decir: no tienes que pagar inscripción, comprar ni vender nada, no tienes que mantener o cargar redes, lo único que tienes que hacer es invitar a 3 personas. <br> ¡Así de fácil!</p> <br>
+          <p>Te invitamos a ser parte de WIN donde eliminamos las debilidades comunes de los esquemas comerciales en red, es decir: <b>no tienes que pagar inscripción, comprar ni vender nada, no tienes que mantener o cargar redes,</b> lo único que tienes que hacer es vincular a 6 Negocios y a 3 Personas. <br> ¡Así de fácil!</p> <br>
           <p>Lo mejor es que pueden afiliarse <b>todo tipo de Negocios</b> de productos y/o servicios</p> <br>
           <p>¡Si el dinero está en tu cabeza, Weenjoy lo pone en tus manos!</p>
         `
@@ -293,13 +293,13 @@ export const state = () => ({
         "name": "Germán Zamacona",
         "photo": "/img/activadores/germanZamacona.png",
         "speach": "Cuando no te guste lo que pasa disrumpe y crea, lo que a tus ojos es correcto.",
-        "position": "Activador Master"
+        "position": "Activador Líder"
       },
       {
         "name": "Tere Medina",
         "photo": "/img/activadores/tereMedina.png",
         "speach": "Para mí, Weenjoy es compartir oportunidades, ya que este es un gran movimiento que activará la economía de nuestro país.",
-        "position": "Activador Master"
+        "position": "Activadora Líder"
       },
       {
         "name": "Roberto Martínez",
@@ -317,19 +317,19 @@ export const state = () => ({
         "name": "Nacho Pérez",
         "photo": "/img/activadores/nachoPerez.png",
         "speach": "La innovación es lo de hoy.",
-        "position": "Activador Master"
+        "position": "Activador Líder"
       },
       {
         "name": "Miriam del Peral",
         "photo": "/img/activadores/miriamDelPeral.png",
         "speach": "Weenjoy es la solución más eficaz para mejorar la calidad de vida de las personas mediante un método original, sorprendente y además de forma gratuita que impactará por su excelente eficacia y funcionalidad.",
-        "position": "Directora de Desarrollo Weenjoy travel"
+        "position": "Directora de Desarrollo Weenjoy Travel"
       },
       {
         "name": "Karla Lijermark",
         "photo": "/img/activadores/karlaLijermark.png",
         "speach": "Tu destino lo decides tú.",
-        "position": "Activador Master"
+        "position": "Activadora Líder"
       },
       {
         "name": "Domingo Ruiz",
@@ -393,8 +393,8 @@ export const state = () => ({
       },
       "news": [{
           "title": "KICKOFF ACTIVACIÓN MLM",
-          "content": "¡Entérate! Realizamos dos eventos el 10 y 29 de septiembre del 2018 en el Hotel Villa Montaña, para Joyners Líderes y Pilares; en él se dio a conocer Weenjoy y el esquema de Negocios de WIN para motivarlos a que se incorporaran como activadores líderes, y trabajar en conjunto para invitarlos al WIN CONNECTION.",
-          "date": "10 de Septiembre del 2018",
+          "content": "¡Entérate! Realizamos dos eventos el 10 y 29 de septiembre del 2018 en el Hotel Villa Montaña, para Activadores Líderes y Asociados; en él se dio a conocer Weenjoy y el esquema de Negocios de WIN para que se incorporaran a la plataforma WIN.",
+          "date": "Septiembre del 2018",
           "images": {
             "main": "/img/news/kickoff_01.jpg",
             "landscape": "/img/news/kickoff_02.jpg"
@@ -402,7 +402,7 @@ export const state = () => ({
         },
         {
           "title": "WIN CONNECTION MLM",
-          "content": "El 27 de octubre del 2018, en el Centro Cultural Tres Marías, realizamos el lanzamiento de Activación de Negocios WIN y el arranque de la prueba piloto de Weenjoy en Morelia. Los activadores 6x3 que fueron invitados por los Joyners Líderes para darles a conocer el esquema de Negocios WIN. ¡Gracias por formar parte de este proyecto!",
+          "content": "El 27 de octubre del 2018, en el Centro Cultural Tres Marías, realizamos el lanzamiento de Vinculación de Negocios WIN y el arranque de la prueba piloto de Weenjoy en Morelia. Los Joyners, que fueron invitados por los Activadores Lideres y Asociados para formar parte de esta empresa. ¡Gracias por formar parte de este proyecto!",
           "date": "27 de Octubre 2018",
           "images": {
             "main": "/img/news/connection_01.jpg",
@@ -584,7 +584,7 @@ export const state = () => ({
           "url": "https://player.vimeo.com/video/297434646"
         },
         {
-          "title": "Casos de uso con Pinjoys",
+          "title": "Caso de uso con Pinjoys",
           "url": "https://player.vimeo.com/video/315921387"
         },
         {
