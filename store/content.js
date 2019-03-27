@@ -1,5 +1,5 @@
 export const state = () => ({
-    "fab": "¡Activate!",
+    "fab": "¡Actívate!",
 
     "navbar": {
       "logo": "/img/WIN_logo_white.png",
