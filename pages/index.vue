@@ -603,9 +603,8 @@
 
       .media {
         position: absolute;
-        background: rgba(68, 68, 68, 0.3);
         width: 300px;
-        height: 300px;
+        height: 290px;
         object-fit: cover;
 
         &:nth-of-type(1) {

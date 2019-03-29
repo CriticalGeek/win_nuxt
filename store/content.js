@@ -264,6 +264,21 @@ export const state = () => ({
         },
         {
           "url": "https://player.vimeo.com/video/314064321"
+        },
+        {
+          "url": "https://player.vimeo.com/video/327215643"
+        },
+        {
+          "url": "https://player.vimeo.com/video/327215888"
+        },
+        {
+          "url": "https://player.vimeo.com/video/327216140"
+        },
+        {
+          "url": "https://player.vimeo.com/video/327216360"
+        },
+        {
+          "url": "https://player.vimeo.com/video/327216515"
         }
       ],
       "activator_carousel": [{
