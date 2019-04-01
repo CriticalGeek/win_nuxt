@@ -14,6 +14,10 @@ export const state = () => ({
           "url": "/"
         },
         {
+          "name": "Plan de compensación",
+          "url": "/compensacion"
+        },
+        {
           "name": "Noticias",
           "url": "/noticias"
         },
@@ -424,13 +428,30 @@ export const state = () => ({
             "main": "/img/news/connection_01.jpg",
             "landscape": "/img/news/connection_02.jpg",
             "gallery": [
-              '/img/news/connection_03.png',
-              '/img/news/connection_04.png',
-              '/img/news/connection_05.png',
-              '/img/news/connection_06.png',
-              '/img/news/connection_07.png',
-              '/img/news/connection_08.png',
-              '/img/news/connection_09.png'
+              '/img/news/connection_03.jpg',
+              '/img/news/connection_04.jpg',
+              '/img/news/connection_05.jpg',
+              '/img/news/connection_06.jpg',
+              '/img/news/connection_07.jpg',
+              '/img/news/connection_08.jpg',
+              '/img/news/connection_09.jpg',
+              '/img/news/connection_10.jpg',
+              '/img/news/connection_11.jpg',
+              '/img/news/connection_12.jpg',
+              '/img/news/connection_13.jpg',
+              '/img/news/connection_14.jpg',
+              '/img/news/connection_15.jpg',
+              '/img/news/connection_16.jpg',
+              '/img/news/connection_17.jpg',
+              '/img/news/connection_18.jpg',
+              '/img/news/connection_19.jpg',
+              '/img/news/connection_20.jpg',
+              '/img/news/connection_21.jpg',
+              '/img/news/connection_22.jpg',
+              '/img/news/connection_23.jpg',
+              '/img/news/connection_24.jpg',
+              '/img/news/connection_25.jpg',
+              '/img/news/connection_26.jpg',
             ]
           }
         },
@@ -442,13 +463,31 @@ export const state = () => ({
             "main": "/img/news/winweeks_01.jpg",
             "landscape": "/img/news/winweeks_02.jpg",
             "gallery": [
-              '/img/news/winweeks_03.png',
-              '/img/news/winweeks_04.png',
-              '/img/news/winweeks_05.png',
-              '/img/news/winweeks_06.png',
-              '/img/news/winweeks_07.png',
-              '/img/news/winweeks_08.png',
-              '/img/news/winweeks_09.png'
+              '/img/news/winweeks_03.jpg',
+              '/img/news/winweeks_04.jpg',
+              '/img/news/winweeks_05.jpg',
+              '/img/news/winweeks_06.jpg',
+              '/img/news/winweeks_07.jpg',
+              '/img/news/winweeks_08.jpg',
+              '/img/news/winweeks_09.jpg',
+              '/img/news/winweeks_09.jpg',
+              '/img/news/winweeks_10.jpg',
+              '/img/news/winweeks_11.jpg',
+              '/img/news/winweeks_12.jpg',
+              '/img/news/winweeks_13.jpg',
+              '/img/news/winweeks_14.jpg',
+              '/img/news/winweeks_15.jpg',
+              '/img/news/winweeks_16.jpg',
+              '/img/news/winweeks_17.jpg',
+              '/img/news/winweeks_18.jpg',
+              '/img/news/winweeks_19.jpg',
+              '/img/news/winweeks_20.jpg',
+              '/img/news/winweeks_21.jpg',
+              '/img/news/winweeks_22.jpg',
+              '/img/news/winweeks_23.jpg',
+              '/img/news/winweeks_24.jpg',
+              '/img/news/winweeks_25.jpg',
+              '/img/news/winweeks_26.jpg',
             ]
           }
         }
@@ -476,6 +515,90 @@ export const state = () => ({
           "speach": "Con WEENJOY incrementaremos nuestras ventas.",
           "name": "Colchas Camelinas"
         }]
+      }
+    },
+
+    "compensation": {
+      "hero": {
+        "title": `<h1 data-aos="fade-up">Plan de compensación</h1>`,
+        "content": `
+          <p>
+            WIN te pagará comisiones mensuales sobre el total
+            de los ingresos de todos los Negocios que tu red
+            genere mes tras mes a través de Weenjoy.
+          <p>`,
+        "background": "/img/hero_05.png"
+      },
+      "plan": {
+        "img": "/img/plan.png",
+        "title": "WIN a diseñado",
+        "subtitle": "un plan de trabajo fácil y poderoso",
+        "content": `
+          <p>Activar a 6 negocios y con ello integrar a 3 Joyners Directos a tu equipo de trabajo. <em>6 Negocios y 3 Joyners</em> son números muy fáciles de alcanzar.</p>
+        `,
+      },
+      "nivel1": {
+        "title": "Nivel #1",
+        "subtitle": "Negocios Afiliados de manera directa",
+        "content": `
+          <p>WIN te pagará el 0.20% sobre el 100% de los ingresos que los Negocios Activos en la plataforma Weenjoy, hayan obtenido mensualmente derivados por las compras y/o consumos de los usuarios de Weenjoy.</p> <br>
+          <p>
+            Puede llegar a ser del 0.30% en el caso de cadenas*. <br>
+            0.20% al 0.30% de tus primeros 6 Negocios.
+          </p>
+        `,
+        "gallery": [
+          "/img/nivel1_01.png",
+          "/img/nivel1_02.png"
+        ],
+        "tiles": [
+          {
+            "img": "/img/negocios.svg",
+            "name": "NEGOCIOS",
+            "quantity": "6",
+            "description": "DIRECTOS"
+          },
+          {
+            "img": "/img/joyners.svg",
+            "name": "JOYNERS",
+            "quantity": "3",
+            "description": "DIRECTOS"
+          },
+          {
+            "img": "/img/ganancias.svg",
+            "name": "GANANCIAS",
+            "quantity": ".20%"
+          },
+        ]
+      },
+      "nivel2": {
+        "title": "Nivel #2",
+        "subtitle": "Negocios Afiliados de manera indirecta",
+        "content": `
+          <p>WIN te pagará el 0.10% en cada nivel sobre el 100%
+          de los ingresos que los Negocios Activos en la
+          plataforma Weenjoy, hayan obtenido
+          mensualmente derivados por las
+          compras y/o consumos de los
+          usuarios de Weenjoy.</p> <br>
+          <p>
+            0.10% de cientos de Negocios Afiliados <br>
+            por tu organización de Joyners.
+          </p>
+        `,
+        "gallery": [
+          "/img/nivel2_01.png",
+          "/img/nivel2_02.png"
+        ]
+      },
+      "earnings": {
+        "title": "Potencial de Ganancias",
+        "description": "Ejemplo de un Negocio que genera diariamente un promedio de 10 ventas de $500 MXN:",
+        "table": "/img/table.png",
+        "text": `
+          <p>El plan de compensación de WIN, está diseñado para que una vez que construyas tu plan 6x3 en un periodo
+          no mayor a 4 meses y dedicando 2 a 3 horas de tu tiempo por semana <em>generes importantes ganancias mensuales.</em></p>
+        `
       }
     },
 

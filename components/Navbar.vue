@@ -370,6 +370,7 @@
     animation-fill-mode: forwards;
 
     .links {
+      margin-top: -70px;
       color: #fff;
       display: flex;
       flex-direction: column;
