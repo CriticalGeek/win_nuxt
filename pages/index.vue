@@ -220,43 +220,6 @@
     </section>
 
     <section
-      class="compensation_plan"
-      id="compensacion"
-    >
-      <h1
-        data-aos="fade-up"
-        data-aos-duration="700"
-      ><em>{{ compensation_title }}</em></h1>
-      <div
-        data-aos="fade-up"
-        data-aos-duration="700"
-        v-html="compensation_subtitle"
-      ></div>
-    </section>
-
-    <no-ssr>
-      <Carousel>
-        <div
-          class="swiper-slide compensation-carousel"
-          v-for="(level, index) in compensation_levels"
-          :key="`compensationLevels-${index}`"
-        >
-          <img :src="level.background">
-          <img
-            class="compensation-carousel__icon"
-            :src="level.icon"
-          >
-          <div class="compensation-carousel__wrapper">
-            <h1>{{ level.title }}</h1>
-            <p>{{ level.subtitle }}</p>
-            <div class="separator"></div>
-            <p v-html="level.content"></p>
-          </div>
-        </div>
-      </Carousel>
-    </no-ssr>
-
-    <section
       class="highlighted_activator"
       id="testimonio"
     >
@@ -725,7 +688,7 @@
 
   .section4_texture {
     position: absolute;
-    top: 50px;
+    top: -500px;
     left: 10%;
     height: 400px;
     object-fit: contain;
