@@ -88,12 +88,13 @@
         <table style="color: #fff;">
           <tr>
             <td></td>
-            <td style="background: #459829;">Nivel 2</td>
-            <td style="background: #008985;">Nivel 3</td>
-            <td style="background: #00698F;">Nivel 4</td>
-            <td style="background: #005EA8;">Nivel 5</td>
-            <td style="background: #003C73;">Nivel 6</td>
-            <td style="background: #ff2d2d;">TOTALES</td>
+            <td style="background: #5C5C5C; font-size: 1rem;">Nivel 1</td>
+            <td style="background: #459829; font-size: 1rem;">Nivel 2</td>
+            <td style="background: #008985; font-size: 1rem;">Nivel 3</td>
+            <td style="background: #00698F; font-size: 1rem;">Nivel 4</td>
+            <td style="background: #005EA8; font-size: 1rem;">Nivel 5</td>
+            <td style="background: #003C73; font-size: 1rem;">Nivel 6</td>
+            <td style="background: #ff2d2d; font-size: 1rem;">TOTALES</td>
           </tr>
           <tr>
             <td style="background: #ff2d2d; text-align: center;">
@@ -103,12 +104,13 @@
               > <br>
               <span>NEGOCIOS</span>
             </td>
-            <td style="background: #7CAE50;">18 <br> <span>INDIRECTOS</span></td>
-            <td style="background: #4BAAA0;">54 <br> <span>INDIRECTOS</span></td>
-            <td style="background: #3D84A5;">162 <br> <span>INDIRECTOS</span></td>
-            <td style="background: #458EC8;">486 <br> <span>INDIRECTOS</span></td>
-            <td style="background: #004D8B;">1458 <br> <span>INDIRECTOS</span></td>
-            <td style="background: #ff2d2d;">2184 <br> <span>NEGOCIOS</span></td>
+            <td style="background: #7C7B7B; line-height: 1.2;">6 <br> <span>DIRECTOS</span></td>
+            <td style="background: #7CAE50; line-height: 1.2;">18 <br> <span>INDIRECTOS</span></td>
+            <td style="background: #4BAAA0; line-height: 1.2;">54 <br> <span>INDIRECTOS</span></td>
+            <td style="background: #3D84A5; line-height: 1.2;">162 <br> <span>INDIRECTOS</span></td>
+            <td style="background: #458EC8; line-height: 1.2;">486 <br> <span>INDIRECTOS</span></td>
+            <td style="background: #004D8B; line-height: 1.2;">1458 <br> <span>INDIRECTOS</span></td>
+            <td style="background: #ff2d2d; line-height: 1.2;">2184 <br> <span>NEGOCIOS</span></td>
           </tr>
           <tr>
             <td style="background: #ff2d2d; text-align: center;">
@@ -118,12 +120,13 @@
               > <br>
               <span>JOYNERS</span>
             </td>
-            <td style="background: #A4C477;">9 <br> <span>INDIRECTOS</span></td>
-            <td style="background: #7FC1BD;">27 <br> <span>INDIRECTOS</span></td>
-            <td style="background: #72A1C0;">81 <br> <span>INDIRECTOS</span></td>
-            <td style="background: #67B7E4;">243 <br> <span>INDIRECTOS</span></td>
-            <td style="background: #4F71A8;">729 <br> <span>INDIRECTOS</span></td>
-            <td style="background: #ff2d2d;">1092 <br> <span>JOYNERS</span></td>
+            <td style="background: #9e9d9d; line-height: 1.2;">3 <br> <span>DIRECTOS</span></td>
+            <td style="background: #A4C477; line-height: 1.2;">9 <br> <span>INDIRECTOS</span></td>
+            <td style="background: #7FC1BD; line-height: 1.2;">27 <br> <span>INDIRECTOS</span></td>
+            <td style="background: #72A1C0; line-height: 1.2;">81 <br> <span>INDIRECTOS</span></td>
+            <td style="background: #67B7E4; line-height: 1.2;">243 <br> <span>INDIRECTOS</span></td>
+            <td style="background: #4F71A8; line-height: 1.2;"></td>
+            <td style="background: #ff2d2d; line-height: 1.2;">363 <br> <span>JOYNERS</span></td>
           </tr>
           <tr>
             <td style="background: #ff2d2d; text-align: center;">
@@ -133,6 +136,7 @@
               > <br>
               <span>GANANCIAS</span>
             </td>
+            <td style="background: #006E8F;">.20%</td>
             <td style="background: #006E8F;">.10%</td>
             <td style="background: #006E8F;">.10%</td>
             <td style="background: #006E8F;">.10%</td>
@@ -167,12 +171,12 @@
           <td style="font-size: 1rem;">Nivel 6</td>
         </tr>
         <tr>
-          <td style="background: #7D7C80">$240 <br> <span>MXN</span></td>
-          <td style="background: #79C06F">$120 <br> <span>MXN</span></td>
-          <td style="background: #41BDB2">$120 <br> <span>MXN</span></td>
-          <td style="background: #4596B0">$120 <br> <span>MXN</span></td>
-          <td style="background: #4E9CCE">$120 <br> <span>MXN</span></td>
-          <td style="background: #00659C">$120 <br> <span>MXN</span></td>
+          <td style="background: #7D7C80; line-height: 1.2;">$240 <br> <span>MXN</span></td>
+          <td style="background: #79C06F; line-height: 1.2;">$120 <br> <span>MXN</span></td>
+          <td style="background: #41BDB2; line-height: 1.2;">$120 <br> <span>MXN</span></td>
+          <td style="background: #4596B0; line-height: 1.2;">$120 <br> <span>MXN</span></td>
+          <td style="background: #4E9CCE; line-height: 1.2;">$120 <br> <span>MXN</span></td>
+          <td style="background: #00659C; line-height: 1.2;">$120 <br> <span>MXN</span></td>
         </tr>
         <tr style="background: #ff2d2d;">
           <td>.20%</td>
@@ -183,20 +187,20 @@
           <td>.10%</td>
         </tr>
         <tr>
-          <td style="background: #7D7C80">x6 <br> <span>NEGOCIOS</span></td>
-          <td style="background: #79C06F">x18 <br> <span>NEGOCIOS</span></td>
-          <td style="background: #41BDB2">x54 <br> <span>NEGOCIOS</span></td>
-          <td style="background: #4596B0">x162 <br> <span>NEGOCIOS</span></td>
-          <td style="background: #4E9CCE">x486 <br> <span>NEGOCIOS</span></td>
-          <td style="background: #00659C">x1458 <br> <span>NEGOCIOS</span></td>
+          <td style="background: #7D7C80; line-height: 1.2;">x6 <br> <span>NEGOCIOS</span></td>
+          <td style="background: #79C06F; line-height: 1.2;">x18 <br> <span>NEGOCIOS</span></td>
+          <td style="background: #41BDB2; line-height: 1.2;">x54 <br> <span>NEGOCIOS</span></td>
+          <td style="background: #4596B0; line-height: 1.2;">x162 <br> <span>NEGOCIOS</span></td>
+          <td style="background: #4E9CCE; line-height: 1.2;">x486 <br> <span>NEGOCIOS</span></td>
+          <td style="background: #00659C; line-height: 1.2;">x1458 <br> <span>NEGOCIOS</span></td>
         </tr>
         <tr>
-          <td style="background: #7D7C80; opacity: .7;">x3 <br> <span>JOYNERS</span></td>
-          <td style="background: #79C06F; opacity: .7;">x9 <br> <span>JOYNERS</span></td>
-          <td style="background: #41BDB2; opacity: .7;">x27 <br> <span>JOYNERS</span></td>
-          <td style="background: #4596B0; opacity: .7;">x81 <br> <span>JOYNERS</span></td>
-          <td style="background: #4E9CCE; opacity: .7;">x243 <br> <span>JOYNERS</span></td>
-          <td style="background: #00659C; opacity: .7;">x729 <br> <span>JOYNERS</span></td>
+          <td style="background: #7D7C80; opacity: .7; line-height: 1.2;">x3 <br> <span>JOYNERS</span></td>
+          <td style="background: #79C06F; opacity: .7; line-height: 1.2;">x9 <br> <span>JOYNERS</span></td>
+          <td style="background: #41BDB2; opacity: .7; line-height: 1.2;">x27 <br> <span>JOYNERS</span></td>
+          <td style="background: #4596B0; opacity: .7; line-height: 1.2;">x81 <br> <span>JOYNERS</span></td>
+          <td style="background: #4E9CCE; opacity: .7; line-height: 1.2;">x243 <br> <span>JOYNERS</span></td>
+          <td style="background: #00659C; opacity: .7; line-height: 1.2;"></td>
         </tr>
         <tr style="background: #13829E">
           <td style="font-size: 1rem;">$1,440</td>
@@ -225,7 +229,7 @@
           <td colspan="3">
             <div style="display: flex; align-items: center; justify-content: space-around;">
               <div style="font-size: 1rem">
-                ingresos <br> residuales
+                Ingresos <br> residuales
               </div>
               <div style="display: flex;">
                 TOTAL: $262,800
@@ -501,10 +505,12 @@ table {
     box-sizing: border-box;
     font-size: 1.4rem;
     text-align: center;
-    padding: 0 0.5rem;
+    padding: 0.7rem;
+    font-weight: 700;
 
     & > span {
       font-size: 0.8rem;
+      font-weight: 400;
     }
   }
 }

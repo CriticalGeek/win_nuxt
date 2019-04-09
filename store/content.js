@@ -142,7 +142,7 @@ export const state = () => ({
         ],
         "title": "¿Cuántas vidas quieres cambiar hoy?",
         "subtitle": "Estás en el lugar adecuado.",
-        "content": "WIN es el Sistema de vinculación de Negocios a Weenjoy, basado en un exitoso modelo de apalancamiento en red, donde obtienes ganancias residuales y exponenciales por apalancarte en otros Joyners como tú, para que, en conjunto, inviten a Negocios a esta gran comunidad.",
+        "content": "WIN es el Sistema de Vinculación de Negocios a Weenjoy, basado en un exitoso modelo de apalancamiento en red, donde obtienes ganancias residuales y exponenciales por apalancarte en otros Joyners como tú, para que, en conjunto, inviten a Negocios a esta gran comunidad.",
         "texture": "/img/textures/fondo_01.svg"
       },
       "section2": {
@@ -151,7 +151,7 @@ export const state = () => ({
         "background": "/img/success_background.jpg",
         "content": `
           <p>¡Conoce a los Joyners que están cambiando al mundo!</p> <br>
-          <p>Trabajamos con personas que se atreven a cambiar el rumbo de la economía en su comunidad.</p> <br>
+          <p>Trabajamos con personas que se atreven a cambiar el rumbo de la economía en su Comunidad.</p> <br>
           <p>Tú como ellos puedes tener un plan de compensación monetaria.</p>
         `,
         "gallery": [{
@@ -168,9 +168,9 @@ export const state = () => ({
       "section3": {
         "title": "<h1>yeah<strong>!</strong></h1>",
         "content": `
-          <p>Te invitamos a ser parte de WIN donde eliminamos las debilidades comunes de los esquemas comerciales en red, es decir: <b>no tienes que pagar inscripción, comprar ni vender nada, no tienes que mantener o cargar redes,</b> lo único que tienes que hacer es vincular a 6 Negocios y a 3 Personas. <br> ¡Así de fácil!</p> <br>
+          <p>Te invitamos a ser parte de WIN donde eliminamos las debilidades comunes de los esquemas comerciales en red, es decir: <b>no tienes que pagar inscripción, comprar ni vender nada, no tienes que mantener o cargar redes,</b> lo único que tienes que hacer es Vincular a 6 Negocios y a 3 Personas. <br> ¡Así de fácil!</p> <br>
           <p>Lo mejor es que pueden afiliarse <b>todo tipo de Negocios</b> de productos y/o servicios</p> <br>
-          <p>¡Si el dinero está en tu cabeza, Weenjoy lo pone en tus manos!</p>
+          <p><b>¡Si el dinero está en tu cabeza, Weenjoy lo pone en tus manos!</b></p>
         `
       },
       "section4": {
@@ -184,7 +184,7 @@ export const state = () => ({
             "icon": "/img/principio_01.png",
             "background": "/img/principio_01-background.png",
             "content": `
-              <p>En los trabajos tradicionales y comunes, intercambias tu tiempo por dinero(quincena, honorarios, etc.) por eso a este tipo de ingresos se les llaman Lineales.</p> <br>
+              <p>En los trabajos tradicionales y comunes, intercambias tu tiempo por dinero (quincena, honorarios, etc.) por eso a este tipo de ingresos se les llaman lineales.</p> <br>
               <p>En cambio, en los ingresos residuales, realizas un trabajo una sola vez y él mismo te reportará un flujo continuo de ganancias que se prolonga y puede perpetuarse con el tiempo.</p> <br>
               <p>Esta es la forma más inteligente de ganar dinero.</p>
               <p>Lo más valioso de WIN, es que te permite generar de manera muy fácil importantes ingresos residuales.</p>
@@ -197,7 +197,7 @@ export const state = () => ({
             "background": "/img/principio_02-background.png",
             "content": `
               <p>Quienes obtienen INGRESOS RESIDUALES se apalancan en personas, que al no ser tus empleados no te cuestan. Como ellos también son dueños de su propio Negocio, ponen el mismo interés y entusiasmo que tú en hacerlo crecer y al no ser comisionistas no hay competencia.</p> <br>
-              <p>Este modelo de apalancamiento en personas busca que a ti te vaya bien porque en la medida que tú ganes, ganan ellos también.</p>
+              <p>Este modelo de apalancamiento en personas busca que a ti te vaya bien porque <b>en la medida que tú ganes, ganan ellos también.</b></p>
             `
           },
           {
@@ -206,7 +206,7 @@ export const state = () => ({
             "icon": "/img/principio_03.png",
             "background": "/img/principio_03-background.png",
             "content": `
-              <p>En WIN te apalancarás en el talento y trabajo de cientos de Activadores (Joyners), aunque tú solamente integres a tres conocidos.</p>
+              <p>En WIN te apalancarás en el talento y trabajo de cientos de Joyners (Activadores), aunque tú solamente integres a tres conocidos.</p>
             `
           },
           {
@@ -316,12 +316,6 @@ export const state = () => ({
         "position": "Activador Líder"
       },
       {
-        "name": "Miriam del Peral",
-        "photo": "/img/activadores/miriamDelPeral.png",
-        "speach": "Weenjoy es la solución más eficaz para mejorar la calidad de vida de las personas mediante un método original, sorprendente y además de forma gratuita que impactará por su excelente eficacia y funcionalidad.",
-        "position": "Directora de Desarrollo Weenjoy Travel"
-      },
-      {
         "name": "Karla Lijermark",
         "photo": "/img/activadores/karlaLijermark.png",
         "speach": "Tu destino lo decides tú.",
@@ -332,12 +326,6 @@ export const state = () => ({
         "photo": "/img/activadores/domingoRuiz.png",
         "speach": "Weenjoy es un vehículo innovador a favor de la distribución de la riqueza al conectar necesidades y soluciones a través de medios digitales.",
         "position": "Asesor Fiscal y Legal Weenjoy"
-      },
-      {
-        "name": "Alejandro Ramírez",
-        "photo": "/img/activadores/alejandroRamirez.png",
-        "speach": "Weenjoy, compartiendo para cambiar a mundo.",
-        "position": "Director de Desarrollo Weenjoy Commerce"
       },
       {
         "name": "Estefania Cortina",
@@ -393,7 +381,7 @@ export const state = () => ({
         "name": "Lizbeth Delgado",
         "photo": "/img/highlighted/highlighted.png",
         "speach": "Weenjoy es una Red de Distribuidores donde todos pueden generar una mayor cantidad de ingresos, día a día con un residual extraordinario. ¡Compartir es vivir la vida!",
-        "position": "Joyner",
+        "position": "Activadora Lider",
         "texture": "/img/textures/fondo_03.svg"
       }
     },
@@ -413,7 +401,7 @@ export const state = () => ({
       },
       "news": [{
           "title": "KICKOFF ACTIVACIÓN MLM",
-          "content": "¡Entérate! Realizamos dos eventos el 10 y 29 de septiembre del 2018 en el Hotel Villa Montaña, para Activadores Líderes y Asociados; en él se dio a conocer Weenjoy y el esquema de Negocios de WIN para que se incorporaran a la plataforma WIN.",
+          "content": "¡Entérate! Realizamos dos eventos el 10 y 29 de septiembre del 2018 en el Hotel Villa Montaña de Morelia Michoacán, para Activadores Líderes y Asociados; en él se dio a conocer Weenjoy y el esquema de Negocios de WIN para que se incorporaran a la plataforma WIN.",
           "date": "Septiembre del 2018",
           "images": {
             "main": "/img/news/kickoff_01.jpg",
@@ -422,7 +410,7 @@ export const state = () => ({
         },
         {
           "title": "WIN CONNECTION MLM",
-          "content": "El 27 de octubre del 2018, en el Centro Cultural Tres Marías, realizamos el lanzamiento de Vinculación de Negocios WIN y el arranque de la prueba piloto de Weenjoy en Morelia. Los Joyners, que fueron invitados por los Activadores Lideres y Asociados para formar parte de esta empresa. ¡Gracias por formar parte de este proyecto!",
+          "content": "El 27 de octubre del 2018, en el Centro Cultural y de Negocios Tres Marías, realizamos el lanzamiento de Vinculación de Negocios. Más de 300 personas fueron invitados por los Activadores Lideres y Pilares para convertirse en Joyners e integrarse a WIN. ¡Gracias por formar parte de este empresa!",
           "date": "27 de Octubre 2018",
           "images": {
             "main": "/img/news/connection_01.jpg",
@@ -435,42 +423,6 @@ export const state = () => ({
               '/img/news/connection_07.jpg',
               '/img/news/connection_08.jpg',
               '/img/news/connection_09.jpg',
-              '/img/news/connection_10.jpg',
-              '/img/news/connection_11.jpg',
-              '/img/news/connection_12.jpg',
-              '/img/news/connection_13.jpg',
-              '/img/news/connection_14.jpg',
-              '/img/news/connection_15.jpg',
-              '/img/news/connection_16.jpg',
-              '/img/news/connection_17.jpg',
-              '/img/news/connection_18.jpg',
-              '/img/news/connection_19.jpg',
-              '/img/news/connection_20.jpg',
-              '/img/news/connection_21.jpg',
-              '/img/news/connection_22.jpg',
-              '/img/news/connection_23.jpg',
-              '/img/news/connection_24.jpg',
-              '/img/news/connection_25.jpg',
-              '/img/news/connection_26.jpg',
-            ]
-          }
-        },
-        {
-          "title": "WIN WEEKS",
-          "content": "Las WIN Weeks son reuniones semanales en las que damos a conocer Weenjoy y WIN a prospectos de Joyners y Weenjoy Partners. Ofrecemos capacitación en temas diversos a todo el equipo respecto al seguimiento constante de su Red de Negocios y Organización de Joyners, así como resolver dudas, inquietudes y problemas informáticos. ¡Infórmate!",
-          "date": "12 de Diciembre 2018",
-          "images": {
-            "main": "/img/news/winweeks_01.jpg",
-            "landscape": "/img/news/winweeks_02.jpg",
-            "gallery": [
-              '/img/news/winweeks_03.jpg',
-              '/img/news/winweeks_04.jpg',
-              '/img/news/winweeks_05.jpg',
-              '/img/news/winweeks_06.jpg',
-              '/img/news/winweeks_07.jpg',
-              '/img/news/winweeks_08.jpg',
-              '/img/news/winweeks_09.jpg',
-              '/img/news/winweeks_09.jpg',
               '/img/news/winweeks_10.jpg',
               '/img/news/winweeks_11.jpg',
               '/img/news/winweeks_12.jpg',
@@ -488,6 +440,41 @@ export const state = () => ({
               '/img/news/winweeks_24.jpg',
               '/img/news/winweeks_25.jpg',
               '/img/news/winweeks_26.jpg',
+
+            ]
+          }
+        },
+        {
+          "title": "WIN WEEKS",
+          "content": "Las WIN Weeks son reuniones semanales en las que damos a conocer Weenjoy y WIN a prospectos de Joyners y Weenjoy Partners. Ofrecemos capacitación en temas diversos a todo el equipo respecto al seguimiento constante de su Red de Negocios y Organización de Joyners, así como resolver dudas e inquietudes. ¡Infórmate!",
+          "images": {
+            "main": "/img/news/winweeks_01.jpg",
+            "landscape": "/img/news/winweeks_02.jpg",
+            "gallery": [
+              '/img/news/winweeks_03.jpg',
+              '/img/news/winweeks_04.jpg',
+              '/img/news/winweeks_05.jpg',
+              '/img/news/winweeks_06.jpg',
+              '/img/news/winweeks_07.jpg',
+              '/img/news/winweeks_08.jpg',
+              '/img/news/winweeks_09.jpg',
+              '/img/news/connection_10.jpg',
+              '/img/news/connection_11.jpg',
+              '/img/news/connection_12.jpg',
+              '/img/news/connection_13.jpg',
+              '/img/news/connection_14.jpg',
+              '/img/news/connection_15.jpg',
+              '/img/news/connection_16.jpg',
+              '/img/news/connection_17.jpg',
+              '/img/news/connection_18.jpg',
+              '/img/news/connection_19.jpg',
+              '/img/news/connection_20.jpg',
+              '/img/news/connection_21.jpg',
+              '/img/news/connection_22.jpg',
+              '/img/news/connection_23.jpg',
+              '/img/news/connection_24.jpg',
+              '/img/news/connection_25.jpg',
+              '/img/news/connection_26.jpg',
             ]
           }
         }
@@ -534,7 +521,7 @@ export const state = () => ({
         "title": "WIN a diseñado",
         "subtitle": "un plan de trabajo fácil y poderoso",
         "content": `
-          <p>Activar a 6 negocios y con ello integrar a 3 Joyners Directos a tu equipo de trabajo. <em>6 Negocios y 3 Joyners</em> son números muy fáciles de alcanzar.</p>
+          <p>Activar a 6 Negocios y con ello integrar a 3 Joyners directos a tu equipo de trabajo. <em>6 Negocios y 3 Joyners</em> son números muy fáciles de alcanzar.</p>
         `,
       },
       "nivel1": {
@@ -559,12 +546,6 @@ export const state = () => ({
             "description": "DIRECTOS"
           },
           {
-            "img": "/img/joyners.svg",
-            "name": "JOYNERS",
-            "quantity": "3",
-            "description": "DIRECTOS"
-          },
-          {
             "img": "/img/ganancias.svg",
             "name": "GANANCIAS",
             "quantity": ".20%"
@@ -572,7 +553,7 @@ export const state = () => ({
         ]
       },
       "nivel2": {
-        "title": "Nivel #2",
+        "title": "Nivel #2 al #6",
         "subtitle": "Negocios Afiliados de manera indirecta",
         "content": `
           <p>WIN te pagará el 0.10% en cada nivel sobre el 100%
@@ -602,87 +583,93 @@ export const state = () => ({
       }
     },
 
-    "ambassadors": [{
-      "id": "lucy",
-      "name": "Lucy Ponce Ávila",
-      "position": "Embajadora",
-      "photo": "/img/embajadores/lucy_ponce/photo.jpg",
-      "url": "/perfiles/lucy",
-      "cv": {
-        "hero": {
-          "image": "/img/embajadores/lucy_ponce/hero.png",
-          "title": "Lucy Ponce Ávila",
-          "subtitle": "Embajadora WIN"
-        },
-        "about": {
-          "photo": "/img/embajadores/lucy_ponce/cv.png",
-          "title": "Conoce más",
-          "subtitle": "Lucy Ponce se ha dedicado a cambiar la vida de las personas.",
-          "content": `
-            <p>Para ello, ha apoyado la equidad de género y el empoderamiento de las mujeres; ya que, de acuerdo a muchas organizaciones a nivel internacional, para combatir la pobreza, es necesario que mujeres y niñas tengan mejores oportunidades en todos los ámbitos de la sociedad.</p> <br>
-            <p>Gracias al Congreso Internacional, Mujer y Poder, del cual es Fundadora y Presidenta, se busca que se generen las mismas circunstancias y se instauren los mismos beneficios para hombres y mujeres en las empresas.</p> <br>
-            <p>También preside la asociación Michoacán Conquista y la Asociación Internacional de Mujeres Empresarias, además de ser conferencista de la Cámara Internacional de Emprendedores (CAINEM).</p> <br>
-            <p>Con una gran capacidad de búsqueda de oportunidades para todos, a Lucy le apasiona viajar, ello hace que conozca más a fondo la vida de personas, en particular, mujeres, que tienen el deseo de crecer, emprender y sobresalir.</p>
-          `,
-        },
-        "phrase": "La pasión con la que vives tus sueños, es lo que determina el nivel de tu éxito",
-        "social": {
-          "thumbnail": "/img/embajadores/lucy_ponce/thumbnail.png",
-          "user": "/img/embajadores/lucy_ponce/user.png",
-          "networks": [{
-              "url": "https://www.facebook.com/marialucyponce",
-              "icon": "/img/social_icons/facebook.svg"
-            },
-            {
-              "url": "https://www.instagram.com/lucyponceavila",
-              "icon": "/img/social_icons/insta.svg"
-            }
-          ]
+    "ambassadors": {
+      "title": "Embajadores Weenjoy",
+      "description": `
+        <p><b>Nuestros Embajadores de Marca</b>, son personas excepcionales que a lo largo de sus trayectorias han tenido importantes logros que se alinean con los objetivos y propósitos de Weenjoy: <b>prosperidad, equidad, comunidad, crecimiento y desarrollo de los potenciales individuales</b>. ¡Conócelos!</p>
+      `,
+      "list": [{
+        "id": "lucy",
+        "name": "Lucy Ponce Ávila",
+        "position": "Embajadora",
+        "photo": "/img/embajadores/lucy_ponce/photo.jpg",
+        "url": "/perfiles/lucy",
+        "cv": {
+          "hero": {
+            "image": "/img/embajadores/lucy_ponce/hero.png",
+            "title": "Lucy Ponce Ávila",
+            "subtitle": "Embajadora WIN"
+          },
+          "about": {
+            "photo": "/img/embajadores/lucy_ponce/cv.png",
+            "title": "Conoce más",
+            "subtitle": "Lucy Ponce se ha dedicado a cambiar la vida de las personas.",
+            "content": `
+              <p>Para ello, ha apoyado la equidad de género y el empoderamiento de las mujeres; ya que, de acuerdo a muchas organizaciones a nivel internacional, para combatir la pobreza, es necesario que mujeres y niñas tengan mejores oportunidades en todos los ámbitos de la sociedad.</p> <br>
+              <p>Gracias al Congreso Internacional, Mujer y Poder, del cual es Fundadora y Presidenta, se busca que se generen las mismas circunstancias y se instauren los mismos beneficios para hombres y mujeres en las empresas.</p> <br>
+              <p>También preside la asociación Michoacán Conquista y la Asociación Internacional de Mujeres Empresarias, además de ser conferencista de la Cámara Internacional de Emprendedores (CAINEM).</p> <br>
+              <p>Con una gran capacidad de búsqueda de oportunidades para todos, a Lucy le apasiona viajar, ello hace que conozca más a fondo la vida de personas, en particular, mujeres, que tienen el deseo de crecer, emprender y sobresalir.</p>
+            `,
+          },
+          "phrase": "La pasión con la que vives tus sueños, es lo que determina el nivel de tu éxito",
+          "social": {
+            "thumbnail": "/img/embajadores/lucy_ponce/thumbnail.png",
+            "user": "/img/embajadores/lucy_ponce/user.png",
+            "networks": [{
+                "url": "https://www.facebook.com/marialucyponce",
+                "icon": "/img/social_icons/facebook.svg"
+              },
+              {
+                "url": "https://www.instagram.com/lucyponceavila",
+                "icon": "/img/social_icons/insta.svg"
+              }
+            ]
+          }
         }
-      }
+      },
+      {
+        "id": "ahmed",
+        "name": "Ahmed Ozsu",
+        "position": "Embajador WIN",
+        "photo": "/img/embajadores/ahmed_ozsu/photo.png",
+        "url": "/perfiles/ahmed",
+        "cv": {
+          "hero": {
+            "image": "/img/embajadores/ahmed_ozsu/hero.png",
+            "title": "Ahmed Ozsu",
+            "subtitle": "Embajador WIN"
+          },
+          "about": {
+            "photo": "/img/embajadores/ahmed_ozsu/cv.png",
+            "title": "Conoce más",
+            "subtitle": "Ahmed Ozsu se ha caracterizado por ser un gran emprendedor y agente de cambio.",
+            "content": `
+              <p>Ahmed tiene la motivación, pasión, creatividad y determinación para buscar soluciones sociales, ya sea en su comunidad, país o en el mundo.Fiel creyente del emprendimiento con visión social colectiva, siempre ha buscado generar una participación ciudadana más activa, así como una generación de beneficios para la ciudad de Morelia, el estado de Michoacán y México.</p> <br>
+              <p>Fundador de varias empresas y asociaciones civiles, donde destaca su visión y participación social como: Prefiero Local AC, Fundación México 2050 AC, Amor por Morelia AC, en el estado de Michoacán; siempre intentando promover, difundir y respetar la diversidad cultural, artística, y gastronómica de Michoacán y México, siendo un constante impulsor de este estado a través de sus emprendimientos, asociaciones civiles y trabajo como representante y vocal consejero ciudadano en distintas instancias e instituciones públicas, descentralizadas y ciudadanas sin fines de lucro.</p> <br>
+              <p>Actualmente se encuentra realizando nuevos proyectos con la meta de desarrollar fuertemente la parte socioeconómica de Michoacán a través de la investigación, desarrollo y aplicación de tecnología.</p>
+            `,
+          },
+          "phrase": "El emprendimiento con visión social es mi pasión",
+          "social": {
+            "thumbnail": "/img/embajadores/ahmed_ozsu/thumbnail.png",
+            "user": "/img/embajadores/ahmed_ozsu/user.png",
+            "networks": [{
+                "url": "https://www.facebook.com/ahmed.medina",
+                "icon": "/img/social_icons/facebook.svg"
+              },
+              {
+                "url": "https://twitter.com/ahmedozsu",
+                "icon": "/img/social_icons/twitter.svg"
+              },
+              {
+                "url": "https://www.instagram.com/ahmedozsu/ ",
+                "icon": "/img/social_icons/insta.svg"
+              }
+            ]
+          }
+        }
+      }]
     },
-    {
-      "id": "ahmed",
-      "name": "Ahmed Ozsu",
-      "position": "Embajador WIN",
-      "photo": "/img/embajadores/ahmed_ozsu/photo.png",
-      "url": "/perfiles/ahmed",
-      "cv": {
-        "hero": {
-          "image": "/img/embajadores/ahmed_ozsu/hero.png",
-          "title": "Ahmed Ozsu",
-          "subtitle": "Embajador WIN"
-        },
-        "about": {
-          "photo": "/img/embajadores/ahmed_ozsu/cv.png",
-          "title": "Conoce más",
-          "subtitle": "Ahmed Ozsu se ha caracterizado por ser un gran emprendedor y agente de cambio.",
-          "content": `
-            <p>Ahmed tiene la motivación, pasión, creatividad y determinación para buscar soluciones sociales, ya sea en su comunidad, país o en el mundo.Fiel creyente del emprendimiento con visión social colectiva, siempre ha buscado generar una participación ciudadana más activa, así como una generación de beneficios para la ciudad de Morelia, el estado de Michoacán y México.</p> <br>
-            <p>Fundador de varias empresas y asociaciones civiles, donde destaca su visión y participación social como: Prefiero Local AC, Fundación México 2050 AC, Amor por Morelia AC, en el estado de Michoacán; siempre intentando promover, difundir y respetar la diversidad cultural, artística, y gastronómica de Michoacán y México, siendo un constante impulsor de este estado a través de sus emprendimientos, asociaciones civiles y trabajo como representante y vocal consejero ciudadano en distintas instancias e instituciones públicas, descentralizadas y ciudadanas sin fines de lucro.</p> <br>
-            <p>Actualmente se encuentra realizando nuevos proyectos con la meta de desarrollar fuertemente la parte socioeconómica de Michoacán a través de la investigación, desarrollo y aplicación de tecnología.</p>
-          `,
-        },
-        "phrase": "El emprendimiento con visión social es mi pasión",
-        "social": {
-          "thumbnail": "/img/embajadores/ahmed_ozsu/thumbnail.png",
-          "user": "/img/embajadores/ahmed_ozsu/user.png",
-          "networks": [{
-              "url": "https://www.facebook.com/ahmed.medina",
-              "icon": "/img/social_icons/facebook.svg"
-            },
-            {
-              "url": "https://twitter.com/ahmedozsu",
-              "icon": "/img/social_icons/twitter.svg"
-            },
-            {
-              "url": "https://www.instagram.com/ahmedozsu/ ",
-              "icon": "/img/social_icons/insta.svg"
-            }
-          ]
-        }
-      }
-    }],
 
     "resources": {
       "hero": {

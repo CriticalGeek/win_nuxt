@@ -68,7 +68,7 @@
       </div>
     </section>
 
-    <section
+    <!-- <section
       class="partners"
       id="partners"
     >
@@ -86,7 +86,7 @@
         data-aos="fade-up"
         data-aos-duration="700"
       />
-    </section>
+    </section> -->
 
     <div
       class="gallery animated fadeIn"

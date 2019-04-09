@@ -1,10 +1,11 @@
 <template>
   <section class="ambassadors">
-    <div>
+    <div class="ambassadors__head">
       <h1
         data-aos="fade-up"
         data-aos-duration="700"
-      ><em>Embajadores Weenjoy</em></h1>
+      ><em>  {{ ambassadors_title }}  </em></h1>
+      <span v-html="ambassadors_description"></span>
     </div>
 
     <div class="ambassadors_wrapper">
@@ -31,7 +32,9 @@
   export default {
     data () {
       return {
-        ambassadors: this.$store.state.content.ambassadors,
+        ambassadors_title: this.$store.state.content.ambassadors.title,
+        ambassadors_description: this.$store.state.content.ambassadors.description,
+        ambassadors: this.$store.state.content.ambassadors.list,
       }
     }
   }
@@ -49,6 +52,12 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+
+  .ambassadors__head {
+    & > span p {
+      max-width: 1000px;
+    }
+  }
 
   .ambassadors_wrapper {
     margin-top: 50px;
