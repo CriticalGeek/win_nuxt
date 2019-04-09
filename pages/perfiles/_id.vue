@@ -31,7 +31,7 @@
       </div>
     </div>
 
-    <div class="profile__phrase">
+    <div class="profile__phrase--personal">
       <h4
         data-aos="fade-up"
         data-aos-duration="700"
@@ -65,6 +65,13 @@
         </a>
       </div>
     </div>
+
+    <div class="profile__phrase--weenjoy">
+      <h4
+        data-aos="fade-up"
+        data-aos-duration="700"
+      >{{ profile.cv.weenjoyPhrase }}</h4>
+    </div>
   </section>
 </template>
 
@@ -73,7 +80,7 @@
     data () {
       return {
         id: this.$route.params.id,
-        ambassadors: this.$store.state.content.ambassadors
+        ambassadors: this.$store.state.content.ambassadors.list
       }
     },
     computed: {
@@ -139,11 +146,20 @@
     }
   }
 
-  .profile__phrase {
+  %profile__phrase {
     @extend %s_color;
 
     padding: 100px var(--global_padding);
     text-align: center;
+  }
+
+  .profile__phrase--personal {
+    @extend %profile__phrase;
+  }
+
+  .profile__phrase--weenjoy {
+    @extend %profile__phrase;
+    background: #ff2d2d;
   }
 
   .profile__social {

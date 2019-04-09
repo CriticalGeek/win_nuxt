@@ -350,6 +350,12 @@ export const state = () => ({
         "photo": "/img/activadores/lilianaRuiz.png",
         "speach": "Weenjoy, economía colaborativa de alto sentido.",
         "position": "Activadora Lider"
+      },
+      {
+        "name": "Tere Ambriz",
+        "photo": "/img/activadores/tereAmbriz.png",
+        "speach": "Weenjoy es una oportunidad de crecimiento personal y estabilidad económica.",
+        "position": "Activadora Lider"
       }],
       "compensation_plan": {
         "title": "Plan de compensación",
@@ -612,6 +618,7 @@ export const state = () => ({
             `,
           },
           "phrase": "La pasión con la que vives tus sueños, es lo que determina el nivel de tu éxito",
+          "weenjoyPhrase": "Weenjoy, es más que una aplicación, es un modelo que va a mejorar la calidad de vida de las personas",
           "social": {
             "thumbnail": "/img/embajadores/lucy_ponce/thumbnail.png",
             "user": "/img/embajadores/lucy_ponce/user.png",
@@ -650,6 +657,7 @@ export const state = () => ({
             `,
           },
           "phrase": "El emprendimiento con visión social es mi pasión",
+          "weenjoyPhrase": "¡Si te vas a meter a bañar, salpica, yo creo que  eso, es precisamente lo que hace Weenjoy!",
           "social": {
             "thumbnail": "/img/embajadores/ahmed_ozsu/thumbnail.png",
             "user": "/img/embajadores/ahmed_ozsu/user.png",
