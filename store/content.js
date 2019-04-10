@@ -972,7 +972,7 @@ export const state = () => ({
           "title": "Llámanos",
           "url": "javascript: void(0)",
           "contact": [{
-              "name": `<p>Interior de la República <b>01 800 746 5697</b></p>`,
+              "name": `<p>Interior de la República <b>01 800 PINJOYS (746 5697)</b></p>`,
             },
             {
               "name": `<p>Morelia <b>(443) 340 69 44</b></p>`
