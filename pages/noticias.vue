@@ -88,6 +88,27 @@
       />
     </section> -->
 
+    <section class="events">
+      <h1
+        data-aos="fade-up"
+        data-aos-duration="700"
+      ><em>{{ events_title }}</em></h1>
+      <p
+        data-aos="fade-up"
+        data-aos-duration="700"
+      >{{ events_subtitle }}</p>
+
+      <div class="events__gallery">
+        <img
+          v-for="(img, index) in events_images"
+          :key="`event-${index}`"
+          :src="img"
+          data-aos="fade-up"
+          data-aos-duration="700"
+        >
+      </div>
+    </section>
+
     <div
       class="gallery animated fadeIn"
       @click="closeGallery"
@@ -159,6 +180,11 @@
         // partners
         partners_title: this.$store.state.content.news.partners.title,
         partners_subtitle: this.$store.state.content.news.partners.subtitle,
+
+        // Events
+        events_title: this.$store.state.content.news.events.title,
+        events_subtitle: this.$store.state.content.news.events.subtitle,
+        events_images: this.$store.state.content.news.events.images
       }
     }
   }
@@ -289,6 +315,31 @@
       height: 100%;
       width: 100%;
       object-fit: contain;
+    }
+  }
+}
+
+.events {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px var(--global_padding);
+
+  & > p {
+    max-width: 900px;
+  }
+
+  .events__gallery {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    & > img {
+      height: 200px;
+      object-fit: contain;
+      margin: 25px;
     }
   }
 }
