@@ -511,14 +511,13 @@ export const state = () => ({
       },
       "events": {
         "title": "Proximos Eventos",
-        "subtitle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, molestias repellat impedit doloribus eligendi provident dignissimos dolor dolore quam possimus dolorum ad omnis aliquam debitis illum molestiae. Culpa, omnis quibusdam?",
         "images": [
           "/img/events/connection_cdmx.png",
-          "/img/events/connection_gdl.png",
           "/img/events/connection_gto.png",
-          "/img/events/connection_mty.png",
-          "/img/events/connection_pue.png",
+          "/img/events/connection_gdl.png",
           "/img/events/connection_qro.png",
+          "/img/events/connection_pue.png",
+          "/img/events/connection_mty.png",
           "/img/events/connection_sal.png"
         ]
       }
