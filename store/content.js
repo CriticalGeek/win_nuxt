@@ -387,7 +387,7 @@ export const state = () => ({
         "name": "Lizbeth Delgado",
         "photo": "/img/highlighted/highlighted.png",
         "speach": "Weenjoy es una Red de Distribuidores donde todos pueden generar una mayor cantidad de ingresos, día a día con un residual extraordinario. ¡Compartir es vivir la vida!",
-        "position": "Activadora Lider",
+        "position": "Activadora Asociada",
         "texture": "/img/textures/fondo_03.svg"
       }
     },
@@ -629,8 +629,8 @@ export const state = () => ({
               <p>Con una gran capacidad de búsqueda de oportunidades para todos, a Lucy le apasiona viajar, ello hace que conozca más a fondo la vida de personas, en particular, mujeres, que tienen el deseo de crecer, emprender y sobresalir.</p>
             `,
           },
-          "phrase": "La pasión con la que vives tus sueños, es lo que determina el nivel de tu éxito",
-          "weenjoyPhrase": "Weenjoy, es más que una aplicación, es un modelo que va a mejorar la calidad de vida de las personas",
+          "phrase": "``La pasión con la que vives tus sueños, es lo que determina el nivel de tu éxito''",
+          "weenjoyPhrase": "``Weenjoy, es más que una aplicación, es un modelo que va a mejorar la calidad de vida de las personas''",
           "social": {
             "thumbnail": "/img/embajadores/lucy_ponce/thumbnail.png",
             "user": "/img/embajadores/lucy_ponce/user.png",
@@ -668,8 +668,8 @@ export const state = () => ({
               <p>Actualmente se encuentra realizando nuevos proyectos con la meta de desarrollar fuertemente la parte socioeconómica de Michoacán a través de la investigación, desarrollo y aplicación de tecnología.</p>
             `,
           },
-          "phrase": "El emprendimiento con visión social es mi pasión",
-          "weenjoyPhrase": "¡Si te vas a meter a bañar, salpica, yo creo que  eso, es precisamente lo que hace Weenjoy!",
+          "phrase": "``El emprendimiento con visión social es mi pasión''",
+          "weenjoyPhrase": "``¡Si te vas a meter a bañar, salpica, yo creo que  eso, es precisamente lo que hace Weenjoy!''",
           "social": {
             "thumbnail": "/img/embajadores/ahmed_ozsu/thumbnail.png",
             "user": "/img/embajadores/ahmed_ozsu/user.png",
@@ -719,7 +719,7 @@ export const state = () => ({
         {
           "background": "/img/folleto_04.png",
           "title": "INFO CONTABLE",
-          "pdf": "/pdf/Info_contable_R5_14marzo_2019.pdf",
+          "pdf": "/pdf/Info_contable_R5_04abril_2019.pdf",
           "action": "DESCARGAR"
         }],
       },
@@ -963,7 +963,7 @@ export const state = () => ({
 
     "contact": {
       "hero": {
-        "title": `<h1><em>Centro de Atención Weenjoy</em></h1>`,
+        "title": `<h1><em>Atención Weenjoy</em></h1>`,
         "content": `<p>¿Tienes dudas? Contáctanos para conocer más sobre nuestro Sistema de Activación de Negocios</p>`,
         "background": "/img/hero_04.png"
       },
@@ -1024,7 +1024,7 @@ export const state = () => ({
         {
           "name": "Weenjoy Colombia",
           "icon": "/img/contact_icons/ciudades_03.svg",
-          "address": `<p>Torre Protección, Carrera 43A <br> 1 - 50, Torre 1, Piso 6, Oficina 652</p>`
+          "address": `<p>Torre Protección, Carrera 43A <br> 1 - 50, Torre 1, Piso 6, Oficina 652, Medellín, Antq. Col.</p>`
         }
       ]
     }

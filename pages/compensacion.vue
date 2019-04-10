@@ -515,6 +515,29 @@ table {
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1024px) {
+  .nivel1__intro img,
+  .nivel1__plan > img,
+  .nivel2__intro img,
+  .nivel2__table > img {
+    display: none;
+  }
+
+  .nivel1__intro__title,
+  .nivel2__intro__title {
+    width: 100% !important;
+  }
+
+  .nivel1__content,
+  .nivel1__plan,
+  .nivel2__content,
+  .nivel2__table {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .nivel2__table {
+    overflow-x: scroll;
+  }
 }
 </style>

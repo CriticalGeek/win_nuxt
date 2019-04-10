@@ -36,6 +36,10 @@
         data-aos="fade-up"
         data-aos-duration="700"
       >{{ profile.cv.phrase }}</h4>
+      <p
+        data-aos="fade-up"
+        data-aos-duration="700"
+      >- {{ profile.name }} -</p>
     </div>
 
     <div class="profile__social">
@@ -71,6 +75,10 @@
         data-aos="fade-up"
         data-aos-duration="700"
       >{{ profile.cv.weenjoyPhrase }}</h4>
+      <p
+        data-aos="fade-up"
+        data-aos-duration="700"
+      >- {{ profile.name }} -</p>
     </div>
   </section>
 </template>
