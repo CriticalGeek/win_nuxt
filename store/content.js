@@ -421,31 +421,30 @@ export const state = () => ({
             "main": require("~/assets/img/news/connection_01.jpg"),
             "landscape": require("~/assets/img/news/connection_02.jpg"),
             "gallery": [
-              '/img/news/connection_03.jpg',
-              '/img/news/connection_04.jpg',
-              '/img/news/connection_05.jpg',
-              '/img/news/connection_06.jpg',
-              '/img/news/connection_07.jpg',
-              '/img/news/connection_08.jpg',
-              '/img/news/connection_09.jpg',
-              '/img/news/winweeks_10.jpg',
-              '/img/news/winweeks_11.jpg',
-              '/img/news/winweeks_12.jpg',
-              '/img/news/winweeks_13.jpg',
-              '/img/news/winweeks_14.jpg',
-              '/img/news/winweeks_15.jpg',
-              '/img/news/winweeks_16.jpg',
-              '/img/news/winweeks_17.jpg',
-              '/img/news/winweeks_18.jpg',
-              '/img/news/winweeks_19.jpg',
-              '/img/news/winweeks_20.jpg',
-              '/img/news/winweeks_21.jpg',
-              '/img/news/winweeks_22.jpg',
-              '/img/news/winweeks_23.jpg',
-              '/img/news/winweeks_24.jpg',
-              '/img/news/winweeks_25.jpg',
-              '/img/news/winweeks_26.jpg',
-
+              require('~/assets/img/news/connection_03.jpg'),
+              require('~/assets/img/news/connection_04.jpg'),
+              require('~/assets/img/news/connection_05.jpg'),
+              require('~/assets/img/news/connection_06.jpg'),
+              require('~/assets/img/news/connection_07.jpg'),
+              require('~/assets/img/news/connection_08.jpg'),
+              require('~/assets/img/news/connection_09.jpg'),
+              require('~/assets/img/news/winweeks_10.jpg'),
+              require('~/assets/img/news/winweeks_11.jpg'),
+              require('~/assets/img/news/winweeks_12.jpg'),
+              require('~/assets/img/news/winweeks_13.jpg'),
+              require('~/assets/img/news/winweeks_14.jpg'),
+              require('~/assets/img/news/winweeks_15.jpg'),
+              require('~/assets/img/news/winweeks_16.jpg'),
+              require('~/assets/img/news/winweeks_17.jpg'),
+              require('~/assets/img/news/winweeks_18.jpg'),
+              require('~/assets/img/news/winweeks_19.jpg'),
+              require('~/assets/img/news/winweeks_20.jpg'),
+              require('~/assets/img/news/winweeks_21.jpg'),
+              require('~/assets/img/news/winweeks_22.jpg'),
+              require('~/assets/img/news/winweeks_23.jpg'),
+              require('~/assets/img/news/winweeks_24.jpg'),
+              require('~/assets/img/news/winweeks_25.jpg'),
+              require('~/assets/img/news/winweeks_26.jpg'),
             ]
           }
         },
@@ -456,30 +455,30 @@ export const state = () => ({
             "main": require("~/assets/img/news/winweeks_01.jpg"),
             "landscape": require("~/assets/img/news/winweeks_02.jpg"),
             "gallery": [
-              '/img/news/winweeks_03.jpg',
-              '/img/news/winweeks_04.jpg',
-              '/img/news/winweeks_05.jpg',
-              '/img/news/winweeks_06.jpg',
-              '/img/news/winweeks_07.jpg',
-              '/img/news/winweeks_08.jpg',
-              '/img/news/winweeks_09.jpg',
-              '/img/news/connection_10.jpg',
-              '/img/news/connection_11.jpg',
-              '/img/news/connection_12.jpg',
-              '/img/news/connection_13.jpg',
-              '/img/news/connection_14.jpg',
-              '/img/news/connection_15.jpg',
-              '/img/news/connection_16.jpg',
-              '/img/news/connection_17.jpg',
-              '/img/news/connection_18.jpg',
-              '/img/news/connection_19.jpg',
-              '/img/news/connection_20.jpg',
-              '/img/news/connection_21.jpg',
-              '/img/news/connection_22.jpg',
-              '/img/news/connection_23.jpg',
-              '/img/news/connection_24.jpg',
-              '/img/news/connection_25.jpg',
-              '/img/news/connection_26.jpg',
+              require('~/assets/img/news/winweeks_03.jpg'),
+              require('~/assets/img/news/winweeks_04.jpg'),
+              require('~/assets/img/news/winweeks_05.jpg'),
+              require('~/assets/img/news/winweeks_06.jpg'),
+              require('~/assets/img/news/winweeks_07.jpg'),
+              require('~/assets/img/news/winweeks_08.jpg'),
+              require('~/assets/img/news/winweeks_09.jpg'),
+              require('~/assets/img/news/connection_10.jpg'),
+              require('~/assets/img/news/connection_11.jpg'),
+              require('~/assets/img/news/connection_12.jpg'),
+              require('~/assets/img/news/connection_13.jpg'),
+              require('~/assets/img/news/connection_14.jpg'),
+              require('~/assets/img/news/connection_15.jpg'),
+              require('~/assets/img/news/connection_16.jpg'),
+              require('~/assets/img/news/connection_17.jpg'),
+              require('~/assets/img/news/connection_18.jpg'),
+              require('~/assets/img/news/connection_19.jpg'),
+              require('~/assets/img/news/connection_20.jpg'),
+              require('~/assets/img/news/connection_21.jpg'),
+              require('~/assets/img/news/connection_22.jpg'),
+              require('~/assets/img/news/connection_23.jpg'),
+              require('~/assets/img/news/connection_24.jpg'),
+              require('~/assets/img/news/connection_25.jpg'),
+              require('~/assets/img/news/connection_26.jpg'),
             ]
           }
         }
@@ -769,14 +768,14 @@ export const state = () => ({
             <p><strong>¿Cuáles son los 4 pasos que debes seguir para armar tu Red de Negocios?</strong></p> <br>
             <p>Los pasos se desarrollan por medio de un proceso conocido como JOIN (antes VACA). Este es un sistema mediante el cual se activarán los Negocios de tus amigos o familiares para que ingresen y se conviertan en Weenjoy Partners.</p>
             <p>J=Job / Trabajo: Es el primer paso del proceso que te permitirá tener una reunión inicial con la persona que toma las decisiones del Negocio o Empresa. El objetivo de este acercamiento es que generes interés en el dueño sobre Weenjoy y lo convenzas de los beneficios de pertenecer a esta comunidad.</p>
-            <img src=require("~/assets/img/entries/02/job.jpg" alt="Job">)
+            <img src="${require('~/assets/img/entries/02/job.jpg')}" alt="Job">
             <p>O=Operate / Opera: Ya que convenciste y lograste el sí de tus Negocios, lo que sigue es acompañarlo en su proceso de alta. Estos pasos los debe de hacer directamente el dueño del Negocio (Weenjoy Partner) ingresando a weenjoy.com. El dueño del Negocio deberá verificarte como Joyner (Activador) y generar su cuenta en Weenjoy.</p>
-            <img src=require("~/assets/img/entries/02/operate.png" alt="Operate">)
+            <img src="${require('~/assets/img/entries/02/operate.png')}" alt="Operate">
             <p>I=Inspire / Capacita: Dentro del proceso JOIN la capacitación es la parte más importante y es aquí donde tú como Joyner (Activador) deberás dedicar la mayor atención y enfoque con tus Negocios para que juntos ganen con Weenjoy.</p>
-            <img src=require("~/assets/img/entries/02/inspire.jpg" alt="Inspire">)
+            <img src="${require('~/assets/img/entries/02/inspire.jpg')}" alt="Inspire">
             <p>La capacitación a los Negocios y empleados es importante porque de ellos dependerá la adecuada funcionalidad de la APP de Weenjoy con los usuarios.</p>
             <p>N=Notify / Notifica: En este último paso, tu objetivo es dar acompañamiento para asegurar la calidad y servicio del funcionamiento de la APP en pro de los beneficios de la empresa y los usuarios.</p>
-            <img src=require("~/assets/img/entries/02/notify.jpg" alt="Notify">)
+            <img src="${require('~/assets/img/entries/02/notify.jpg')}" alt="Notify">
             <p>No olvides invitar a tus amigos que ya tengan la APP a consumir en los Negocios que tú afiliaste, así ¡todos ganan!</p>
           `,
           "url": "/entradas/contigo"
@@ -788,11 +787,11 @@ export const state = () => ({
           "thumbnail": require("~/assets/img/entries/03/thumbnail.jpg"),
           "entry": `
             <p>L=Look / Busca: Tendrás que ser muy específico en el perfil de tus 3 Joyners, invita a amigos y conocidos que de preferencia tengan experiencia en redes de mercadeo o que conozcan a dueños de Negocios.</p>
-            <img src=require("~/assets/img/entries/03/look.jpg" alt="placeholder">)
+            <img src=${require("~/assets/img/entries/03/look.jpg")} alt="placeholder">
             <p>IN=Integrate / Integrar: Comienza a armar tu Organización de Joyners, apóyalos en su capacitación y certificación para que replique el plan 6x3. Recuerda que por cada 2 negocios que afilies, tienes derecho a invitar a un nuevo Joyner.</p>
-            <img src=require("~/assets/img/entries/03/integrate.jpg" alt="placeholder">)
+            <img src=${require("~/assets/img/entries/03/integrate.jpg")} alt="placeholder">
             <p>K=Keep / Mantener: Es muy importante que hagas un seguimiento de tu Red de Negocios y tu Organización de Joyners para que los ayudes con dudas, pero sobre todo para que mantengas tu red generando ingresos residuales exponenciales.</p>
-            <img src=require("~/assets/img/entries/03/keep.jpg" alt="Keep">)
+            <img src=${require("~/assets/img/entries/03/keep.jpg")} alt="Keep">
             <p>Tienes un portal aquí, dentro de la plataforma WIN, que te ayudará a tener más orden y visualizar tus avances.</p>
             <ul>
               <li>Puedes crear equipo con otras personas para que ellos hagan lo mismo que tú y que también ganen de los negocios afiliados por ellos, siguiendo el proceso LINK.</li>
