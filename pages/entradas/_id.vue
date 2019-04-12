@@ -5,18 +5,13 @@
         <img :src="post.thumbnail">
         <div class="header__text">
           <span>
-            <h3
-              data-aos="fade-left"
-              data-aos-duration="700"
-            ><em>{{ post.title }}</em></h3>
+            <h3><em>{{ post.title }}</em></h3>
           </span>
         </div>
       </div>
       <div
         class="content"
         v-html="post.entry"
-        data-aos="fade-right"
-        data-aos-duration="700"
       ></div>
     </article>
 
