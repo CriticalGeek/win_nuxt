@@ -2,7 +2,7 @@ export const state = () => ({
     "fab": "¡Actívate!",
 
     "navbar": {
-      "logo": "/img/WIN_logo_white.png",
+      "logo": require("~/assets/img/WIN_logo_white.png"),
       "action": "INICIAR SESIÓN",
       "actionURL": "/login",
       "menuIcon": "/img/menu-icon.svg"
@@ -35,15 +35,15 @@ export const state = () => ({
         }
       ],
       "social": [{
-          "icon": "/img/social_icons/facebook.svg",
+          "icon": require("~/assets/img/social_icons/facebook.svg"),
           "url": "https://www.facebook.com/WIN.WeenjoyIntelligentNetwork"
         },
         {
-          "icon": "/img/social_icons/twitter.svg",
+          "icon": require("~/assets/img/social_icons/twitter.svg"),
           "url": "https://twitter.com/WINWeenjoy"
         },
         {
-          "icon": "/img/social_icons/weenjoy.svg",
+          "icon": require("~/assets/img/social_icons/weenjoy.svg"),
           "url": "https://www.weenjoy.com/"
         }
       ]
@@ -67,17 +67,17 @@ export const state = () => ({
           "url": "/recursos#faqs"
         }
       ],
-      "logo": "/img/WIN_logo_white.png",
+      "logo": require("~/assets/img/WIN_logo_white.png"),
       "social": [{
-          "icon": "/img/social_icons/facebook.svg",
+          "icon": require("~/assets/img/social_icons/facebook.svg"),
           "url": "https://www.facebook.com/WIN.WeenjoyIntelligentNetwork"
         },
         {
-          "icon": "/img/social_icons/twitter.svg",
+          "icon": require("~/assets/img/social_icons/twitter.svg"),
           "url": "https://twitter.com/WINWeenjoy"
         },
         {
-          "icon": "/img/social_icons/weenjoy.svg",
+          "icon": require("~/assets/img/social_icons/weenjoy.svg"),
           "url": "https://www.weenjoy.com/"
         }
       ],
@@ -115,40 +115,40 @@ export const state = () => ({
             <span data-aos="fade" data-aos-delay="3000">¡Afilia a Personas y Negocios para impulsar tu economía! Vincula Negocios en Weenjoy y</span>
             <em data-aos="fade-up" data-aos-delay="1800">genera ingresos adicionales</em>
             <span data-aos="fade" data-aos-delay="3000">de manera fácil, rápida y segura.</span></p>`,
-        "background": "/img/hero_01.png"
+        "background": require("~/assets/img/hero_01.png")
       },
       "section1": {
         "circles": [{
-            "img": "/img/circles_01.jpg"
+            "img": require("~/assets/img/circles_01.jpg")
           },
           {
-            "img": "/img/circles_02.jpg"
+            "img": require("~/assets/img/circles_02.jpg")
           },
           {
-            "img": "/img/circles_03.jpg"
+            "img": require("~/assets/img/circles_03.jpg")
           },
           {
-            "img": "/img/circles_04.jpg"
+            "img": require("~/assets/img/circles_04.jpg")
           },
           {
-            "img": "/img/circles_05.jpg"
+            "img": require("~/assets/img/circles_05.jpg")
           },
           {
-            "img": "/img/circles_06.jpg"
+            "img": require("~/assets/img/circles_06.jpg")
           },
           {
-            "img": "/img/circles_07.jpg"
+            "img": require("~/assets/img/circles_07.jpg")
           }
         ],
         "title": "¿Cuántas vidas quieres cambiar hoy?",
         "subtitle": "Estás en el lugar adecuado.",
         "content": "WIN es el Sistema de Vinculación de Negocios a Weenjoy, basado en un exitoso modelo de apalancamiento en red, donde obtienes ganancias residuales y exponenciales por apalancarte en otros Joyners como tú, para que, en conjunto, inviten a Negocios a esta gran comunidad.",
-        "texture": "/img/textures/fondo_01.svg"
+        "texture": require("~/assets/img/textures/fondo_01.svg")
       },
       "section2": {
         "title": "WIN",
         "subtitle": "SUCCESS STORIES",
-        "background": "/img/success_background.jpg",
+        "background": require("~/assets/img/success_background.jpg"),
         "content": `
           <p>¡Conoce a los Joyners que están cambiando al mundo!</p> <br>
           <p>Trabajamos con personas que se atreven a cambiar el rumbo de la economía en su Comunidad.</p> <br>
@@ -177,12 +177,12 @@ export const state = () => ({
         "title": "4 principios fundamentales",
         "content": "Lo más valioso de WIN es que te permite generar de manera muy fácil un ingreso continuo, constante y que con el tiempo puede incrementarse.",
         "action": "Ver más",
-        "texture": "/img/textures/fondo_02.svg",
+        "texture": require("~/assets/img/textures/fondo_02.svg"),
         "principles": [{
             "name": "Principio #1",
             "description": "Ingresos Residuales",
-            "icon": "/img/principio_01.png",
-            "background": "/img/principio_01-background.png",
+            "icon": require("~/assets/img/principio_01.png"),
+            "background": require("~/assets/img/principio_01-background.png"),
             "content": `
               <p>En los trabajos tradicionales y comunes, intercambias tu tiempo por dinero (quincena, honorarios, etc.) por eso a este tipo de ingresos se les llaman lineales.</p> <br>
               <p>En cambio, en los ingresos residuales, realizas un trabajo una sola vez y él mismo te reportará un flujo continuo de ganancias que se prolonga y puede perpetuarse con el tiempo.</p> <br>
@@ -193,8 +193,8 @@ export const state = () => ({
           {
             "name": "Principio #2",
             "description": "Apalancamiento en personas",
-            "icon": "/img/principio_02.png",
-            "background": "/img/principio_02-background.png",
+            "icon": require("~/assets/img/principio_02.png"),
+            "background": require("~/assets/img/principio_02-background.png"),
             "content": `
               <p>Quienes obtienen INGRESOS RESIDUALES se apalancan en personas, que al no ser tus empleados no te cuestan. Como ellos también son dueños de su propio Negocio, ponen el mismo interés y entusiasmo que tú en hacerlo crecer y al no ser comisionistas no hay competencia.</p> <br>
               <p>Este modelo de apalancamiento en personas busca que a ti te vaya bien porque <b>en la medida que tú ganes, ganan ellos también.</b></p>
@@ -203,8 +203,8 @@ export const state = () => ({
           {
             "name": "Principio #3",
             "description": "Modelo de crecimiento exponencial",
-            "icon": "/img/principio_03.png",
-            "background": "/img/principio_03-background.png",
+            "icon": require("~/assets/img/principio_03.png"),
+            "background": require("~/assets/img/principio_03-background.png"),
             "content": `
               <p>En WIN te apalancarás en el talento y trabajo de cientos de Joyners (Activadores), aunque tú solamente integres a tres conocidos.</p>
             `
@@ -212,8 +212,8 @@ export const state = () => ({
           {
             "name": "Principio #4",
             "description": "Sistema fácil y replicable",
-            "icon": "/img/principio_04.png",
-            "background": "/img/principio_04-background.png",
+            "icon": require("~/assets/img/principio_04.png"),
+            "background": require("~/assets/img/principio_04-background.png"),
             "content": `
               <p>Al tener estos beneficios, serás el portavoz para difundir la buena noticia de Weenjoy a todas las personas.</p>
             `
@@ -224,25 +224,24 @@ export const state = () => ({
         "title": "Así como ellos,",
         "subtitle": "Conoce, actívate y genera",
         "content": "No tienes nada que perder y si mucho que ganar",
-        "background": "/img/activate_background.png",
         "action": "ACTÍVATE",
         "images": [{
-            "url": "/img/activate-down-01.png"
+            "url": require("~/assets/img/activate-down-01.png")
           },
           {
-            "url": "/img/activate-down-02.png"
+            "url": require("~/assets/img/activate-down-02.png")
           },
           {
-            "url": "/img/activate-down-03.png"
+            "url": require("~/assets/img/activate-down-03.png")
           },
           {
-            "url": "/img/activate-up-01.png"
+            "url": require("~/assets/img/activate-up-01.png")
           },
           {
-            "url": "/img/activate-up-02.png"
+            "url": require("~/assets/img/activate-up-02.png")
           },
           {
-            "url": "/img/activate-up-03.png"
+            "url": require("~/assets/img/activate-up-03.png")
 
         }]
       },
@@ -287,73 +286,73 @@ export const state = () => ({
       ],
       "activator_carousel": [{
         "name": "Germán Zamacona",
-        "photo": "/img/activadores/germanZamacona.png",
+        "photo": require("~/assets/img/activadores/germanZamacona.png"),
         "speach": "Cuando no te guste lo que pasa disrumpe y crea, lo que a tus ojos es correcto.",
         "position": "Activador Líder"
       },
       {
         "name": "Tere Medina",
-        "photo": "/img/activadores/tereMedina.png",
+        "photo": require("~/assets/img/activadores/tereMedina.png"),
         "speach": "Para mí, Weenjoy es compartir oportunidades, ya que este es un gran movimiento que activará la economía de nuestro país.",
         "position": "Activadora Líder"
       },
       {
         "name": "Roberto Martínez",
-        "photo": "/img/activadores/robertoMartinez.png",
+        "photo": require("~/assets/img/activadores/robertoMartinez.png"),
         "speach": "Weenjoy es la solución más impactante e innovadora del futuro para solucionar la economía de las personas.",
         "position": "Asesor General Weenjoy"
       },
       {
         "name": "Octavio Rincón",
-        "photo": "/img/activadores/octavioRincon.png",
+        "photo": require("~/assets/img/activadores/octavioRincon.png"),
         "speach": "Weenjoy viene a responder al reto de innovar de manera impactante en la economía a todos los niveles sociales, realmente una solución revolucionaria.",
         "position": "Asesor de T.I. Weenjoy"
       },
       {
         "name": "Nacho Pérez",
-        "photo": "/img/activadores/nachoPerez.png",
+        "photo": require("~/assets/img/activadores/nachoPerez.png"),
         "speach": "La innovación es lo de hoy.",
         "position": "Activador Líder"
       },
       {
         "name": "Karla Lijermark",
-        "photo": "/img/activadores/karlaLijermark.png",
+        "photo": require("~/assets/img/activadores/karlaLijermark.png"),
         "speach": "Tu destino lo decides tú.",
         "position": "Activadora Líder"
       },
       {
         "name": "Domingo Ruiz",
-        "photo": "/img/activadores/domingoRuiz.png",
+        "photo": require("~/assets/img/activadores/domingoRuiz.png"),
         "speach": "Weenjoy es un vehículo innovador a favor de la distribución de la riqueza al conectar necesidades y soluciones a través de medios digitales.",
         "position": "Asesor Fiscal y Legal Weenjoy"
       },
       {
         "name": "Estefania Cortina",
-        "photo": "/img/activadores/estefaniaCortina.png",
+        "photo": require("~/assets/img/activadores/estefaniaCortina.png"),
         "speach": "Con Weenjoy sabemos lo que queremos y lo vamos a obtener, nada nos va a detener.",
         "position": "Joyner"
       },
       {
         "name": "Enrique Chávez",
-        "photo": "/img/activadores/enriqueChavez.png",
+        "photo": require("~/assets/img/activadores/enriqueChavez.png"),
         "speach": "Si el dinero está en tu cabeza, Weenjoy lo pondrá en tus manos.",
         "position": "BPA"
       },
       {
         "name": "Gerardo Guzmán",
-        "photo": "/img/activadores/gerardoGuzman.png",
+        "photo": require("~/assets/img/activadores/gerardoGuzman.png"),
         "speach": "Weenjoy es la forma de transformar el mundo económicamente a través de una comunidad sustentable y cooperativa.",
         "position": "BPA"
       },
       {
         "name": "Liliana Ruíz Montenegro",
-        "photo": "/img/activadores/lilianaRuiz.png",
+        "photo": require("~/assets/img/activadores/lilianaRuiz.png"),
         "speach": "Weenjoy, economía colaborativa de alto sentido.",
         "position": "Activadora Lider"
       },
       {
         "name": "Tere Ambriz",
-        "photo": "/img/activadores/tereAmbriz.png",
+        "photo": require("~/assets/img/activadores/tereAmbriz.png"),
         "speach": "Weenjoy es una oportunidad de crecimiento personal y estabilidad económica.",
         "position": "Activadora Lider"
       }],
@@ -369,8 +368,8 @@ export const state = () => ({
               <p>WIN te pagará el 0.20% sobre el 100% de los ingresos que los Negocios Activos en la plataforma Weenjoy, hayan obtenido mensualmente derivados por las compras y/o consumos de los usuarios de Weenjoy. Puede llegar a ser del 0.30 % en el caso de cadenas * . </p>
               <p>0.20% al 0.30% de tus primeros 6 Negocios.</p>
             `,
-            "background": "/img/level_1.jpg",
-            "icon": "/img/level_1-ico.png"
+            "background": require("~/assets/img/level_1.jpg"),
+            "icon": require("~/assets/img/level_1-ico.png")
           },
           {
             "title": "Nivel #2 al #6",
@@ -378,17 +377,17 @@ export const state = () => ({
             "content": `
               <p>Te pagará el 0.10% en cada nivel sobre el 100% de los ingresos que los Negocios Activos en la plataforma Weenjoy, hayan obtenido mensualmente derivados por las compras y/o consumos de los usuarios de Weenjoy.</p>
             `,
-            "background": "/img/level_2.jpg",
-            "icon": "/img/level_2-ico.png"
+            "background": require("~/assets/img/level_2.jpg"),
+            "icon": require("~/assets/img/level_2-ico.png")
           }
         ]
       },
       "highlighted_activator": {
         "name": "Lizbeth Delgado",
-        "photo": "/img/highlighted/highlighted.png",
+        "photo": require("~/assets/img/highlighted/highlighted.png"),
         "speach": "Weenjoy es una Red de Distribuidores donde todos pueden generar una mayor cantidad de ingresos, día a día con un residual extraordinario. ¡Compartir es vivir la vida!",
         "position": "Activadora Asociada",
-        "texture": "/img/textures/fondo_03.svg"
+        "texture": require("~/assets/img/textures/fondo_03.svg")
       }
     },
 
@@ -398,10 +397,10 @@ export const state = () => ({
         "content": `
           <p data-aos="fade">Somos WIN y nos gusta trabajar en equipo para beneficiar a toda una <em>gran comunidad.</em></p>
         `,
-        "background": "/img/hero_02.png"
+        "background": require("~/assets/img/hero_02.png")
       },
       "news_banner": {
-        "icon": "/img/WIN_logo_dark.png",
+        "icon": require("~/assets/img/WIN_logo_dark.png"),
         "title": "Eventos especiales WIN",
         "content": "Crecemos día con día y nos interesa que estés informado de los acontecimientos."
       },
@@ -410,8 +409,8 @@ export const state = () => ({
           "content": "¡Entérate! Realizamos dos eventos el 10 y 29 de septiembre del 2018 en el Hotel Villa Montaña de Morelia Michoacán, para Activadores Líderes y Asociados; en él se dio a conocer Weenjoy y el esquema de Negocios de WIN para que se incorporaran a la plataforma WIN.",
           "date": "Septiembre del 2018",
           "images": {
-            "main": "/img/news/kickoff_01.jpg",
-            "landscape": "/img/news/kickoff_02.jpg"
+            "main": require("~/assets/img/news/kickoff_01.jpg"),
+            "landscape": require("~/assets/img/news/kickoff_02.jpg")
           }
         },
         {
@@ -419,8 +418,8 @@ export const state = () => ({
           "content": "El 27 de octubre del 2018, en el Centro Cultural y de Negocios Tres Marías, realizamos el lanzamiento de Vinculación de Negocios. Más de 300 personas fueron invitados por los Activadores Lideres y Pilares para convertirse en Joyners e integrarse a WIN. ¡Gracias por formar parte de este empresa!",
           "date": "27 de Octubre 2018",
           "images": {
-            "main": "/img/news/connection_01.jpg",
-            "landscape": "/img/news/connection_02.jpg",
+            "main": require("~/assets/img/news/connection_01.jpg"),
+            "landscape": require("~/assets/img/news/connection_02.jpg"),
             "gallery": [
               '/img/news/connection_03.jpg',
               '/img/news/connection_04.jpg',
@@ -454,8 +453,8 @@ export const state = () => ({
           "title": "WIN WEEKS",
           "content": "Las WIN Weeks son reuniones semanales en las que damos a conocer Weenjoy y WIN a prospectos de Joyners y Weenjoy Partners. Ofrecemos capacitación en temas diversos a todo el equipo respecto al seguimiento constante de su Red de Negocios y Organización de Joyners, así como resolver dudas e inquietudes. ¡Infórmate!",
           "images": {
-            "main": "/img/news/winweeks_01.jpg",
-            "landscape": "/img/news/winweeks_02.jpg",
+            "main": require("~/assets/img/news/winweeks_01.jpg"),
+            "landscape": require("~/assets/img/news/winweeks_02.jpg"),
             "gallery": [
               '/img/news/winweeks_03.jpg',
               '/img/news/winweeks_04.jpg',
@@ -489,22 +488,22 @@ export const state = () => ({
         "title": "¡Gracias por tu confianza!",
         "subtitle": "Nuestros Weenjoy Partners satisfechos",
         "list": [{
-          "logo": "/img/partners/tata.jpg",
+          "logo": require("~/assets/img/partners/tata.jpg"),
           "speach": "Si te vas a meter a bañar, salpica, creemos que eso es precisamente lo que hace WEENJOY, y cambiará el mundo.",
           "name": "Tata Mezcaleria"
         },
         {
-          "logo": "/img/partners/creditcar.jpg",
+          "logo": require("~/assets/img/partners/creditcar.jpg"),
           "speach": "WEENJOY es una idea disruptiva, tecnológica, con una gran dimensión social donde todos se benefician económicamente.",
           "name": "Creditcar"
         },
         {
-          "logo": "/img/partners/leomar.jpg",
+          "logo": require("~/assets/img/partners/leomar.jpg"),
           "speach": "Weenjoy es una APP totalmente revolucionaria que va a cambiar la manera de hacer negocios.",
           "name": "Grupo Leomar"
         },
         {
-          "logo": "/img/partners/colchas_camelinas.jpg",
+          "logo": require("~/assets/img/partners/colchas_camelinas.jpg"),
           "speach": "Con WEENJOY incrementaremos nuestras ventas.",
           "name": "Colchas Camelinas"
         }]
@@ -512,13 +511,13 @@ export const state = () => ({
       "events": {
         "title": "Proximos Eventos",
         "images": [
-          "/img/events/connection_cdmx.png",
-          "/img/events/connection_gto.png",
-          "/img/events/connection_gdl.png",
-          "/img/events/connection_qro.png",
-          "/img/events/connection_pue.png",
-          "/img/events/connection_mty.png",
-          "/img/events/connection_sal.png"
+          require("~/assets/img/events/connection_cdmx.png"),
+          require("~/assets/img/events/connection_gto.png"),
+          require("~/assets/img/events/connection_gdl.png"),
+          require("~/assets/img/events/connection_qro.png"),
+          require("~/assets/img/events/connection_pue.png"),
+          require("~/assets/img/events/connection_mty.png"),
+          require("~/assets/img/events/connection_sal.png")
         ]
       }
     },
@@ -532,10 +531,10 @@ export const state = () => ({
             de los ingresos de todos los Negocios que tu red
             genere mes tras mes a través de Weenjoy.
           <p>`,
-        "background": "/img/hero_05.png"
+        "background": require("~/assets/img/hero_05.png")
       },
       "plan": {
-        "img": "/img/plan.png",
+        "img": require("~/assets/img/plan.png"),
         "title": "WIN a diseñado",
         "subtitle": "un plan de trabajo fácil y poderoso",
         "content": `
@@ -553,18 +552,18 @@ export const state = () => ({
           </p>
         `,
         "gallery": [
-          "/img/nivel1_01.png",
-          "/img/nivel1_02.png"
+          require("~/assets/img/nivel1_01.png"),
+          require("~/assets/img/nivel1_02.png")
         ],
         "tiles": [
           {
-            "img": "/img/negocios.svg",
+            "img": require("~/assets/img/negocios.svg"),
             "name": "NEGOCIOS",
             "quantity": "6",
             "description": "DIRECTOS"
           },
           {
-            "img": "/img/ganancias.svg",
+            "img": require("~/assets/img/ganancias.svg"),
             "name": "GANANCIAS",
             "quantity": ".20%"
           },
@@ -586,14 +585,14 @@ export const state = () => ({
           </p>
         `,
         "gallery": [
-          "/img/nivel2_01.png",
-          "/img/nivel2_02.png"
+          require("~/assets/img/nivel2_01.png"),
+          require("~/assets/img/nivel2_02.png")
         ]
       },
       "earnings": {
         "title": "Potencial de Ganancias",
         "description": "Ejemplo de un Negocio que genera diariamente un promedio de 10 ventas de $500 MXN:",
-        "table": "/img/table.png",
+        "table": require("~/assets/img/table.png"),
         "text": `
           <p>El plan de compensación de WIN, está diseñado para que una vez que construyas tu plan 6x3 en un periodo
           no mayor a 4 meses y dedicando 2 a 3 horas de tu tiempo por semana <em>generes importantes ganancias mensuales.</em></p>
@@ -610,16 +609,16 @@ export const state = () => ({
         "id": "lucy",
         "name": "Lucy Ponce Ávila",
         "position": "Embajadora",
-        "photo": "/img/embajadores/lucy_ponce/photo.jpg",
+        "photo": require("~/assets/img/embajadores/lucy_ponce/photo.jpg"),
         "url": "/perfiles/lucy",
         "cv": {
           "hero": {
-            "image": "/img/embajadores/lucy_ponce/hero.png",
+            "image": require("~/assets/img/embajadores/lucy_ponce/hero.png"),
             "title": "Lucy Ponce Ávila",
             "subtitle": "Embajadora WIN"
           },
           "about": {
-            "photo": "/img/embajadores/lucy_ponce/cv.png",
+            "photo": require("~/assets/img/embajadores/lucy_ponce/cv.png"),
             "title": "Conoce más",
             "subtitle": "Lucy Ponce se ha dedicado a cambiar la vida de las personas.",
             "content": `
@@ -632,15 +631,15 @@ export const state = () => ({
           "phrase": "``La pasión con la que vives tus sueños, es lo que determina el nivel de tu éxito''",
           "weenjoyPhrase": "``Weenjoy, es más que una aplicación, es un modelo que va a mejorar la calidad de vida de las personas''",
           "social": {
-            "thumbnail": "/img/embajadores/lucy_ponce/thumbnail.png",
-            "user": "/img/embajadores/lucy_ponce/user.png",
+            "thumbnail": require("~/assets/img/embajadores/lucy_ponce/thumbnail.png"),
+            "user": require("~/assets/img/embajadores/lucy_ponce/user.png"),
             "networks": [{
                 "url": "https://www.facebook.com/marialucyponce",
-                "icon": "/img/social_icons/facebook.svg"
+                "icon": require("~/assets/img/social_icons/facebook.svg")
               },
               {
                 "url": "https://www.instagram.com/lucyponceavila",
-                "icon": "/img/social_icons/insta.svg"
+                "icon": require("~/assets/img/social_icons/insta.svg")
               }
             ]
           }
@@ -650,16 +649,16 @@ export const state = () => ({
         "id": "ahmed",
         "name": "Ahmed Ozsu",
         "position": "Embajador WIN",
-        "photo": "/img/embajadores/ahmed_ozsu/photo.png",
+        "photo": require("~/assets/img/embajadores/ahmed_ozsu/photo.png"),
         "url": "/perfiles/ahmed",
         "cv": {
           "hero": {
-            "image": "/img/embajadores/ahmed_ozsu/hero.png",
+            "image": require("~/assets/img/embajadores/ahmed_ozsu/hero.png"),
             "title": "Ahmed Ozsu",
             "subtitle": "Embajador WIN"
           },
           "about": {
-            "photo": "/img/embajadores/ahmed_ozsu/cv.png",
+            "photo": require("~/assets/img/embajadores/ahmed_ozsu/cv.png"),
             "title": "Conoce más",
             "subtitle": "Ahmed Ozsu se ha caracterizado por ser un gran emprendedor y agente de cambio.",
             "content": `
@@ -671,19 +670,19 @@ export const state = () => ({
           "phrase": "``El emprendimiento con visión social es mi pasión''",
           "weenjoyPhrase": "``¡Si te vas a meter a bañar, salpica, yo creo que  eso, es precisamente lo que hace Weenjoy!''",
           "social": {
-            "thumbnail": "/img/embajadores/ahmed_ozsu/thumbnail.png",
-            "user": "/img/embajadores/ahmed_ozsu/user.png",
+            "thumbnail": require("~/assets/img/embajadores/ahmed_ozsu/thumbnail.png"),
+            "user": require("~/assets/img/embajadores/ahmed_ozsu/user.png"),
             "networks": [{
                 "url": "https://www.facebook.com/ahmed.medina",
-                "icon": "/img/social_icons/facebook.svg"
+                "icon": require("~/assets/img/social_icons/facebook.svg")
               },
               {
                 "url": "https://twitter.com/ahmedozsu",
-                "icon": "/img/social_icons/twitter.svg"
+                "icon": require("~/assets/img/social_icons/twitter.svg")
               },
               {
                 "url": "https://www.instagram.com/ahmedozsu/ ",
-                "icon": "/img/social_icons/insta.svg"
+                "icon": require("~/assets/img/social_icons/insta.svg")
               }
             ]
           }
@@ -694,30 +693,30 @@ export const state = () => ({
     "resources": {
       "hero": {
         "title": `<h1><em>Recursos para Joyners</em></h1>`,
-        "background": "/img/hero_03.png"
+        "background": require("~/assets/img/hero_03.png")
       },
       "brochures": {
         "title": "Folletos informativos",
         "files": [{
-          "background": "/img/folleto_01.png",
+          "background": require("~/assets/img/folleto_01.png"),
           "title": "WEENJOY PARTNER",
           "pdf": "/pdf/Folleto_Weenjoy_R1nov2018.pdf",
           "action": "DESCARGAR"
         },
         {
-          "background": "/img/folleto_02.png",
+          "background": require("~/assets/img/folleto_02.png"),
           "title": "WIN",
           "pdf": "/pdf/Folleto_WIN_R1nov2018.pdf",
           "action": "DESCARGAR"
         },
         {
-          "background": "/img/folleto_03.png",
+          "background": require("~/assets/img/folleto_03.png"),
           "title": "JOBBER",
           "pdf": "/pdf/Folleto_Jobber_R1nov2018.pdf",
           "action": "DESCARGAR"
         },
         {
-          "background": "/img/folleto_04.png",
+          "background": require("~/assets/img/folleto_04.png"),
           "title": "INFO CONTABLE",
           "pdf": "/pdf/Info_contable_R5_04abril_2019.pdf",
           "action": "DESCARGAR"
@@ -749,7 +748,7 @@ export const state = () => ({
           "id": "vistazo",
           "name": "Ventajas de hacer comunidad",
           "title": "¡Conoce las ventajas de formar parte de esta gran comunidad!",
-          "thumbnail": "/img/entries/01/thumbnail.jpg",
+          "thumbnail": require("~/assets/img/entries/01/thumbnail.jpg"),
           "entry": `
             <ol>
               <li>No tienes que invertir absolutamente nada más que 1 ó 2 horas a la semana durante poco tiempo.</li>
@@ -765,19 +764,19 @@ export const state = () => ({
           "id": "contigo",
           "name": "Weenjoy contigo",
           "title": "Weenjoy  te apoya para que todas tus dudas sean resueltas.",
-          "thumbnail": "/img/entries/02/thumbnail.jpg",
+          "thumbnail": require("~/assets/img/entries/02/thumbnail.jpg"),
           "entry": `
             <p><strong>¿Cuáles son los 4 pasos que debes seguir para armar tu Red de Negocios?</strong></p> <br>
             <p>Los pasos se desarrollan por medio de un proceso conocido como JOIN (antes VACA). Este es un sistema mediante el cual se activarán los Negocios de tus amigos o familiares para que ingresen y se conviertan en Weenjoy Partners.</p>
             <p>J=Job / Trabajo: Es el primer paso del proceso que te permitirá tener una reunión inicial con la persona que toma las decisiones del Negocio o Empresa. El objetivo de este acercamiento es que generes interés en el dueño sobre Weenjoy y lo convenzas de los beneficios de pertenecer a esta comunidad.</p>
-            <img src="/img/entries/02/job.jpg" alt="Job">
+            <img src=require("~/assets/img/entries/02/job.jpg" alt="Job">)
             <p>O=Operate / Opera: Ya que convenciste y lograste el sí de tus Negocios, lo que sigue es acompañarlo en su proceso de alta. Estos pasos los debe de hacer directamente el dueño del Negocio (Weenjoy Partner) ingresando a weenjoy.com. El dueño del Negocio deberá verificarte como Joyner (Activador) y generar su cuenta en Weenjoy.</p>
-            <img src="/img/entries/02/operate.png" alt="Operate">
+            <img src=require("~/assets/img/entries/02/operate.png" alt="Operate">)
             <p>I=Inspire / Capacita: Dentro del proceso JOIN la capacitación es la parte más importante y es aquí donde tú como Joyner (Activador) deberás dedicar la mayor atención y enfoque con tus Negocios para que juntos ganen con Weenjoy.</p>
-            <img src="/img/entries/02/inspire.jpg" alt="Inspire">
+            <img src=require("~/assets/img/entries/02/inspire.jpg" alt="Inspire">)
             <p>La capacitación a los Negocios y empleados es importante porque de ellos dependerá la adecuada funcionalidad de la APP de Weenjoy con los usuarios.</p>
             <p>N=Notify / Notifica: En este último paso, tu objetivo es dar acompañamiento para asegurar la calidad y servicio del funcionamiento de la APP en pro de los beneficios de la empresa y los usuarios.</p>
-            <img src="/img/entries/02/notify.jpg" alt="Notify">
+            <img src=require("~/assets/img/entries/02/notify.jpg" alt="Notify">)
             <p>No olvides invitar a tus amigos que ya tengan la APP a consumir en los Negocios que tú afiliaste, así ¡todos ganan!</p>
           `,
           "url": "/entradas/contigo"
@@ -786,14 +785,14 @@ export const state = () => ({
           "id": "equipo",
           "name": "Arma tu equipo",
           "title": "¿Cuáles son los 3 pasos que debes seguir para armar tu Organización de Joyners (Activadores)?",
-          "thumbnail": "/img/entries/03/thumbnail.jpg",
+          "thumbnail": require("~/assets/img/entries/03/thumbnail.jpg"),
           "entry": `
             <p>L=Look / Busca: Tendrás que ser muy específico en el perfil de tus 3 Joyners, invita a amigos y conocidos que de preferencia tengan experiencia en redes de mercadeo o que conozcan a dueños de Negocios.</p>
-            <img src="/img/entries/03/look.jpg" alt="placeholder">
+            <img src=require("~/assets/img/entries/03/look.jpg" alt="placeholder">)
             <p>IN=Integrate / Integrar: Comienza a armar tu Organización de Joyners, apóyalos en su capacitación y certificación para que replique el plan 6x3. Recuerda que por cada 2 negocios que afilies, tienes derecho a invitar a un nuevo Joyner.</p>
-            <img src="/img/entries/03/integrate.jpg" alt="placeholder">
+            <img src=require("~/assets/img/entries/03/integrate.jpg" alt="placeholder">)
             <p>K=Keep / Mantener: Es muy importante que hagas un seguimiento de tu Red de Negocios y tu Organización de Joyners para que los ayudes con dudas, pero sobre todo para que mantengas tu red generando ingresos residuales exponenciales.</p>
-            <img src="/img/entries/03/keep.jpg" alt="Keep">
+            <img src=require("~/assets/img/entries/03/keep.jpg" alt="Keep">)
             <p>Tienes un portal aquí, dentro de la plataforma WIN, que te ayudará a tener más orden y visualizar tus avances.</p>
             <ul>
               <li>Puedes crear equipo con otras personas para que ellos hagan lo mismo que tú y que también ganen de los negocios afiliados por ellos, siguiendo el proceso LINK.</li>
@@ -808,7 +807,7 @@ export const state = () => ({
           "id": "amigos",
           "name": "Acerca a tus amigos",
           "title": "Invita a tus amigos para que puedas tener al mejor equipo junto a ti.",
-          "thumbnail": "/img/entries/04/thumbnail.jpg",
+          "thumbnail": require("~/assets/img/entries/04/thumbnail.jpg"),
           "entry": `
             <ol>
               <li>Personas que están en la constante búsqueda de oportunidades.</li>
@@ -965,10 +964,10 @@ export const state = () => ({
       "hero": {
         "title": `<h1><em>Atención Weenjoy</em></h1>`,
         "content": `<p>¿Tienes dudas? Contáctanos para conocer más sobre nuestro Sistema de Activación de Negocios</p>`,
-        "background": "/img/hero_04.png"
+        "background": require("~/assets/img/hero_04.png")
       },
       "social": [{
-          "icon": "/img/contact_icons/smartphone.png",
+          "icon": require("~/assets/img/contact_icons/smartphone.png"),
           "title": "Llámanos",
           "url": "javascript: void(0)",
           "contact": [{
@@ -980,7 +979,7 @@ export const state = () => ({
           ]
         },
         {
-          "icon": "/img/contact_icons/whatsapp.png",
+          "icon": require("~/assets/img/contact_icons/whatsapp.png"),
           "title": "WhatsApp Business",
           "url": "https://api.whatsapp.com/send?phone=5213323759183",
           "contact": [{
@@ -988,7 +987,7 @@ export const state = () => ({
           }]
         },
         {
-          "icon": "/img/contact_icons/email.png",
+          "icon": require("~/assets/img/contact_icons/email.png"),
           "title": "Escribenos a:",
           "url": "mailto:atencionwin@weenjoy.com",
           "contact": [{
@@ -996,7 +995,7 @@ export const state = () => ({
           }]
         },
         {
-          "icon": "/img/contact_icons/facebook.svg",
+          "icon": require("~/assets/img/contact_icons/facebook.svg"),
           "title": "Redes sociales",
           "url": "https://www.facebook.com/WIN.WeenjoyIntelligentNetwork",
           "contact": [{
@@ -1004,7 +1003,7 @@ export const state = () => ({
           }]
         },
         {
-          "icon": "/img/contact_icons/twitter.svg",
+          "icon": require("~/assets/img/contact_icons/twitter.svg"),
           "url": "https://twitter.com/WINWeenjoy",
           "contact": [{
             "name": `<p>twitter</p>`,
@@ -1013,17 +1012,17 @@ export const state = () => ({
       ],
       "addresses": [{
           "name": "Weenjoy USA",
-          "icon": "/img/contact_icons/ciudades_01.svg",
+          "icon": require("~/assets/img/contact_icons/ciudades_01.svg"),
           "address": `<p>1160 Battery Street East, Suite 100, <br> San Francisco, CA 94111, EE.UU.</p>`
         },
         {
           "name": "Weenjoy México",
-          "icon": "/img/contact_icons/ciudades_02.svg",
+          "icon": require("~/assets/img/contact_icons/ciudades_02.svg"),
           "address": `<p>Puerta de Hierro, Av. Real Acueducto 360, <br> 5 to piso, Col.Santa Margarita, <br> C.P.45116, Zapopan, Jal.Mx.</p>`
         },
         {
           "name": "Weenjoy Colombia",
-          "icon": "/img/contact_icons/ciudades_03.svg",
+          "icon": require("~/assets/img/contact_icons/ciudades_03.svg"),
           "address": `<p>Torre Protección, Carrera 43A <br> 1 - 50, Torre 1, Piso 6, Oficina 652, Medellín, Antq. Col.</p>`
         }
       ]

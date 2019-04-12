@@ -228,7 +228,11 @@
         class="highlighted_texture"
         v-rellax="{ speed: -2 }"
       >
-      <img :src="highlighted_photo">
+      <img
+        data-aos="fade-up"
+        data-aos-duration="700"
+        :src="highlighted_photo"
+      >
       <div class="highlighted_separator"></div>
       <div
         data-aos="fade-up"

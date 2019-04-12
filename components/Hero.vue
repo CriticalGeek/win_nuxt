@@ -28,12 +28,9 @@
     height: 100%;
 
     & img {
-      margin-left: -2%;
-      margin-top: -2%;
-      width: 110%;
-      height: 110%;
+      width: 100%;
+      height: 100%;
       object-fit: cover;
-      filter: blur(4px);
     }
   }
 
